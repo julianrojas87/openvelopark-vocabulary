@@ -17,7 +17,7 @@
                             foaf:primaryTopic               <https://velopark.be/openvelopark/terms> ;
                             dct:issued                      "2019-01-29"^^xsd:date ;
                             dct:modified                    "2019-01-29"^^xsd:date ;
-                            dct:hasFormat                   <https://raw.githubusercontent.com/OpenTransport/vocabulary/master/gtfs/gtfs.ttl> ;
+                            dct:hasFormat                   <https://raw.githubusercontent.com/julianrojas87/openvelopark-vocabulary/master/openvelopark.ttl> ;
                             cc:license                      <http://creativecommons.org/licenses/by/3.0/> ;
                             dct:rights                      "Copyright 2019 - Open Velopark contributors" .
 
