@@ -6,28 +6,319 @@
 @prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
 @prefix mv:     <http://schema.mobivoc.org/> .
 @prefix gr:     <http://purl.org/goodrelations/v1#> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
 @prefix dct:    <http://purl.org/dc/terms/> .
 @prefix vann:   <http://purl.org/vocab/vann/> .
 @prefix foaf:   <http://xmlns.com/foaf/0.1/> .
+@prefix vs:     <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix schema: <http://schema.org/> .
+@prefix vp:     <https://velopark.be/openvelopark/terms#> .
 
 
 
-<https://velopark.be/openvelopark/terms>  a                 foaf:Document ;
-                            foaf:primaryTopic               <https://velopark.be/openvelopark/terms> ;
-                            dct:issued                      "2019-01-29"^^xsd:date ;
-                            dct:modified                    "2019-01-29"^^xsd:date ;
-                            dct:hasFormat                   <https://raw.githubusercontent.com/julianrojas87/openvelopark-vocabulary/master/openvelopark.ttl> ;
-                            cc:license                      <http://creativecommons.org/licenses/by/3.0/> ;
-                            dct:rights                      "Copyright 2019 - Open Velopark contributors" .
+<https://velopark.be/openvelopark/terms>  
+        a                 foaf:Document ;
+        foaf:primaryTopic <https://velopark.be/openvelopark/terms> ;
+        dct:issued        "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
+        dct:hasFormat     <https://raw.githubusercontent.com/julianrojas87/openvelopark-vocabulary/master/openvelopark.ttl> ;
+        cc:license        <http://creativecommons.org/licenses/by/3.0/> ;
+        dct:rights        "Copyright 2019 - Open Velopark contributors" .
 
-<https://velopark.be/openvelopark/terms>  a                 owl:Ontology ;
-                            rdfs:label                      "Open Velopark Vocabulary"@en ;
-                            dct:description                 "This ontology introduces the definition of a set of bicycle parking facilities related terms. It reuses and entends the MobiVoc (see http://schema.mobivoc.org/) and the schema.org (see https://schema.org) vocabularies."@en ;
-                            vann:preferredNamespacePrefix   "openvelopak" ;
-                            vann:preferredNamespaceUri      "https://velopark.be/openvelopark/terms#";
-                            rdfs:seeAlso                    <http://schema.mobivoc.org/> ;
-                            rdfs:seeAlso                    <https://schema.org/> ;
-                            rdfs:seeAlso                    <https://www.velopark.be/> ;
-                            dct:creator                     [ foaf:mbox "julianandres.rojasmelendez@ugent.be"; foaf:name "Julian Rojas" ] ;
-                            dct:creator                     [ foaf:mbox "Pieter.Colpaert@UGent.be"; foaf:name "Pieter Colpaert" ] .
+<https://velopark.be/openvelopark/terms>  
+        a                 owl:Ontology ;
+        rdfs:label        "Open Velopark Vocabulary"@en ;
+        dct:description   "This ontology introduces the definition of a set of bicycle parking facilities related terms. It reuses and entends the MobiVoc (see http://schema.mobivoc.org/) and the schema.org (see https://schema.org) vocabularies."@en ;
+        vann:preferredNamespacePrefix  "openvelopak" ;
+        vann:preferredNamespaceUri     "https://velopark.be/openvelopark/terms#";
+        rdfs:seeAlso      <http://schema.mobivoc.org/> ;
+        rdfs:seeAlso      <https://schema.org/> ;
+        rdfs:seeAlso      <https://www.velopark.be/> ;
+        dct:creator       [ foaf:mbox "julianandres.rojasmelendez@ugent.be"; foaf:name "Julian Rojas" ] ;
+        dct:creator       [ foaf:mbox "Pieter.Colpaert@UGent.be"; foaf:name "Pieter Colpaert" ] .
+
+vp:PermanentPersonnelSupervision  
+        a                 rdfs:Class , owl:Class ;
+        rdfs:comment      "Bicycle parking facility with permanent personel supervision." ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "Bycicle storage with permanent personnel supervision"@en ;
+        rdfs:subClassOf   mv:BicycleParkingStation ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:LimitedPersonnelSupervision  
+        a                 rdfs:Class , owl:Class ;
+        rdfs:comment      "Bicycle parking facility with limited personel supervision." ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "Bycicle storage with limited personnel supervision"@en ;
+        rdfs:subClassOf   mv:BicycleParkingStation ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:NoPersonnelSupervision  
+        a                 rdfs:Class , owl:Class ;
+        rdfs:comment      "Bicycle parking facility with limited personel supervision." ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "Bycicle storage with limited personnel supervision"@en ;
+        rdfs:subClassOf   mv:BicycleParkingStation ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:NeighborhoodParking  
+        a                 rdfs:Class , owl:Class ;
+        rdfs:comment      "Bicycle parking facility for residents of a given neighborhood." ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "Neighborhood Parking Facility"@en ;
+        rdfs:subClassOf   mv:BicycleParkingStation ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:BicycleCase  
+        a                 rdfs:Class , owl:Class ;
+        rdfs:comment      "Covered and lockable bicycle parking facility on public roads." ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "Bicycle Case"@en ;
+        rdfs:subClassOf   mv:BicycleParkingStation ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:AllowedBicycle  
+        a                 rdfs:Class , owl:Class ;
+        rdfs:comment      "A bicycle that is allowed in a given parking facility." ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "Allowed Bicycle"@en ;
+        rdfs:subClassOf   schema:Vehicle ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:RegularBicycle  
+        a                 mv:Bicycle ;
+        rdfs:comment      "A regular bicycle that does not have any special features." ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "Regular Bicycle"@en ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:ElectricBicycle  
+        a                 mv:Bicycle ;
+        rdfs:comment      "An electrically powered bicycle." ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "Electric Bicycle"@en ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:CargoBicycle  
+        a                 mv:Bicycle ;
+        rdfs:comment      "A bicycle specially adapted to transport load." ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "Cargo Bicycle"@en ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:TandemBicycle  
+        a                 mv:Bicycle ;
+        rdfs:comment      "A bicycle designed to be ridden by more than one person." ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "Tandem Bicycle"@en ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:CameraSurveillance  
+        a                 rdfs:Class , owl:Class ;
+        rdfs:comment      "A parking facility feature that indicates it has surveillance cameras available." ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "Camera Surveillance"@en ;
+        rdfs:subClassOf   schema:LocationFeatureSpecification ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:ElectronicAccess  
+        a                 rdfs:Class , owl:Class ;
+        rdfs:comment      "A parking facility feature that indicates it has an electronic access system." ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "Electronic Access"@en ;
+        rdfs:subClassOf   schema:LocationFeatureSpecification ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:BicyclePump  
+        a                 rdfs:Class , owl:Class ;
+        rdfs:comment      "A parking facility feature that indicates it has a bicycle pump available." ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "Bicycle Pump"@en ;
+        rdfs:subClassOf   schema:LocationFeatureSpecification ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:MaintenanceService 
+        a                 rdfs:Class , owl:Class ;
+        rdfs:comment      "A parking facility feature that indicates it has a bicycle maintenance service available." ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "Maintenance Service"@en ;
+        rdfs:subClassOf   schema:LocationFeatureSpecification ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:ChargingPoint 
+        a                 rdfs:Class , owl:Class ;
+        rdfs:comment      "A parking facility feature that indicates it has an electrical bicycle charging point available." ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "Charging Point"@en ;
+        rdfs:subClassOf   schema:LocationFeatureSpecification ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:LockerService 
+        a                 rdfs:Class , owl:Class ;
+        rdfs:comment      "A parking facility feature that indicates it has a locker service available." ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "Locker Service"@en ;
+        rdfs:subClassOf   schema:LocationFeatureSpecification ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:ToiletService 
+        a                 rdfs:Class , owl:Class ;
+        rdfs:comment      "A parking facility feature that indicates it has a toilet service available." ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "Toilet Service"@en ;
+        rdfs:subClassOf   schema:LocationFeatureSpecification ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:BikeRentalService 
+        a                 rdfs:Class , owl:Class ;
+        rdfs:comment      "A parking facility feature that indicates it has a bicycle rental service available." ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "Bike Rental Service"@en ;
+        rdfs:subClassOf   schema:LocationFeatureSpecification ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:allowed  
+        a                 rdf:Property , owl:ObjectProperty ;
+        rdfs:comment      "Indicates a type of bicycle that is allowed in a certain parking facility."@en ;
+        rdfs:domain       mv:BicycleParkingStation ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "allowed"@en ;
+        rdfs:range        vp:AllowedBicycle ;
+        dct:created       "2019-01-30"^^xsd:date ;
+        dct:modified      "2019-01-30"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:minimumStorageTime  
+        a                 rdf:Property , owl:DatatypeProperty ;
+        rdfs:comment      "Indicates the minimum amount of time that bicycles are allowed to be parked in a certain parking facility."@en ;
+        rdfs:domain       mv:BicycleParkingStation ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "minimun storage time"@en ;
+        rdfs:range        xsd:duration ;
+        dct:created       "2019-01-30"^^xsd:date ;
+        dct:modified      "2019-01-30"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:maximumStorageTime  
+        a                 rdf:Property , owl:DatatypeProperty ;
+        rdfs:comment      "Indicates the maximum amount of time that bicycles are allowed to be parked in a certain parking facility."@en ;
+        rdfs:domain       mv:BicycleParkingStation ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "maximum storage time"@en ;
+        rdfs:range        xsd:duration ;
+        dct:created       "2019-01-30"^^xsd:date ;
+        dct:modified      "2019-01-30"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:intendedAudience  
+        a                 rdf:Property , owl:DatatypeProperty ;
+        rdfs:comment      "Indicates the type of audience that can make use of a certain parking facility."@en ;
+        rdfs:domain       mv:BicycleParkingStation ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "intended audience"@en ;
+        rdfs:range        xsd:string ;
+        dct:created       "2019-01-30"^^xsd:date ;
+        dct:modified      "2019-01-30"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:restrictions  
+        a                 rdf:Property , owl:DatatypeProperty ;
+        rdfs:comment      "Indicates the operational restrictions that a certain parking facility may have."@en ;
+        rdfs:domain       mv:BicycleParkingStation ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "restrictions"@en ;
+        rdfs:range        xsd:string ;
+        dct:created       "2019-01-30"^^xsd:date ;
+        dct:modified      "2019-01-30"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:removalConditions  
+        a                 rdf:Property , owl:DatatypeProperty ;
+        rdfs:comment      "Description of the conditions under which a bicycle may be removed from a certain parking facility."@en ;
+        rdfs:domain       mv:BicycleParkingStation ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "removal conditions"@en ;
+        rdfs:range        xsd:string ;
+        dct:created       "2019-01-30"^^xsd:date ;
+        dct:modified      "2019-01-30"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:postRemovalAction  
+        a                 rdf:Property , owl:DatatypeProperty ;
+        rdfs:comment      "Description of how parking facility users must proceed when their bicycles are removed."@en ;
+        rdfs:domain       mv:BicycleParkingStation ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "post removal action"@en ;
+        rdfs:range        xsd:string ;
+        dct:created       "2019-01-30"^^xsd:date ;
+        dct:modified      "2019-01-30"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:bicycleType  
+        a                 rdf:Property , owl:ObjectProperty ;
+        rdfs:comment      "Indicates the specific type of bicycle that is allowed in a certain parking facility."@en ;
+        rdfs:domain       vp:AllowedBicycle ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "bicycle type"@en ;
+        rdfs:range        mv:Bycicle ;
+        dct:created       "2019-01-30"^^xsd:date ;
+        dct:modified      "2019-01-30"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:bicyclesAmount  
+        a                 rdf:Property , owl:DatatypeProperty ;
+        rdfs:comment      "Indicates the maximum amount of bicycle of a certain type that are allowed in a parking facility."@en ;
+        rdfs:domain       vp:AllowedBicycle ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "bicylces amount"@en ;
+        rdfs:range        xsd:integer ;
+        dct:created       "2019-01-30"^^xsd:date ;
+        dct:modified      "2019-01-30"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:countingSystem  
+        a                 rdf:Property , owl:DatatypeProperty ;
+        rdfs:comment      "Indicates whether a certain type of allowed bicycle has a counting system or not, for a given parking facility."@en ;
+        rdfs:domain       vp:AllowedBicycle ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "counting system"@en ;
+        rdfs:range        xsd:boolean ;
+        dct:created       "2019-01-30"^^xsd:date ;
+        dct:modified      "2019-01-30"^^xsd:date ;
+        vs:term_status    "stable" .
