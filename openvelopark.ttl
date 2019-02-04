@@ -12,25 +12,25 @@
 @prefix foaf:   <http://xmlns.com/foaf/0.1/> .
 @prefix vs:     <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
 @prefix schema: <http://schema.org/> .
-@prefix vp:     <https://velopark.be/openvelopark/terms#> .
+@prefix vp:     <https://velopark.ilabt.imec.be/openvelopark/terms#> .
 
 
 
-<https://velopark.be/openvelopark/terms>  
+<https://velopark.ilabt.imec.be/openvelopark/terms>  
         a                 foaf:Document ;
-        foaf:primaryTopic <https://velopark.be/openvelopark/terms> ;
+        foaf:primaryTopic <https://velopark.ilabt.imec.be/openvelopark/terms> ;
         dct:issued        "2019-01-29"^^xsd:date ;
         dct:modified      "2019-01-29"^^xsd:date ;
         dct:hasFormat     <https://raw.githubusercontent.com/julianrojas87/openvelopark-vocabulary/master/openvelopark.ttl> ;
         cc:license        <http://creativecommons.org/licenses/by/3.0/> ;
         dct:rights        "Copyright 2019 - Open Velopark contributors" .
 
-<https://velopark.be/openvelopark/terms>  
+<https://velopark.ilabt.imec.be/openvelopark/terms>  
         a                 owl:Ontology ;
         rdfs:label        "Open Velopark Vocabulary"@en ;
-        dct:description   "This ontology introduces the definition of a set of bicycle parking facilities related terms. It reuses and entends the MobiVoc (see http://schema.mobivoc.org/) and the schema.org (see https://schema.org) vocabularies."@en ;
+        dct:description   "This ontology introduces the definition of a set of bicycle parking facilities related terms. It reuses and extends the MobiVoc (see http://schema.mobivoc.org/) and the schema.org (see https://schema.org) vocabularies."@en ;
         vann:preferredNamespacePrefix  "openvelopak" ;
-        vann:preferredNamespaceUri     "https://velopark.be/openvelopark/terms#";
+        vann:preferredNamespaceUri     "https://velopark.ilabt.imec.be/openvelopark/terms#";
         rdfs:seeAlso      <http://schema.mobivoc.org/> ;
         rdfs:seeAlso      <https://schema.org/> ;
         rdfs:seeAlso      <https://www.velopark.be/> ;
