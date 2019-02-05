@@ -12,6 +12,7 @@
         "GeoShape": "schema:GeoShape",
         "Map": "schema:Map",
         "ContactPoint": "schema:ContactPoint",
+        "OpeningHoursSpecification": "schema:OpeningHoursSpecification",
         "WebSite": "schema:WebSite",
         "PriceSpecification": "schema:PriceSpecification",
         "Photograph": "schema:Photograph",
@@ -21,9 +22,6 @@
         "Exit": "mv:ParkingFacilityExit",
         "RealTimeCapacity": "mv:RealTimeCapacity",
         "TimeSpecification": "mv:TimeSpecification",
-        "PermanentPersonnelSupervision": "vp:PermanentPersonnelSupervision",
-        "LimitedPersonnelSupervision": "vp:LimitedPersonnelSupervision",
-        "NoPersonnelSupervision": "vp:NoPersonnelSupervision",
         "NeighborhoodParking": "vp:NeighborhoodParking",
         "BicycleCase": "vp:BicycleCase",
         "AllowedBicycle": "vp:AllowedBicycle",
@@ -32,6 +30,7 @@
         "CargoBicycle": "vp:CargoBicycle",
         "TandemBicycle": "vp:TandemBicycle",
         "CameraSurveillance": "vp:CameraSurveillance",
+        "PersonnelSupervision": "vp:PersonnelSupervision",
         "ElectronicAccess": "vp:ElectronicAccess",
         "BicyclePump": "vp:BicyclePump",
         "MaintenanceService": "vp:MaintenanceService",
@@ -89,17 +88,9 @@
             "@id": "schema:longitude",
             "@type": "xsd:double"
         },
-        "startDate": {
-            "@id": "schema:startDate",
-            "@type": "xsd:dateTime"
-        },
-        "endDate": {
-            "@id": "schema:endDate",
-            "@type": "xsd:dateTime"
-        },
-        "openingHours": {
-            "@id": "schema:openingHours",
-            "@type": "xsd:string"
+        "openingHoursSpecification": {
+            "@id": "schema:openingHoursSpecification",
+            "@type": "@set"
         },
         "contactType": {
             "@id": "schema:contactType",
@@ -116,6 +107,22 @@
         "availableLanguage": {
             "@id": "schema:availableLanguage",
             "@container": "@set"
+        },
+        "hoursAvailable": {
+            "@id": "schema:hoursAvailable",
+            "@container": "@set"
+        },
+        "dayOfWeek": {
+            "@id": "schema:dayOfWeek",
+            "@type": "@id"
+        },
+        "opens": {
+            "@id": "schema:opens",
+            "@type": "xsd:time"
+        },
+        "closes": {
+            "@id": "schema:closes",
+            "@type": "xsd:time"
         },
         "publicAccess": {
             "@id": "schema:publicAccess",
@@ -181,8 +188,16 @@
             "@id": "mv:timeUnit",
             "@type": "xsd:string"
         },
-        "allowed": {
-            "@id": "vp:allowed",
+        "startDate": {
+            "@id": "vp:startDate",
+            "@type": "xsd:dateTime"
+        },
+        "endDate": {
+            "@id": "vp:endDate",
+            "@type": "xsd:dateTime"
+        },
+        "allows": {
+            "@id": "vp:allows",
             "@container": "@set"
         },
         "minimumStorageTime": {
@@ -257,12 +272,6 @@
             "@language": "fr"
         }
     ],
-    "totalCapacity": 450,
-    "capacity": {
-        "@type": "RealTimeCapacity",
-        "currentValue": 133,
-        "date": "2018-11-08T14:42:00.000Z"
-    },
     "ownedBy": {
         "@id": "https://www.wikidata.org/wiki/Q1296",
         "@type": "BusinessEntity",
@@ -313,8 +322,43 @@
         "contactType": "customer service",
         "email": "parking@nmbs.be",
         "telephone": "+3292101010",
-        "availableLanguage": ["nl", "fr", "en"],
-        "openingHours": "Mo,Tu,We,Th,Fr 09:00-17:00"
+        "availableLanguage": [
+            "nl",
+            "fr",
+            "en"
+        ],
+        "hoursAvailable": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "schema:Monday",
+                "opens": "09:00:00",
+                "closes": "17:00:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "schema:Tuesday",
+                "opens": "09:00:00",
+                "closes": "17:00:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "schema:Wednesday",
+                "opens": "08:00:00",
+                "closes": "18:00:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "schema:Thursday",
+                "opens": "09:00:00",
+                "closes": "17:00:00"
+            },
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "schema:Friday",
+                "opens": "09:00:00",
+                "closes": "12:00:00"
+            }
+        ]
     },
     "interactionService": {
         "@type": "WebSite",
@@ -336,8 +380,39 @@
     "@graph": [
         {
             "@id": "http://data.gent.be/parking/bikes/546213#secured",
-            "@type": "PermanentPersonnelSupervision",
-            "openingHours": "Mo,Tu,We,Th 09:00-12:00",
+            "@type": "BicycleParkingStation",
+            "openingHoursSpecification": [
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "schema:Monday",
+                    "opens": "09:00:00",
+                    "closes": "17:00:00"
+                },
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "schema:Tuesday",
+                    "opens": "09:00:00",
+                    "closes": "17:00:00"
+                },
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "schema:Wednesday",
+                    "opens": "08:00:00",
+                    "closes": "18:00:00"
+                },
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "schema:Thursday",
+                    "opens": "09:00:00",
+                    "closes": "17:00:00"
+                },
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "schema:Friday",
+                    "opens": "09:00:00",
+                    "closes": "12:00:00"
+                }
+            ],
             "maximumStorageTime": "P30D",
             "publicAccess": false,
             "intendedAudience": "Residents in Ghent",
@@ -351,7 +426,7 @@
                 "currentValue": 133,
                 "date": "2018-11-08T14:42:00.000Z"
             },
-            "allowed": [
+            "allows": [
                 {
                     "@type": "AllowedBicycle",
                     "bicycleType": "vp:RegularBicycle",
@@ -413,7 +488,7 @@
                     "@type": "PriceSpecification",
                     "freeOfCharge": false,
                     "price": 3.00,
-                    "priceCurrency": "EUR",
+                    "currency": "EUR",
                     "url": "http://parking.nmbs.be/parking/prices",
                     "dueForTime": {
                         "@type": "TimeSpecification",
@@ -428,7 +503,75 @@
             "amenityFeature": [
                 {
                     "@type": "CameraSurveillance",
-                    "value": true
+                    "value": true,
+                    "hoursAvailable": [
+                        {
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": "schema:Monday",
+                            "opens": "09:00:00",
+                            "closes": "17:00:00"
+                        },
+                        {
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": "schema:Tuesday",
+                            "opens": "09:00:00",
+                            "closes": "17:00:00"
+                        },
+                        {
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": "schema:Wednesday",
+                            "opens": "08:00:00",
+                            "closes": "18:00:00"
+                        },
+                        {
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": "schema:Thursday",
+                            "opens": "09:00:00",
+                            "closes": "17:00:00"
+                        },
+                        {
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": "schema:Friday",
+                            "opens": "09:00:00",
+                            "closes": "12:00:00"
+                        }
+                    ]
+                },
+                {
+                    "@type": "PersonnelSupervision",
+                    "value": true,
+                    "hoursAvailable": [
+                        {
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": "schema:Monday",
+                            "opens": "09:00:00",
+                            "closes": "17:00:00"
+                        },
+                        {
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": "schema:Tuesday",
+                            "opens": "09:00:00",
+                            "closes": "17:00:00"
+                        },
+                        {
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": "schema:Wednesday",
+                            "opens": "08:00:00",
+                            "closes": "18:00:00"
+                        },
+                        {
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": "schema:Thursday",
+                            "opens": "09:00:00",
+                            "closes": "17:00:00"
+                        },
+                        {
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": "schema:Friday",
+                            "opens": "09:00:00",
+                            "closes": "12:00:00"
+                        }
+                    ]
                 },
                 {
                     "@type": "BicyclePump",
@@ -442,8 +585,39 @@
         },
         {
             "@id": "http://data.gent.be/parking/bikes/546213#unsecured",
-            "@type": "NoPersonnelSupervision",
-            "openingHours": "Mo,Tu,We,Th 09:00-12:00",
+            "@type": "NeighborhoodParking",
+            "openingHoursSpecification": [
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "schema:Monday",
+                    "opens": "09:00:00",
+                    "closes": "17:00:00"
+                },
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "schema:Tuesday",
+                    "opens": "09:00:00",
+                    "closes": "17:00:00"
+                },
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "schema:Wednesday",
+                    "opens": "08:00:00",
+                    "closes": "18:00:00"
+                },
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "schema:Thursday",
+                    "opens": "09:00:00",
+                    "closes": "17:00:00"
+                },
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "schema:Friday",
+                    "opens": "09:00:00",
+                    "closes": "12:00:00"
+                }
+            ],
             "maximumStorageTime": "P90D",
             "publicAccess": true,
             "intendedAudience": "General public",
@@ -456,7 +630,7 @@
                 "currentValue": 133,
                 "date": "2018-11-08T14:42:00.000Z"
             },
-            "allowed": [
+            "allows": [
                 {
                     "@type": "AllowedBicycle",
                     "bicycleType": "vp:RegularBicycle",
