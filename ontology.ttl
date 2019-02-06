@@ -23,14 +23,14 @@
         dct:issued        "2019-01-29"^^xsd:date ;
         dct:modified      "2019-01-29"^^xsd:date ;
         dct:hasFormat     <https://raw.githubusercontent.com/julianrojas87/openvelopark-vocabulary/master/openvelopark.ttl> ;
-        cc:license        <http://creativecommons.org/licenses/by/3.0/> ;
+        cc:license        <https://creativecommons.org/licenses/by/4.0/> ;
         dct:rights        "Copyright 2019 - Open Velopark contributors" .
 
 <https://velopark.ilabt.imec.be/openvelopark/terms>  
         a                 owl:Ontology ;
         rdfs:label        "Open Velopark Vocabulary"@en ;
         dct:description   "This ontology introduces the definition of a set of bicycle parking facilities related terms. It reuses and extends the MobiVoc (see http://schema.mobivoc.org/) and the schema.org (see https://schema.org) vocabularies."@en ;
-        vann:preferredNamespacePrefix  "openvelopak" ;
+        vann:preferredNamespacePrefix  "openvelopark" ;
         vann:preferredNamespaceUri     "https://velopark.ilabt.imec.be/openvelopark/terms#";
         rdfs:seeAlso      <http://schema.mobivoc.org/> ;
         rdfs:seeAlso      <https://schema.org/> ;
@@ -369,6 +369,12 @@ schema:amenityFeature
         rdfs:isDefinedBy  schema: ;
         rdfs:label        "amenity feature"@en ;
         rdfs:range        schema:LocationFeatureSpecification .
+
+schema:LocationFeatureSpecification  
+        a                 owl:Class ;
+        rdfs:comment      "Specifies a location feature by providing a structured value representing a feature of an accommodation as a property-value pair of varying degrees of formality."@en ;
+        rdfs:isDefinedBy  schema: ;
+        rdfs:label        "LocationFeatureSpecification"@en  .
 
 schema:Vehicle  
         a                 owl:Class ;

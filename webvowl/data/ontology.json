@@ -1,0 +1,3353 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.4), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "de", "en", "fr", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://schema.org", "http://purl.org/goodrelations/v1", "http://www.w3.org/2000/01/rdf-schema", "http://schema.mobivoc.org", "http://purl.org/dc/terms", "http://www.w3.org/2001/XMLSchema", "http://dbpedia.org/ontology", "http://xmlns.com/foaf/0.1", "https://velopark.ilabt.imec.be/openvelopark/terms" ],
+    "iri" : "https://velopark.ilabt.imec.be/openvelopark/terms",
+    "author" : [ "_:genid2147483651", "_:genid2147483650" ],
+    "description" : {
+      "en" : "This ontology introduces the definition of a set of bicycle parking facilities related terms. It reuses and extends the MobiVoc (see http://schema.mobivoc.org/) and the schema.org (see https://schema.org) vocabularies."
+    },
+    "labels" : {
+      "en" : "Open Velopark Vocabulary"
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "iri"
+      } ],
+      "hasFormat" : [ {
+        "identifier" : "hasFormat",
+        "language" : "undefined",
+        "value" : "https://raw.githubusercontent.com/julianrojas87/openvelopark-vocabulary/master/openvelopark.ttl",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "_:genid2147483651",
+        "type" : "label"
+      }, {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "_:genid2147483650",
+        "type" : "label"
+      } ],
+      "primaryTopic" : [ {
+        "identifier" : "primaryTopic",
+        "language" : "undefined",
+        "value" : "https://velopark.ilabt.imec.be/openvelopark/terms",
+        "type" : "iri"
+      } ],
+      "rights" : [ {
+        "identifier" : "rights",
+        "language" : "undefined",
+        "value" : "Copyright 2019 - Open Velopark contributors",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "openvelopark",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-01-29",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://velopark.ilabt.imec.be/openvelopark/terms#",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2019-01-29",
+        "type" : "label"
+      } ],
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://www.velopark.be/",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://schema.mobivoc.org/",
+        "type" : "iri"
+      }, {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "https://schema.org/",
+        "type" : "iri"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "metrics" : {
+    "classCount" : 40,
+    "objectPropertyCount" : 21,
+    "datatypePropertyCount" : 30,
+    "individualCount" : 2
+  },
+  "class" : [ {
+    "id" : "3",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "33",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "40",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "43",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "56",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "67",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "55",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "71",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  }, {
+    "id" : "81",
+    "type" : "owl:Class"
+  }, {
+    "id" : "90",
+    "type" : "owl:Class"
+  }, {
+    "id" : "65",
+    "type" : "owl:Class"
+  }, {
+    "id" : "36",
+    "type" : "owl:Class"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "104",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "95",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "130",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "87",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "134",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "140",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "138",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "122",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "2",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "63",
+    "type" : "owl:Class"
+  }, {
+    "id" : "126",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "77",
+    "type" : "owl:Class"
+  }, {
+    "id" : "142",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "3",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://schema.mobivoc.org/RealTimeCapacity",
+    "baseIri" : "http://schema.mobivoc.org",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.mobivoc.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "de" : "Echtzeit Kapazität",
+      "IRI-based" : "RealTimeCapacity",
+      "en" : "Real Time Capacity"
+    },
+    "comment" : {
+      "en" : "Real-time capacity of a parking facility or parking space."
+    },
+    "attributes" : [ "external" ],
+    "id" : "4",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "http://schema.org/LocationFeatureSpecification",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "LocationFeatureSpecification",
+      "en" : "LocationFeatureSpecification"
+    },
+    "subClasses" : [ "12", "13", "14", "15", "16", "17", "18", "19", "20" ],
+    "comment" : {
+      "en" : "Specifies a location feature by providing a structured value representing a feature of an accommodation as a property-value pair of varying degrees of formality."
+    },
+    "attributes" : [ "external" ],
+    "id" : "11"
+  }, {
+    "iri" : "http://purl.org/goodrelations/v1#BusinessEntity",
+    "baseIri" : "http://purl.org/goodrelations/v1",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/goodrelations/v1#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "de" : "Juristische Person",
+      "IRI-based" : "BusinessEntity",
+      "en" : "Business Entity"
+    },
+    "comment" : {
+      "en" : "An instance of this class represents the legal agent making (or seeking) a particular offering. This can be a legal body or a person. A business entity has at least a primary mailing address and contact details. For this, typical address standards (vCard) and location data (geo, WGS84) can be attached. Note that the location of the business entity is not necessarily the location from which the product or service is being available."
+    },
+    "attributes" : [ "external" ],
+    "id" : "21"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "29",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "30",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#duration",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "33",
+    "label" : {
+      "IRI-based" : "duration"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "34",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "10",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://schema.mobivoc.org/BicycleParkingStation",
+    "baseIri" : "http://schema.mobivoc.org",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.mobivoc.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "de" : "Fahrradparkstation",
+      "IRI-based" : "BicycleParkingStation",
+      "en" : "Bicycle Parking Station"
+    },
+    "subClasses" : [ "36", "37" ],
+    "comment" : {
+      "en" : "Building or structure designed for use as a bicycle parking facility."
+    },
+    "attributes" : [ "external" ],
+    "id" : "9",
+    "superClasses" : [ "35" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#duration",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "38",
+    "label" : {
+      "IRI-based" : "duration"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "39",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "40",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "41",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "42",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://schema.org/PostalAddress",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PostalAddress",
+      "en" : "Postal Address"
+    },
+    "comment" : {
+      "en" : "The mailing address."
+    },
+    "attributes" : [ "external" ],
+    "id" : "43"
+  }, {
+    "iri" : "https://velopark.ilabt.imec.be/openvelopark/terms#BicyclePump",
+    "baseIri" : "https://velopark.ilabt.imec.be/openvelopark/terms",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://velopark.ilabt.imec.be/openvelopark/terms#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2019-01-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-01-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BicyclePump",
+      "en" : "Bicycle Pump"
+    },
+    "comment" : {
+      "undefined" : "A parking facility feature that indicates it has a bicycle pump available."
+    },
+    "id" : "13",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://schema.org/WebSite",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "WebSite",
+      "en" : "WebSite"
+    },
+    "comment" : {
+      "en" : "A WebSite is a set of related web pages and other items typically served from a single web domain and accessible via URLs."
+    },
+    "attributes" : [ "external" ],
+    "id" : "56"
+  }, {
+    "iri" : "https://velopark.ilabt.imec.be/openvelopark/terms#TandemBicycle",
+    "baseIri" : "https://velopark.ilabt.imec.be/openvelopark/terms",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://velopark.ilabt.imec.be/openvelopark/terms#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2019-01-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-01-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "TandemBicycle",
+      "en" : "Tandem Bicycle"
+    },
+    "comment" : {
+      "undefined" : "A bicycle designed to be ridden by more than one person."
+    },
+    "id" : "57",
+    "superClasses" : [ "52" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "58",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "59",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://schema.org/GeoCoordinates",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "GeoCoordinates",
+      "en" : "Geo Coordinates"
+    },
+    "comment" : {
+      "en" : "The geographic coordinates of a place or event."
+    },
+    "attributes" : [ "external" ],
+    "id" : "61"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "62",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://schema.mobivoc.org/Bicycle",
+    "baseIri" : "http://schema.mobivoc.org",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.mobivoc.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "de" : "Fahrrad",
+      "IRI-based" : "Bicycle",
+      "en" : "Bicycle",
+      "fr" : "Vélo"
+    },
+    "subClasses" : [ "57", "63", "51", "64", "65" ],
+    "comment" : {
+      "en" : "A human-or electric powered, pedal-driven, single-track vehicle, having two wheels attached to a frame, one behind the other."
+    },
+    "attributes" : [ "external" ],
+    "id" : "52"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "66",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "67",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#time",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "68",
+    "label" : {
+      "IRI-based" : "time"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "69",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "55",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "https://velopark.ilabt.imec.be/openvelopark/terms#PersonnelSupervision",
+    "baseIri" : "https://velopark.ilabt.imec.be/openvelopark/terms",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://velopark.ilabt.imec.be/openvelopark/terms#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2019-01-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-01-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "PersonnelSupervision",
+      "en" : "Personnel Supervision"
+    },
+    "comment" : {
+      "undefined" : "A parking facility feature that indicates it has personnel supervision available."
+    },
+    "id" : "20",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#time",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "71",
+    "label" : {
+      "IRI-based" : "time"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "46",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://schema.org/PriceSpecification",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "de" : "Preisspezifikation",
+      "IRI-based" : "PriceSpecification",
+      "en" : "Price specification"
+    },
+    "comment" : {
+      "en" : "A structured value representing a price or price range for an item."
+    },
+    "attributes" : [ "external" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://schema.mobivoc.org/ParkingFacility",
+    "baseIri" : "http://schema.mobivoc.org",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.mobivoc.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "de" : "Parkeinrichtung",
+      "IRI-based" : "ParkingFacility",
+      "en" : "Parking Facility"
+    },
+    "subClasses" : [ "9" ],
+    "comment" : {
+      "en" : "Any facility or area assigned for parking vehicles. A parking facility can provide one or more parking spaces."
+    },
+    "attributes" : [ "external" ],
+    "id" : "35",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://schema.org/CivicStructure",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "de" : "Zivile Struktur",
+      "IRI-based" : "CivicStructure",
+      "en" : "Civic Structure"
+    },
+    "subClasses" : [ "35", "73", "77" ],
+    "comment" : {
+      "en" : "A public structure, such as a town hall or concert hall, parking facility or charging point."
+    },
+    "attributes" : [ "external" ],
+    "id" : "7",
+    "superClasses" : [ "26" ]
+  }, {
+    "iri" : "http://schema.org/GeoShape",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "GeoShape",
+      "en" : "Geo Shape"
+    },
+    "comment" : {
+      "en" : "The geographic shape of a place. A GeoShape can be described using several properties whose values are based on latitude/longitude pairs."
+    },
+    "attributes" : [ "external" ],
+    "id" : "81"
+  }, {
+    "iri" : "http://schema.org/Vehicle",
+    "baseIri" : "http://schema.org",
+    "instances" : 1,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "de" : "Fahrzeug",
+      "IRI-based" : "Vehicle",
+      "en" : "Vehicle"
+    },
+    "comment" : {
+      "en" : "A vehicle is a device that is designed or used to transport people or cargo over land, water, air, or through space."
+    },
+    "attributes" : [ "external" ],
+    "id" : "90"
+  }, {
+    "iri" : "https://velopark.ilabt.imec.be/openvelopark/terms#ElectricBicycle",
+    "baseIri" : "https://velopark.ilabt.imec.be/openvelopark/terms",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://velopark.ilabt.imec.be/openvelopark/terms#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2019-01-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-01-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ElectricBicycle",
+      "en" : "Electric Bicycle"
+    },
+    "comment" : {
+      "undefined" : "An electrically powered bicycle."
+    },
+    "id" : "65",
+    "superClasses" : [ "52" ]
+  }, {
+    "iri" : "https://velopark.ilabt.imec.be/openvelopark/terms#BicycleCase",
+    "baseIri" : "https://velopark.ilabt.imec.be/openvelopark/terms",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://velopark.ilabt.imec.be/openvelopark/terms#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2019-01-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-01-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BicycleCase",
+      "en" : "Bicycle Case"
+    },
+    "comment" : {
+      "undefined" : "Covered and lockable bicycle parking facility on public roads."
+    },
+    "id" : "36",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://schema.org/Place",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Place",
+      "en" : "Place"
+    },
+    "subClasses" : [ "7" ],
+    "comment" : {
+      "en" : "Entities that have a somewhat fixed, physical extension."
+    },
+    "attributes" : [ "external" ],
+    "id" : "26"
+  }, {
+    "iri" : "http://schema.org/ContactPoint",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ContactPoint",
+      "en" : "Contact Point"
+    },
+    "comment" : {
+      "en" : "A contact point for customer service."
+    },
+    "attributes" : [ "external" ],
+    "id" : "45"
+  }, {
+    "iri" : "http://schema.org/Photograph",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Photograph",
+      "en" : "Photograph"
+    },
+    "comment" : {
+      "en" : "A photograph."
+    },
+    "attributes" : [ "external" ],
+    "id" : "104"
+  }, {
+    "iri" : "https://velopark.ilabt.imec.be/openvelopark/terms#LockerService",
+    "baseIri" : "https://velopark.ilabt.imec.be/openvelopark/terms",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://velopark.ilabt.imec.be/openvelopark/terms#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2019-01-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-01-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "LockerService",
+      "en" : "Locker Service"
+    },
+    "comment" : {
+      "undefined" : "A parking facility feature that indicates it has a locker service available."
+    },
+    "id" : "16",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "https://velopark.ilabt.imec.be/openvelopark/terms#CargoBicycle",
+    "baseIri" : "https://velopark.ilabt.imec.be/openvelopark/terms",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://velopark.ilabt.imec.be/openvelopark/terms#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2019-01-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-01-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CargoBicycle",
+      "en" : "Cargo Bicycle"
+    },
+    "comment" : {
+      "undefined" : "A bicycle specially adapted to transport load."
+    },
+    "id" : "64",
+    "superClasses" : [ "52" ]
+  }, {
+    "iri" : "https://velopark.ilabt.imec.be/openvelopark/terms#ElectronicAccess",
+    "baseIri" : "https://velopark.ilabt.imec.be/openvelopark/terms",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://velopark.ilabt.imec.be/openvelopark/terms#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2019-01-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-01-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ElectronicAccess",
+      "en" : "Electronic Access"
+    },
+    "comment" : {
+      "undefined" : "A parking facility feature that indicates it has an electronic access system."
+    },
+    "id" : "19",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "https://velopark.ilabt.imec.be/openvelopark/terms#ChargingPoint",
+    "baseIri" : "https://velopark.ilabt.imec.be/openvelopark/terms",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://velopark.ilabt.imec.be/openvelopark/terms#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2019-01-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-01-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ChargingPoint",
+      "en" : "Charging Point"
+    },
+    "comment" : {
+      "undefined" : "A parking facility feature that indicates it has an electrical bicycle charging point available."
+    },
+    "id" : "15",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "https://velopark.ilabt.imec.be/openvelopark/terms#BikeRentalService",
+    "baseIri" : "https://velopark.ilabt.imec.be/openvelopark/terms",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://velopark.ilabt.imec.be/openvelopark/terms#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2019-01-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-01-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "BikeRentalService",
+      "en" : "Bike Rental Service"
+    },
+    "comment" : {
+      "undefined" : "A parking facility feature that indicates it has a bicycle rental service available."
+    },
+    "id" : "17",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "http://schema.org/DayOfWeek",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "DayOfWeek",
+      "en" : "Day of Week"
+    },
+    "comment" : {
+      "en" : "The day of the week, e.g. used to specify to which day the opening hours of an OpeningHoursSpecification refer."
+    },
+    "attributes" : [ "external" ],
+    "id" : "24"
+  }, {
+    "iri" : "https://velopark.ilabt.imec.be/openvelopark/terms#NeighborhoodParking",
+    "baseIri" : "https://velopark.ilabt.imec.be/openvelopark/terms",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://velopark.ilabt.imec.be/openvelopark/terms#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2019-01-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-01-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "NeighborhoodParking",
+      "en" : "Neighborhood Parking Facility"
+    },
+    "comment" : {
+      "undefined" : "Bicycle parking facility for residents of a given neighborhood."
+    },
+    "id" : "37",
+    "superClasses" : [ "9" ]
+  }, {
+    "iri" : "http://schema.org/Map",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "Map",
+      "en" : "Map"
+    },
+    "comment" : {
+      "en" : "A map."
+    },
+    "attributes" : [ "external" ],
+    "id" : "95"
+  }, {
+    "iri" : "http://schema.mobivoc.org/TimeSpecification",
+    "baseIri" : "http://schema.mobivoc.org",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.mobivoc.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "de" : "Zeitspezifikation",
+      "IRI-based" : "TimeSpecification",
+      "en" : "Time specification"
+    },
+    "comment" : {
+      "en" : "Specific time a price specification is due for."
+    },
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://schema.mobivoc.org/ParkingFacilityExit",
+    "baseIri" : "http://schema.mobivoc.org",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.mobivoc.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "de" : "Ausfahrt",
+      "IRI-based" : "ParkingFacilityExit",
+      "en" : "Exit"
+    },
+    "comment" : {
+      "en" : "Exit of a parking facility where vehicles can leave."
+    },
+    "attributes" : [ "external" ],
+    "id" : "73",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "https://velopark.ilabt.imec.be/openvelopark/terms#CameraSurveillance",
+    "baseIri" : "https://velopark.ilabt.imec.be/openvelopark/terms",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://velopark.ilabt.imec.be/openvelopark/terms#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2019-01-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-01-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "CameraSurveillance",
+      "en" : "Camera Surveillance"
+    },
+    "comment" : {
+      "undefined" : "A parking facility feature that indicates it has surveillance cameras available."
+    },
+    "id" : "12",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "https://velopark.ilabt.imec.be/openvelopark/terms#AllowedBicycle",
+    "baseIri" : "https://velopark.ilabt.imec.be/openvelopark/terms",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://velopark.ilabt.imec.be/openvelopark/terms#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2019-01-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-01-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "AllowedBicycle",
+      "en" : "Allowed Bicycle"
+    },
+    "comment" : {
+      "undefined" : "A bicycle that is allowed in a given parking facility."
+    },
+    "id" : "51",
+    "superClasses" : [ "52" ]
+  }, {
+    "iri" : "http://schema.org/OpeningHoursSpecification",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "OpeningHoursSpecification",
+      "en" : "Opening Hours Specification"
+    },
+    "comment" : {
+      "en" : "A structured value providing information about the opening hours of a place or a certain service inside a place."
+    },
+    "attributes" : [ "external" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://schema.mobivoc.org/Capacity",
+    "baseIri" : "http://schema.mobivoc.org",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.mobivoc.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "de" : "Kapazität",
+      "IRI-based" : "Capacity",
+      "en" : "Capacity"
+    },
+    "subClasses" : [ "4" ],
+    "comment" : {
+      "en" : "Capacity of a civic structure."
+    },
+    "attributes" : [ "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "130",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "87",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "49",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "134",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "140",
+    "label" : {
+      "IRI-based" : "boolean"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "138",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "122",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "2",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://velopark.ilabt.imec.be/openvelopark/terms#RegularBicycle",
+    "baseIri" : "https://velopark.ilabt.imec.be/openvelopark/terms",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://velopark.ilabt.imec.be/openvelopark/terms#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2019-01-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-01-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "RegularBicycle",
+      "en" : "Regular Bicycle"
+    },
+    "comment" : {
+      "undefined" : "A regular bicycle that does not have any special features."
+    },
+    "id" : "63",
+    "superClasses" : [ "52" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "81", "61" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "126"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://schema.mobivoc.org/ParkingFacilityEntrance",
+    "baseIri" : "http://schema.mobivoc.org",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.mobivoc.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "de" : "Einfahrt",
+      "IRI-based" : "ParkingFacilityEntrance",
+      "en" : "Entrance"
+    },
+    "comment" : {
+      "en" : "Entrance of a parking facility where vehicles can enter."
+    },
+    "attributes" : [ "external" ],
+    "id" : "77",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "http://xmlns.com/foaf/0.1/Document",
+    "baseIri" : "http://xmlns.com/foaf/0.1",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Document"
+    },
+    "individuals" : [ {
+      "iri" : "https://velopark.ilabt.imec.be/openvelopark/terms",
+      "baseIri" : "https://velopark.ilabt.imec.be/openvelopark",
+      "labels" : {
+        "IRI-based" : "terms"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "142"
+  }, {
+    "iri" : "https://velopark.ilabt.imec.be/openvelopark/terms#ToiletService",
+    "baseIri" : "https://velopark.ilabt.imec.be/openvelopark/terms",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://velopark.ilabt.imec.be/openvelopark/terms#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2019-01-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-01-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "ToiletService",
+      "en" : "Toilet Service"
+    },
+    "comment" : {
+      "undefined" : "A parking facility feature that indicates it has a toilet service available."
+    },
+    "id" : "18",
+    "superClasses" : [ "11" ]
+  }, {
+    "iri" : "https://velopark.ilabt.imec.be/openvelopark/terms#MaintenanceService",
+    "baseIri" : "https://velopark.ilabt.imec.be/openvelopark/terms",
+    "instances" : 0,
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://velopark.ilabt.imec.be/openvelopark/terms#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2019-01-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-01-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "MaintenanceService",
+      "en" : "Maintenance Service"
+    },
+    "comment" : {
+      "undefined" : "A parking facility feature that indicates it has a bicycle maintenance service available."
+    },
+    "id" : "14",
+    "superClasses" : [ "11" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "22",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "25",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "44",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "47",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "53",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "60",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "74",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "75",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "76",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "78",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "79",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "80",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "82",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "83",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "84",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "85",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "86",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "88",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "89",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "91",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "92",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "93",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "94",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "96",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "97",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "98",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "99",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "100",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "101",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "102",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "103",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "105",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "106",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "107",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "108",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "109",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "110",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "111",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "112",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "113",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "114",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "115",
+    "type" : "rdf:Property"
+  }, {
+    "id" : "116",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "117",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "118",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "119",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "120",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "121",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "123",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "124",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "125",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "127",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "128",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "129",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "131",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "132",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "133",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "135",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "136",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "137",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "139",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "141",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "143",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "144",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://schema.mobivoc.org/timeUnit",
+    "baseIri" : "http://schema.mobivoc.org",
+    "range" : "2",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.mobivoc.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "de" : "Zeiteinheit",
+      "IRI-based" : "timeUnit",
+      "en" : "time unit"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Indicates the time unit a value is specified for."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://schema.mobivoc.org/capacity",
+    "baseIri" : "http://schema.mobivoc.org",
+    "range" : "5",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.mobivoc.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Kapazität",
+      "IRI-based" : "capacity",
+      "en" : "has capacity"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "Relates the civic structure to its capacity."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "6"
+  }, {
+    "iri" : "https://velopark.ilabt.imec.be/openvelopark/terms#postRemovalAction",
+    "baseIri" : "https://velopark.ilabt.imec.be/openvelopark/terms",
+    "range" : "10",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://velopark.ilabt.imec.be/openvelopark/terms#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2019-01-30",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-01-30",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "postRemovalAction",
+      "en" : "post removal action"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Description of how parking facility users must proceed when their bicycles are removed."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "8"
+  }, {
+    "iri" : "http://schema.org/dayOfWeek",
+    "baseIri" : "http://schema.org",
+    "range" : "24",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "dayOfWeek",
+      "en" : "day of week"
+    },
+    "domain" : "23",
+    "comment" : {
+      "en" : "The day of the week for which certain opening hours are valid."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "22"
+  }, {
+    "iri" : "http://dbpedia.org/ontology/closeTo",
+    "baseIri" : "http://dbpedia.org/ontology",
+    "range" : "26",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://dbpedia.org/ontology/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "closeTo",
+      "en" : "close to"
+    },
+    "domain" : "26",
+    "comment" : {
+      "en" : "Place close to another place."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "25"
+  }, {
+    "iri" : "http://purl.org/dc/terms/date",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "28",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/dc/terms/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "date",
+      "en" : "date"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "The date of the given real-time capacity."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "27"
+  }, {
+    "iri" : "http://schema.mobivoc.org/ownedBy",
+    "baseIri" : "http://schema.mobivoc.org",
+    "range" : "21",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.mobivoc.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "de" : "in Besitz von",
+      "IRI-based" : "ownedBy",
+      "en" : "owned by"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "The owner of a civic structure or facility. Owner and operator can be different business entities."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "31"
+  }, {
+    "iri" : "https://velopark.ilabt.imec.be/openvelopark/terms#startDate",
+    "baseIri" : "https://velopark.ilabt.imec.be/openvelopark/terms",
+    "range" : "3",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://velopark.ilabt.imec.be/openvelopark/terms#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "startDate",
+      "en" : "start date"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "The initial opening date of a parking facility (in ISO 8601 date format)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "32"
+  }, {
+    "iri" : "http://schema.org/availableLanguage",
+    "baseIri" : "http://schema.org",
+    "range" : "46",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "availableLanguage",
+      "en" : "available language"
+    },
+    "domain" : "45",
+    "comment" : {
+      "en" : "A language someone may use with or at the item, service or place. Please use one of the language codes from the IETF BCP 47 standard."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://schema.mobivoc.org/freeOfCharge",
+    "baseIri" : "http://schema.mobivoc.org",
+    "range" : "49",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.mobivoc.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "de" : "kostenlos",
+      "IRI-based" : "freeOfCharge",
+      "en" : "free of charge"
+    },
+    "domain" : "48",
+    "comment" : {
+      "en" : "Indicates that the usage of the civic structure is for free."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "47"
+  }, {
+    "iri" : "https://velopark.ilabt.imec.be/openvelopark/terms#bicycleType",
+    "baseIri" : "https://velopark.ilabt.imec.be/openvelopark/terms",
+    "range" : "52",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://velopark.ilabt.imec.be/openvelopark/terms#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2019-01-30",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-01-30",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "bicycleType",
+      "en" : "bicycle type"
+    },
+    "domain" : "51",
+    "comment" : {
+      "en" : "Indicates the specific type of bicycle that is allowed in a certain parking facility."
+    },
+    "attributes" : [ "object" ],
+    "id" : "50"
+  }, {
+    "iri" : "https://velopark.ilabt.imec.be/openvelopark/terms#endDate",
+    "baseIri" : "https://velopark.ilabt.imec.be/openvelopark/terms",
+    "range" : "41",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://velopark.ilabt.imec.be/openvelopark/terms#",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "endDate",
+      "en" : "end date"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "The final closing date of a parking facility (in ISO 8601 date format)."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "53"
+  }, {
+    "iri" : "http://schema.mobivoc.org/totalCapacity",
+    "baseIri" : "http://schema.mobivoc.org",
+    "range" : "55",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.mobivoc.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "de" : "Gesamtkapazität",
+      "IRI-based" : "totalCapacity",
+      "en" : "total capacity"
+    },
+    "domain" : "35",
+    "comment" : {
+      "undefined" : "Indicates the total number of parking spaces of a parking facility."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "54"
+  }, {
+    "iri" : "http://schema.org/priceCurrency",
+    "baseIri" : "http://schema.org",
+    "range" : "58",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "priceCurrency",
+      "en" : "price"
+    },
+    "domain" : "48",
+    "comment" : {
+      "en" : "The currency of the price. Use standard formats: ISO 4217 currency format (e.g. USD)."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "60"
+  }, {
+    "iri" : "http://schema.mobivoc.org/operatedBy",
+    "baseIri" : "http://schema.mobivoc.org",
+    "range" : "21",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.mobivoc.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "de" : "betrieben von",
+      "IRI-based" : "operatedBy",
+      "en" : "operated by"
+    },
+    "domain" : "7",
+    "comment" : {
+      "en" : "The operator of a civic structure or facility. Operator and owner can be different business entitites."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "70"
+  }, {
+    "range" : "7",
+    "domain" : "73",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "72"
+  }, {
+    "iri" : "http://schema.org/price",
+    "baseIri" : "http://schema.org",
+    "range" : "59",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "price",
+      "en" : "price"
+    },
+    "domain" : "48",
+    "comment" : {
+      "en" : "The offer price of a product, or of a price component when attached to PriceSpecification and its subtypes."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "74"
+  }, {
+    "range" : "26",
+    "domain" : "7",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "75"
+  }, {
+    "range" : "7",
+    "domain" : "77",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "76"
+  }, {
+    "iri" : "http://schema.org/closes",
+    "baseIri" : "http://schema.org",
+    "range" : "71",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "closes",
+      "en" : "closes"
+    },
+    "domain" : "23",
+    "comment" : {
+      "en" : "The closing hour of the place or service on the given day(s) of the week."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "78"
+  }, {
+    "iri" : "http://schema.mobivoc.org/dueForTime",
+    "baseIri" : "http://schema.mobivoc.org",
+    "range" : "1",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.mobivoc.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "de" : "fällig für Zeitdauer",
+      "IRI-based" : "dueForTime",
+      "en" : "due for time"
+    },
+    "domain" : "48",
+    "comment" : {
+      "en" : "Indicates that a price specification is due for a certain time specification."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "79"
+  }, {
+    "iri" : "http://schema.org/amenityFeature",
+    "baseIri" : "http://schema.org",
+    "range" : "11",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "amenityFeature",
+      "en" : "amenity feature"
+    },
+    "domain" : "26",
+    "comment" : {
+      "en" : "An amenity feature (e.g. a characteristic or service) of a place or accomodation."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "80"
+  }, {
+    "iri" : "http://schema.org/contactPoint",
+    "baseIri" : "http://schema.org",
+    "range" : "45",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "contactPoint",
+      "en" : "contact point"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "A contact point for a person or organization."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "82"
+  }, {
+    "iri" : "http://schema.org/email",
+    "baseIri" : "http://schema.org",
+    "range" : "66",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "email",
+      "en" : "email"
+    },
+    "domain" : "45",
+    "comment" : {
+      "en" : "Email address."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "83"
+  }, {
+    "iri" : "https://velopark.ilabt.imec.be/openvelopark/terms#maximumStorageTime",
+    "baseIri" : "https://velopark.ilabt.imec.be/openvelopark/terms",
+    "range" : "33",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://velopark.ilabt.imec.be/openvelopark/terms#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2019-01-30",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-01-30",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "maximumStorageTime",
+      "en" : "maximum storage time"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Indicates the maximum amount of time that bicycles are allowed to be parked in a certain parking facility."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "84"
+  }, {
+    "iri" : "http://schema.org/openingHoursSpecification",
+    "baseIri" : "http://schema.org",
+    "range" : "23",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "openingHoursSpecification",
+      "en" : "opening hours"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "The hours during which a service or contact is available."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "85"
+  }, {
+    "iri" : "http://schema.mobivoc.org/currentValue",
+    "baseIri" : "http://schema.mobivoc.org",
+    "range" : "87",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.mobivoc.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "currentValue",
+      "en" : "current value"
+    },
+    "domain" : "4",
+    "comment" : {
+      "en" : "Indicates the current value of the real-time capacity."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "86"
+  }, {
+    "iri" : "http://schema.org/telephone",
+    "baseIri" : "http://schema.org",
+    "range" : "40",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "telephone",
+      "en" : "telephone"
+    },
+    "domain" : "45",
+    "comment" : {
+      "en" : "A telephone number."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "88"
+  }, {
+    "range" : "52",
+    "domain" : "65",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "89"
+  }, {
+    "range" : "52",
+    "domain" : "64",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "91"
+  }, {
+    "iri" : "https://velopark.ilabt.imec.be/openvelopark/terms#countingSystem",
+    "baseIri" : "https://velopark.ilabt.imec.be/openvelopark/terms",
+    "range" : "42",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://velopark.ilabt.imec.be/openvelopark/terms#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2019-01-30",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-01-30",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "countingSystem",
+      "en" : "counting system"
+    },
+    "domain" : "51",
+    "comment" : {
+      "en" : "Indicates whether a certain type of allowed bicycle has a counting system or not, for a given parking facility."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "92"
+  }, {
+    "range" : "7",
+    "domain" : "35",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "93"
+  }, {
+    "iri" : "http://schema.org/hasMap",
+    "baseIri" : "http://schema.org",
+    "range" : "95",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hasMap",
+      "en" : "has map"
+    },
+    "domain" : "26",
+    "comment" : {
+      "en" : "A URL to a map of the place."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "94"
+  }, {
+    "range" : "35",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "96"
+  }, {
+    "range" : "52",
+    "domain" : "57",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "97"
+  }, {
+    "range" : "9",
+    "domain" : "37",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "98"
+  }, {
+    "range" : "52",
+    "domain" : "51",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "99"
+  }, {
+    "range" : "52",
+    "domain" : "63",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "100"
+  }, {
+    "iri" : "https://velopark.ilabt.imec.be/openvelopark/terms#dataOwner",
+    "baseIri" : "https://velopark.ilabt.imec.be/openvelopark/terms",
+    "range" : "21",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://velopark.ilabt.imec.be/openvelopark/terms#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2019-01-30",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-01-30",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "dataOwner",
+      "en" : "data owner"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "The owner of the data about a certain bicycle parking facility."
+    },
+    "attributes" : [ "object" ],
+    "id" : "101"
+  }, {
+    "range" : "9",
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "102"
+  }, {
+    "range" : "11",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "103"
+  }, {
+    "iri" : "http://schema.org/photo",
+    "baseIri" : "http://schema.org",
+    "range" : "104",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "photo",
+      "en" : "photo"
+    },
+    "domain" : "26",
+    "comment" : {
+      "en" : "A photograph of this place."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "105"
+  }, {
+    "range" : "11",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "106"
+  }, {
+    "iri" : "http://schema.mobivoc.org/exit",
+    "baseIri" : "http://schema.mobivoc.org",
+    "range" : "73",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.mobivoc.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Ausfahrt",
+      "IRI-based" : "exit",
+      "en" : "exit"
+    },
+    "domain" : "35",
+    "comment" : {
+      "undefined" : "Describes the exit of a parking facility."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "107"
+  }, {
+    "range" : "11",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "108"
+  }, {
+    "range" : "11",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "109"
+  }, {
+    "range" : "11",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "110"
+  }, {
+    "iri" : "http://schema.org/interactionService",
+    "baseIri" : "http://schema.org",
+    "range" : "56",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "interactionService",
+      "en" : "interaction service"
+    },
+    "domain" : "35",
+    "comment" : {
+      "en" : "The WebSite or SoftwareApplication where the interactions took place."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "111"
+  }, {
+    "range" : "11",
+    "domain" : "17",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "112"
+  }, {
+    "iri" : "http://schema.org/address",
+    "baseIri" : "http://schema.org",
+    "range" : "43",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "address",
+      "en" : "address"
+    },
+    "domain" : "26",
+    "comment" : {
+      "en" : "Physical address of the item."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "113"
+  }, {
+    "range" : "11",
+    "domain" : "12",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "114"
+  }, {
+    "domain" : "90",
+    "range" : "52",
+    "id" : "115",
+    "label" : {
+      "IRI-based" : "31",
+      "undefined" : "is a"
+    }
+  }, {
+    "range" : "11",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "116"
+  }, {
+    "range" : "11",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "117"
+  }, {
+    "iri" : "https://velopark.ilabt.imec.be/openvelopark/terms#restrictions",
+    "baseIri" : "https://velopark.ilabt.imec.be/openvelopark/terms",
+    "range" : "29",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://velopark.ilabt.imec.be/openvelopark/terms#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2019-01-30",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-01-30",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "restrictions",
+      "en" : "restrictions"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Indicates the operational restrictions that a certain parking facility may have."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "118"
+  }, {
+    "iri" : "http://schema.org/opens",
+    "baseIri" : "http://schema.org",
+    "range" : "68",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "opens",
+      "en" : "opens"
+    },
+    "domain" : "23",
+    "comment" : {
+      "en" : "The opening hour of the place or service on the given day(s) of the week."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "119"
+  }, {
+    "iri" : "https://velopark.ilabt.imec.be/openvelopark/terms#intendedAudience",
+    "baseIri" : "https://velopark.ilabt.imec.be/openvelopark/terms",
+    "range" : "34",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://velopark.ilabt.imec.be/openvelopark/terms#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2019-01-30",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-01-30",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "intendedAudience",
+      "en" : "intended audience"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Indicates the type of audience that can make use of a certain parking facility."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "120"
+  }, {
+    "iri" : "http://schema.mobivoc.org/timeStartValue",
+    "baseIri" : "http://schema.mobivoc.org",
+    "range" : "122",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.mobivoc.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "de" : "Anfangszeit",
+      "IRI-based" : "timeStartValue",
+      "en" : "time start value"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Indicates the start value of a time period."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "121"
+  }, {
+    "iri" : "http://schema.org/priceSpecification",
+    "baseIri" : "http://schema.org",
+    "range" : "48",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "priceSpecification",
+      "en" : "price specification"
+    },
+    "domain" : "35",
+    "comment" : {
+      "en" : "One or more detailed price specifications, indicating the unit price and delivery or payment charges."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "123"
+  }, {
+    "iri" : "http://schema.org/contactType",
+    "baseIri" : "http://schema.org",
+    "range" : "67",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "contactType",
+      "en" : "contact type"
+    },
+    "domain" : "45",
+    "comment" : {
+      "en" : "A person or organization can have different contact points, for different purposes. For example, a sales contact point, a PR contact point and so on. This property is used to specify the kind of contact point."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "124"
+  }, {
+    "iri" : "http://schema.org/geo",
+    "baseIri" : "http://schema.org",
+    "range" : "126",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "geo",
+      "en" : "geo"
+    },
+    "domain" : "26",
+    "comment" : {
+      "en" : "The geo coordinates of a place."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "125"
+  }, {
+    "iri" : "http://schema.org/publicAccess",
+    "baseIri" : "http://schema.org",
+    "range" : "62",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "publicAccess",
+      "en" : "public access"
+    },
+    "domain" : "26",
+    "comment" : {
+      "en" : "A flag to signal that a Place is open to public visitors."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "127"
+  }, {
+    "iri" : "https://velopark.ilabt.imec.be/openvelopark/terms#minimumStorageTime",
+    "baseIri" : "https://velopark.ilabt.imec.be/openvelopark/terms",
+    "range" : "38",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://velopark.ilabt.imec.be/openvelopark/terms#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2019-01-30",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-01-30",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "minimumStorageTime",
+      "en" : "minimun storage time"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Indicates the minimum amount of time that bicycles are allowed to be parked in a certain parking facility."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "128"
+  }, {
+    "iri" : "http://purl.org/dc/terms/identifier",
+    "baseIri" : "http://purl.org/dc/terms",
+    "range" : "130",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://purl.org/dc/terms/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "identifier",
+      "en" : "identifier"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "An unambiguous reference to the resource within a given context."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "129"
+  }, {
+    "iri" : "https://velopark.ilabt.imec.be/openvelopark/terms#allows",
+    "baseIri" : "https://velopark.ilabt.imec.be/openvelopark/terms",
+    "range" : "51",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://velopark.ilabt.imec.be/openvelopark/terms#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2019-01-30",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-01-30",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "allows",
+      "en" : "allows"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Indicates a type of bicycle that is allowed in a certain parking facility."
+    },
+    "attributes" : [ "object" ],
+    "id" : "131"
+  }, {
+    "iri" : "http://schema.org/name",
+    "baseIri" : "http://schema.org",
+    "range" : "69",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "name",
+      "en" : "name"
+    },
+    "domain" : "26",
+    "comment" : {
+      "en" : "The name of an item."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "132"
+  }, {
+    "iri" : "http://schema.mobivoc.org/numberOfLevels",
+    "baseIri" : "http://schema.mobivoc.org",
+    "range" : "134",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.mobivoc.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "de" : "Anzahl Ebenen",
+      "IRI-based" : "numberOfLevels",
+      "en" : "number of levels"
+    },
+    "domain" : "35",
+    "comment" : {
+      "en" : "Indicates the total number of levels a parking facility has."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "133"
+  }, {
+    "iri" : "https://velopark.ilabt.imec.be/openvelopark/terms#bicyclesAmount",
+    "baseIri" : "https://velopark.ilabt.imec.be/openvelopark/terms",
+    "range" : "39",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://velopark.ilabt.imec.be/openvelopark/terms#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2019-01-30",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-01-30",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "bicyclesAmount",
+      "en" : "bicylces amount"
+    },
+    "domain" : "51",
+    "comment" : {
+      "en" : "Indicates the maximum amount of bicycle of a certain type that are allowed in a parking facility."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "135"
+  }, {
+    "range" : "5",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "136"
+  }, {
+    "iri" : "http://schema.mobivoc.org/timeEndValue",
+    "baseIri" : "http://schema.mobivoc.org",
+    "range" : "138",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.mobivoc.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "de" : "Endzeit",
+      "IRI-based" : "timeEndValue",
+      "en" : "time end value"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Indicates the end value of a time period."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "137"
+  }, {
+    "iri" : "http://schema.mobivoc.org/entrance",
+    "baseIri" : "http://schema.mobivoc.org",
+    "range" : "77",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.mobivoc.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "de" : "hat Einfahrt",
+      "IRI-based" : "entrance",
+      "en" : "entrance"
+    },
+    "domain" : "35",
+    "comment" : {
+      "en" : "Describes the entrance of a parking facility."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "139"
+  }, {
+    "iri" : "http://schema.org/hoursAvailable",
+    "baseIri" : "http://schema.org",
+    "range" : "23",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "hoursAvailable",
+      "en" : "hours available"
+    },
+    "domain" : "45",
+    "comment" : {
+      "en" : "The hours during which a service or contact is available."
+    },
+    "attributes" : [ "external", "object" ],
+    "id" : "141"
+  }, {
+    "iri" : "https://velopark.ilabt.imec.be/openvelopark/terms#removalConditions",
+    "baseIri" : "https://velopark.ilabt.imec.be/openvelopark/terms",
+    "range" : "30",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://velopark.ilabt.imec.be/openvelopark/terms#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2019-01-30",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-01-30",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "removalConditions",
+      "en" : "removal conditions"
+    },
+    "domain" : "9",
+    "comment" : {
+      "en" : "Description of the conditions under which a bicycle may be removed from a certain parking facility."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "143"
+  }, {
+    "iri" : "http://schema.mobivoc.org/overnight",
+    "baseIri" : "http://schema.mobivoc.org",
+    "range" : "140",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "http://schema.mobivoc.org/",
+        "type" : "iri"
+      } ]
+    },
+    "label" : {
+      "de" : "über Nacht",
+      "IRI-based" : "overnight",
+      "en" : "overnight"
+    },
+    "domain" : "1",
+    "comment" : {
+      "undefined" : "Indicates that a time period overnight is possible."
+    },
+    "attributes" : [ "external", "datatype" ],
+    "id" : "144"
+  } ]
+}

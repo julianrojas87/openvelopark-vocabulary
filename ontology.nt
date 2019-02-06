@@ -1,0 +1,904 @@
+<https://velopark.ilabt.imec.be/openvelopark/terms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://velopark.ilabt.imec.be/openvelopark/terms> <http://creativecommons.org/ns#license> <https://creativecommons.org/licenses/by/4.0/> .
+<https://velopark.ilabt.imec.be/openvelopark/terms> <http://purl.org/dc/terms/creator> _:genid1 .
+_:genid1 <http://xmlns.com/foaf/0.1/mbox> "julianandres.rojasmelendez@ugent.be" .
+_:genid1 <http://xmlns.com/foaf/0.1/name> "Julian Rojas" .
+<https://velopark.ilabt.imec.be/openvelopark/terms> <http://purl.org/dc/terms/creator> _:genid2 .
+_:genid2 <http://xmlns.com/foaf/0.1/mbox> "Pieter.Colpaert@UGent.be" .
+_:genid2 <http://xmlns.com/foaf/0.1/name> "Pieter Colpaert" .
+<https://velopark.ilabt.imec.be/openvelopark/terms> <http://purl.org/dc/terms/description> "This ontology introduces the definition of a set of bicycle parking facilities related terms. It reuses and extends the MobiVoc (see http://schema.mobivoc.org/) and the schema.org (see https://schema.org) vocabularies."@en .
+<https://velopark.ilabt.imec.be/openvelopark/terms> <http://purl.org/dc/terms/hasFormat> <https://raw.githubusercontent.com/julianrojas87/openvelopark-vocabulary/master/openvelopark.ttl> .
+<https://velopark.ilabt.imec.be/openvelopark/terms> <http://purl.org/dc/terms/issued> "2019-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms> <http://purl.org/dc/terms/modified> "2019-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms> <http://purl.org/dc/terms/rights> "Copyright 2019 - Open Velopark contributors" .
+<https://velopark.ilabt.imec.be/openvelopark/terms> <http://purl.org/vocab/vann/preferredNamespacePrefix> "openvelopark" .
+<https://velopark.ilabt.imec.be/openvelopark/terms> <http://purl.org/vocab/vann/preferredNamespaceUri> "https://velopark.ilabt.imec.be/openvelopark/terms#" .
+<https://velopark.ilabt.imec.be/openvelopark/terms> <http://www.w3.org/2000/01/rdf-schema#label> "Open Velopark Vocabulary"@en .
+<https://velopark.ilabt.imec.be/openvelopark/terms> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <http://schema.mobivoc.org/> .
+<https://velopark.ilabt.imec.be/openvelopark/terms> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://schema.org/> .
+<https://velopark.ilabt.imec.be/openvelopark/terms> <http://www.w3.org/2000/01/rdf-schema#seeAlso> <https://www.velopark.be/> .
+<https://velopark.ilabt.imec.be/openvelopark/terms> <http://xmlns.com/foaf/0.1/primaryTopic> <https://velopark.ilabt.imec.be/openvelopark/terms> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/modified
+<http://purl.org/dc/terms/modified> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2003/06/sw-vocab-status/ns#term_status
+<http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/mbox
+<http://xmlns.com/foaf/0.1/mbox> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://xmlns.com/foaf/0.1/name
+<http://xmlns.com/foaf/0.1/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.w3.org/2001/XMLSchema#duration
+<http://www.w3.org/2001/XMLSchema#duration> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# http://www.w3.org/2001/XMLSchema#time
+<http://www.w3.org/2001/XMLSchema#time> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://dbpedia.org/ontology/closeTo
+<http://dbpedia.org/ontology/closeTo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://dbpedia.org/ontology/closeTo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Place> .
+<http://dbpedia.org/ontology/closeTo> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/Place> .
+<http://dbpedia.org/ontology/closeTo> <http://www.w3.org/2000/01/rdf-schema#comment> "Place close to another place."@en .
+<http://dbpedia.org/ontology/closeTo> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://dbpedia.org/ontology/> .
+<http://dbpedia.org/ontology/closeTo> <http://www.w3.org/2000/01/rdf-schema#label> "close to"@en .
+# 
+# http://schema.mobivoc.org/capacity
+<http://schema.mobivoc.org/capacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://schema.mobivoc.org/capacity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/CivicStructure> .
+<http://schema.mobivoc.org/capacity> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.mobivoc.org/Capacity> .
+<http://schema.mobivoc.org/capacity> <http://www.w3.org/2000/01/rdf-schema#comment> "Relates the civic structure to its capacity."@en .
+<http://schema.mobivoc.org/capacity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.mobivoc.org/> .
+<http://schema.mobivoc.org/capacity> <http://www.w3.org/2000/01/rdf-schema#label> "has capacity"@en .
+<http://schema.mobivoc.org/capacity> <http://www.w3.org/2000/01/rdf-schema#label> "hat Kapazität"@de .
+# 
+# http://schema.mobivoc.org/dueForTime
+<http://schema.mobivoc.org/dueForTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://schema.mobivoc.org/dueForTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/PriceSpecification> .
+<http://schema.mobivoc.org/dueForTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.mobivoc.org/TimeSpecification> .
+<http://schema.mobivoc.org/dueForTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that a price specification is due for a certain time specification."@en .
+<http://schema.mobivoc.org/dueForTime> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.mobivoc.org/> .
+<http://schema.mobivoc.org/dueForTime> <http://www.w3.org/2000/01/rdf-schema#label> "due for time"@en .
+<http://schema.mobivoc.org/dueForTime> <http://www.w3.org/2000/01/rdf-schema#label> "fällig für Zeitdauer"@de .
+# 
+# http://schema.mobivoc.org/entrance
+<http://schema.mobivoc.org/entrance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://schema.mobivoc.org/entrance> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.mobivoc.org/ParkingFacility> .
+<http://schema.mobivoc.org/entrance> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.mobivoc.org/ParkingFacilityEntrance> .
+<http://schema.mobivoc.org/entrance> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes the entrance of a parking facility."@en .
+<http://schema.mobivoc.org/entrance> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.mobivoc.org/> .
+<http://schema.mobivoc.org/entrance> <http://www.w3.org/2000/01/rdf-schema#label> "entrance"@en .
+<http://schema.mobivoc.org/entrance> <http://www.w3.org/2000/01/rdf-schema#label> "hat Einfahrt"@de .
+# 
+# http://schema.mobivoc.org/exit
+<http://schema.mobivoc.org/exit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://schema.mobivoc.org/exit> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.mobivoc.org/ParkingFacility> .
+<http://schema.mobivoc.org/exit> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.mobivoc.org/ParkingFacilityExit> .
+<http://schema.mobivoc.org/exit> <http://www.w3.org/2000/01/rdf-schema#comment> "Describes the exit of a parking facility." .
+<http://schema.mobivoc.org/exit> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.mobivoc.org/> .
+<http://schema.mobivoc.org/exit> <http://www.w3.org/2000/01/rdf-schema#label> "exit"@en .
+<http://schema.mobivoc.org/exit> <http://www.w3.org/2000/01/rdf-schema#label> "hat Ausfahrt"@de .
+# 
+# http://schema.mobivoc.org/operatedBy
+<http://schema.mobivoc.org/operatedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://schema.mobivoc.org/operatedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/CivicStructure> .
+<http://schema.mobivoc.org/operatedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/goodrelations/v1#BusinessEntity> .
+<http://schema.mobivoc.org/operatedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "The operator of a civic structure or facility. Operator and owner can be different business entitites."@en .
+<http://schema.mobivoc.org/operatedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.mobivoc.org/> .
+<http://schema.mobivoc.org/operatedBy> <http://www.w3.org/2000/01/rdf-schema#label> "betrieben von"@de .
+<http://schema.mobivoc.org/operatedBy> <http://www.w3.org/2000/01/rdf-schema#label> "operated by"@en .
+# 
+# http://schema.mobivoc.org/ownedBy
+<http://schema.mobivoc.org/ownedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://schema.mobivoc.org/ownedBy> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/CivicStructure> .
+<http://schema.mobivoc.org/ownedBy> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/goodrelations/v1#BusinessEntity> .
+<http://schema.mobivoc.org/ownedBy> <http://www.w3.org/2000/01/rdf-schema#comment> "The owner of a civic structure or facility. Owner and operator can be different business entities."@en .
+<http://schema.mobivoc.org/ownedBy> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.mobivoc.org/> .
+<http://schema.mobivoc.org/ownedBy> <http://www.w3.org/2000/01/rdf-schema#label> "in Besitz von"@de .
+<http://schema.mobivoc.org/ownedBy> <http://www.w3.org/2000/01/rdf-schema#label> "owned by"@en .
+# 
+# http://schema.org/address
+<http://schema.org/address> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://schema.org/address> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Place> .
+<http://schema.org/address> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/PostalAddress> .
+<http://schema.org/address> <http://www.w3.org/2000/01/rdf-schema#comment> "Physical address of the item."@en .
+<http://schema.org/address> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/address> <http://www.w3.org/2000/01/rdf-schema#label> "address"@en .
+# 
+# http://schema.org/amenityFeature
+<http://schema.org/amenityFeature> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://schema.org/amenityFeature> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Place> .
+<http://schema.org/amenityFeature> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/LocationFeatureSpecification> .
+<http://schema.org/amenityFeature> <http://www.w3.org/2000/01/rdf-schema#comment> "An amenity feature (e.g. a characteristic or service) of a place or accomodation."@en .
+<http://schema.org/amenityFeature> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/amenityFeature> <http://www.w3.org/2000/01/rdf-schema#label> "amenity feature"@en .
+# 
+# http://schema.org/contactPoint
+<http://schema.org/contactPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://schema.org/contactPoint> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.mobivoc.org/BicycleParkingStation> .
+<http://schema.org/contactPoint> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/ContactPoint> .
+<http://schema.org/contactPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "A contact point for a person or organization."@en .
+<http://schema.org/contactPoint> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/contactPoint> <http://www.w3.org/2000/01/rdf-schema#label> "contact point"@en .
+# 
+# http://schema.org/dayOfWeek
+<http://schema.org/dayOfWeek> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://schema.org/dayOfWeek> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/OpeningHoursSpecification> .
+<http://schema.org/dayOfWeek> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/DayOfWeek> .
+<http://schema.org/dayOfWeek> <http://www.w3.org/2000/01/rdf-schema#comment> "The day of the week for which certain opening hours are valid."@en .
+<http://schema.org/dayOfWeek> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/dayOfWeek> <http://www.w3.org/2000/01/rdf-schema#label> "day of week"@en .
+# 
+# http://schema.org/geo
+<http://schema.org/geo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://schema.org/geo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Place> .
+<http://schema.org/geo> <http://www.w3.org/2000/01/rdf-schema#range> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid3 <http://www.w3.org/2002/07/owl#unionOf> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://schema.org/GeoCoordinates> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://schema.org/GeoShape> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://schema.org/geo> <http://www.w3.org/2000/01/rdf-schema#comment> "The geo coordinates of a place."@en .
+<http://schema.org/geo> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/geo> <http://www.w3.org/2000/01/rdf-schema#label> "geo"@en .
+# 
+# http://schema.org/hasMap
+<http://schema.org/hasMap> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://schema.org/hasMap> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Place> .
+<http://schema.org/hasMap> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/Map> .
+<http://schema.org/hasMap> <http://www.w3.org/2000/01/rdf-schema#comment> "A URL to a map of the place."@en .
+<http://schema.org/hasMap> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/hasMap> <http://www.w3.org/2000/01/rdf-schema#label> "has map"@en .
+# 
+# http://schema.org/hoursAvailable
+<http://schema.org/hoursAvailable> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://schema.org/hoursAvailable> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/ContactPoint> .
+<http://schema.org/hoursAvailable> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/OpeningHoursSpecification> .
+<http://schema.org/hoursAvailable> <http://www.w3.org/2000/01/rdf-schema#comment> "The hours during which a service or contact is available."@en .
+<http://schema.org/hoursAvailable> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/hoursAvailable> <http://www.w3.org/2000/01/rdf-schema#label> "hours available"@en .
+# 
+# http://schema.org/interactionService
+<http://schema.org/interactionService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://schema.org/interactionService> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.mobivoc.org/ParkingFacility> .
+<http://schema.org/interactionService> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/WebSite> .
+<http://schema.org/interactionService> <http://www.w3.org/2000/01/rdf-schema#comment> "The WebSite or SoftwareApplication where the interactions took place."@en .
+<http://schema.org/interactionService> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/interactionService> <http://www.w3.org/2000/01/rdf-schema#label> "interaction service"@en .
+# 
+# http://schema.org/openingHoursSpecification
+<http://schema.org/openingHoursSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://schema.org/openingHoursSpecification> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.mobivoc.org/BicycleParkingStation> .
+<http://schema.org/openingHoursSpecification> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/OpeningHoursSpecification> .
+<http://schema.org/openingHoursSpecification> <http://www.w3.org/2000/01/rdf-schema#comment> "The hours during which a service or contact is available."@en .
+<http://schema.org/openingHoursSpecification> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/openingHoursSpecification> <http://www.w3.org/2000/01/rdf-schema#label> "opening hours"@en .
+# 
+# http://schema.org/photo
+<http://schema.org/photo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://schema.org/photo> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Place> .
+<http://schema.org/photo> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/Photograph> .
+<http://schema.org/photo> <http://www.w3.org/2000/01/rdf-schema#comment> "A photograph of this place."@en .
+<http://schema.org/photo> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/photo> <http://www.w3.org/2000/01/rdf-schema#label> "photo"@en .
+# 
+# http://schema.org/priceSpecification
+<http://schema.org/priceSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://schema.org/priceSpecification> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.mobivoc.org/ParkingFacility> .
+<http://schema.org/priceSpecification> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.org/PriceSpecification> .
+<http://schema.org/priceSpecification> <http://www.w3.org/2000/01/rdf-schema#comment> "One or more detailed price specifications, indicating the unit price and delivery or payment charges."@en .
+<http://schema.org/priceSpecification> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/priceSpecification> <http://www.w3.org/2000/01/rdf-schema#label> "price specification"@en .
+# 
+# https://velopark.ilabt.imec.be/openvelopark/terms#allows
+<https://velopark.ilabt.imec.be/openvelopark/terms#allows> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#allows> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.mobivoc.org/BicycleParkingStation> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#allows> <http://www.w3.org/2000/01/rdf-schema#range> <https://velopark.ilabt.imec.be/openvelopark/terms#AllowedBicycle> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#allows> <http://purl.org/dc/terms/created> "2019-01-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#allows> <http://purl.org/dc/terms/modified> "2019-01-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#allows> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates a type of bicycle that is allowed in a certain parking facility."@en .
+<https://velopark.ilabt.imec.be/openvelopark/terms#allows> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://velopark.ilabt.imec.be/openvelopark/terms#> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#allows> <http://www.w3.org/2000/01/rdf-schema#label> "allows"@en .
+<https://velopark.ilabt.imec.be/openvelopark/terms#allows> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://velopark.ilabt.imec.be/openvelopark/terms#bicycleType
+<https://velopark.ilabt.imec.be/openvelopark/terms#bicycleType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#bicycleType> <http://www.w3.org/2000/01/rdf-schema#domain> <https://velopark.ilabt.imec.be/openvelopark/terms#AllowedBicycle> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#bicycleType> <http://www.w3.org/2000/01/rdf-schema#range> <http://schema.mobivoc.org/Bicycle> .
+<http://schema.mobivoc.org/Bicycle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#bicycleType> <http://purl.org/dc/terms/created> "2019-01-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#bicycleType> <http://purl.org/dc/terms/modified> "2019-01-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#bicycleType> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the specific type of bicycle that is allowed in a certain parking facility."@en .
+<https://velopark.ilabt.imec.be/openvelopark/terms#bicycleType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://velopark.ilabt.imec.be/openvelopark/terms#> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#bicycleType> <http://www.w3.org/2000/01/rdf-schema#label> "bicycle type"@en .
+<https://velopark.ilabt.imec.be/openvelopark/terms#bicycleType> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://velopark.ilabt.imec.be/openvelopark/terms#dataOwner
+<https://velopark.ilabt.imec.be/openvelopark/terms#dataOwner> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#dataOwner> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.mobivoc.org/BicycleParkingStation> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#dataOwner> <http://www.w3.org/2000/01/rdf-schema#range> <http://purl.org/goodrelations/v1#BusinessEntity> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#dataOwner> <http://purl.org/dc/terms/created> "2019-01-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#dataOwner> <http://purl.org/dc/terms/modified> "2019-01-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#dataOwner> <http://www.w3.org/2000/01/rdf-schema#comment> "The owner of the data about a certain bicycle parking facility."@en .
+<https://velopark.ilabt.imec.be/openvelopark/terms#dataOwner> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://velopark.ilabt.imec.be/openvelopark/terms#> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#dataOwner> <http://www.w3.org/2000/01/rdf-schema#label> "data owner"@en .
+<https://velopark.ilabt.imec.be/openvelopark/terms#dataOwner> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/date
+<http://purl.org/dc/terms/date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/date> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.mobivoc.org/RealTimeCapacity> .
+<http://purl.org/dc/terms/date> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<http://purl.org/dc/terms/date> <http://www.w3.org/2000/01/rdf-schema#comment> "The date of the given real-time capacity."@en .
+<http://purl.org/dc/terms/date> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://purl.org/dc/terms/date> <http://www.w3.org/2000/01/rdf-schema#label> "date"@en .
+# 
+# http://purl.org/dc/terms/identifier
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.mobivoc.org/BicycleParkingStation> .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#comment> "An unambiguous reference to the resource within a given context."@en .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/dc/terms/> .
+<http://purl.org/dc/terms/identifier> <http://www.w3.org/2000/01/rdf-schema#label> "identifier"@en .
+# 
+# http://schema.mobivoc.org/currentValue
+<http://schema.mobivoc.org/currentValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.mobivoc.org/currentValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.mobivoc.org/RealTimeCapacity> .
+<http://schema.mobivoc.org/currentValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://schema.mobivoc.org/currentValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the current value of the real-time capacity."@en .
+<http://schema.mobivoc.org/currentValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.mobivoc.org/> .
+<http://schema.mobivoc.org/currentValue> <http://www.w3.org/2000/01/rdf-schema#label> "current value"@en .
+# 
+# http://schema.mobivoc.org/freeOfCharge
+<http://schema.mobivoc.org/freeOfCharge> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.mobivoc.org/freeOfCharge> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/PriceSpecification> .
+<http://schema.mobivoc.org/freeOfCharge> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://schema.mobivoc.org/freeOfCharge> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that the usage of the civic structure is for free."@en .
+<http://schema.mobivoc.org/freeOfCharge> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.mobivoc.org/> .
+<http://schema.mobivoc.org/freeOfCharge> <http://www.w3.org/2000/01/rdf-schema#label> "free of charge"@en .
+<http://schema.mobivoc.org/freeOfCharge> <http://www.w3.org/2000/01/rdf-schema#label> "kostenlos"@de .
+# 
+# http://schema.mobivoc.org/numberOfLevels
+<http://schema.mobivoc.org/numberOfLevels> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.mobivoc.org/numberOfLevels> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.mobivoc.org/ParkingFacility> .
+<http://schema.mobivoc.org/numberOfLevels> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://schema.mobivoc.org/numberOfLevels> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the total number of levels a parking facility has."@en .
+<http://schema.mobivoc.org/numberOfLevels> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.mobivoc.org/> .
+<http://schema.mobivoc.org/numberOfLevels> <http://www.w3.org/2000/01/rdf-schema#label> "Anzahl Ebenen"@de .
+<http://schema.mobivoc.org/numberOfLevels> <http://www.w3.org/2000/01/rdf-schema#label> "number of levels"@en .
+# 
+# http://schema.mobivoc.org/overnight
+<http://schema.mobivoc.org/overnight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.mobivoc.org/overnight> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.mobivoc.org/TimeSpecification> .
+<http://schema.mobivoc.org/overnight> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://schema.mobivoc.org/overnight> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates that a time period overnight is possible." .
+<http://schema.mobivoc.org/overnight> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.mobivoc.org/> .
+<http://schema.mobivoc.org/overnight> <http://www.w3.org/2000/01/rdf-schema#label> "overnight"@en .
+<http://schema.mobivoc.org/overnight> <http://www.w3.org/2000/01/rdf-schema#label> "über Nacht"@de .
+# 
+# http://schema.mobivoc.org/timeEndValue
+<http://schema.mobivoc.org/timeEndValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.mobivoc.org/timeEndValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.mobivoc.org/TimeSpecification> .
+<http://schema.mobivoc.org/timeEndValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://schema.mobivoc.org/timeEndValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the end value of a time period." .
+<http://schema.mobivoc.org/timeEndValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.mobivoc.org/> .
+<http://schema.mobivoc.org/timeEndValue> <http://www.w3.org/2000/01/rdf-schema#label> "Endzeit"@de .
+<http://schema.mobivoc.org/timeEndValue> <http://www.w3.org/2000/01/rdf-schema#label> "time end value"@en .
+# 
+# http://schema.mobivoc.org/timeStartValue
+<http://schema.mobivoc.org/timeStartValue> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.mobivoc.org/timeStartValue> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.mobivoc.org/TimeSpecification> .
+<http://schema.mobivoc.org/timeStartValue> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://schema.mobivoc.org/timeStartValue> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the start value of a time period." .
+<http://schema.mobivoc.org/timeStartValue> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.mobivoc.org/> .
+<http://schema.mobivoc.org/timeStartValue> <http://www.w3.org/2000/01/rdf-schema#label> "Anfangszeit"@de .
+<http://schema.mobivoc.org/timeStartValue> <http://www.w3.org/2000/01/rdf-schema#label> "time start value"@en .
+# 
+# http://schema.mobivoc.org/timeUnit
+<http://schema.mobivoc.org/timeUnit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.mobivoc.org/timeUnit> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.mobivoc.org/TimeSpecification> .
+<http://schema.mobivoc.org/timeUnit> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://schema.mobivoc.org/timeUnit> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the time unit a value is specified for." .
+<http://schema.mobivoc.org/timeUnit> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.mobivoc.org/> .
+<http://schema.mobivoc.org/timeUnit> <http://www.w3.org/2000/01/rdf-schema#label> "Zeiteinheit"@de .
+<http://schema.mobivoc.org/timeUnit> <http://www.w3.org/2000/01/rdf-schema#label> "time unit"@en .
+# 
+# http://schema.mobivoc.org/totalCapacity
+<http://schema.mobivoc.org/totalCapacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.mobivoc.org/totalCapacity> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.mobivoc.org/ParkingFacility> .
+<http://schema.mobivoc.org/totalCapacity> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<http://schema.mobivoc.org/totalCapacity> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the total number of parking spaces of a parking facility." .
+<http://schema.mobivoc.org/totalCapacity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.mobivoc.org/> .
+<http://schema.mobivoc.org/totalCapacity> <http://www.w3.org/2000/01/rdf-schema#label> "Gesamtkapazität"@de .
+<http://schema.mobivoc.org/totalCapacity> <http://www.w3.org/2000/01/rdf-schema#label> "total capacity"@en .
+# 
+# http://schema.org/availableLanguage
+<http://schema.org/availableLanguage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/availableLanguage> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/ContactPoint> .
+<http://schema.org/availableLanguage> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://schema.org/availableLanguage> <http://www.w3.org/2000/01/rdf-schema#comment> "A language someone may use with or at the item, service or place. Please use one of the language codes from the IETF BCP 47 standard."@en .
+<http://schema.org/availableLanguage> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/availableLanguage> <http://www.w3.org/2000/01/rdf-schema#label> "available language"@en .
+# 
+# http://schema.org/closes
+<http://schema.org/closes> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/closes> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/OpeningHoursSpecification> .
+<http://schema.org/closes> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#time> .
+<http://schema.org/closes> <http://www.w3.org/2000/01/rdf-schema#comment> "The closing hour of the place or service on the given day(s) of the week."@en .
+<http://schema.org/closes> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/closes> <http://www.w3.org/2000/01/rdf-schema#label> "closes"@en .
+# 
+# http://schema.org/contactType
+<http://schema.org/contactType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/contactType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/ContactPoint> .
+<http://schema.org/contactType> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://schema.org/contactType> <http://www.w3.org/2000/01/rdf-schema#comment> "A person or organization can have different contact points, for different purposes. For example, a sales contact point, a PR contact point and so on. This property is used to specify the kind of contact point."@en .
+<http://schema.org/contactType> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/contactType> <http://www.w3.org/2000/01/rdf-schema#label> "contact type"@en .
+# 
+# http://schema.org/email
+<http://schema.org/email> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/email> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/ContactPoint> .
+<http://schema.org/email> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://schema.org/email> <http://www.w3.org/2000/01/rdf-schema#comment> "Email address."@en .
+<http://schema.org/email> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/email> <http://www.w3.org/2000/01/rdf-schema#label> "email"@en .
+# 
+# http://schema.org/name
+<http://schema.org/name> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Place> .
+<http://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#comment> "The name of an item."@en .
+<http://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/name> <http://www.w3.org/2000/01/rdf-schema#label> "name"@en .
+# 
+# http://schema.org/opens
+<http://schema.org/opens> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/opens> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/OpeningHoursSpecification> .
+<http://schema.org/opens> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#time> .
+<http://schema.org/opens> <http://www.w3.org/2000/01/rdf-schema#comment> "The opening hour of the place or service on the given day(s) of the week."@en .
+<http://schema.org/opens> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/opens> <http://www.w3.org/2000/01/rdf-schema#label> "opens"@en .
+# 
+# http://schema.org/price
+<http://schema.org/price> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/price> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/PriceSpecification> .
+<http://schema.org/price> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
+<http://schema.org/price> <http://www.w3.org/2000/01/rdf-schema#comment> "The offer price of a product, or of a price component when attached to PriceSpecification and its subtypes."@en .
+<http://schema.org/price> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/price> <http://www.w3.org/2000/01/rdf-schema#label> "price"@en .
+# 
+# http://schema.org/priceCurrency
+<http://schema.org/priceCurrency> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/priceCurrency> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/PriceSpecification> .
+<http://schema.org/priceCurrency> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://schema.org/priceCurrency> <http://www.w3.org/2000/01/rdf-schema#comment> "The currency of the price. Use standard formats: ISO 4217 currency format (e.g. USD)."@en .
+<http://schema.org/priceCurrency> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/priceCurrency> <http://www.w3.org/2000/01/rdf-schema#label> "price"@en .
+# 
+# http://schema.org/publicAccess
+<http://schema.org/publicAccess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/publicAccess> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Place> .
+<http://schema.org/publicAccess> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<http://schema.org/publicAccess> <http://www.w3.org/2000/01/rdf-schema#comment> "A flag to signal that a Place is open to public visitors."@en .
+<http://schema.org/publicAccess> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/publicAccess> <http://www.w3.org/2000/01/rdf-schema#label> "public access"@en .
+# 
+# http://schema.org/telephone
+<http://schema.org/telephone> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<http://schema.org/telephone> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/ContactPoint> .
+<http://schema.org/telephone> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<http://schema.org/telephone> <http://www.w3.org/2000/01/rdf-schema#comment> "A telephone number."@en .
+<http://schema.org/telephone> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/telephone> <http://www.w3.org/2000/01/rdf-schema#label> "telephone"@en .
+# 
+# https://velopark.ilabt.imec.be/openvelopark/terms#bicyclesAmount
+<https://velopark.ilabt.imec.be/openvelopark/terms#bicyclesAmount> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#bicyclesAmount> <http://www.w3.org/2000/01/rdf-schema#domain> <https://velopark.ilabt.imec.be/openvelopark/terms#AllowedBicycle> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#bicyclesAmount> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#integer> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#bicyclesAmount> <http://purl.org/dc/terms/created> "2019-01-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#bicyclesAmount> <http://purl.org/dc/terms/modified> "2019-01-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#bicyclesAmount> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the maximum amount of bicycle of a certain type that are allowed in a parking facility."@en .
+<https://velopark.ilabt.imec.be/openvelopark/terms#bicyclesAmount> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://velopark.ilabt.imec.be/openvelopark/terms#> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#bicyclesAmount> <http://www.w3.org/2000/01/rdf-schema#label> "bicylces amount"@en .
+<https://velopark.ilabt.imec.be/openvelopark/terms#bicyclesAmount> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://velopark.ilabt.imec.be/openvelopark/terms#countingSystem
+<https://velopark.ilabt.imec.be/openvelopark/terms#countingSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#countingSystem> <http://www.w3.org/2000/01/rdf-schema#domain> <https://velopark.ilabt.imec.be/openvelopark/terms#AllowedBicycle> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#countingSystem> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#boolean> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#countingSystem> <http://purl.org/dc/terms/created> "2019-01-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#countingSystem> <http://purl.org/dc/terms/modified> "2019-01-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#countingSystem> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates whether a certain type of allowed bicycle has a counting system or not, for a given parking facility."@en .
+<https://velopark.ilabt.imec.be/openvelopark/terms#countingSystem> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://velopark.ilabt.imec.be/openvelopark/terms#> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#countingSystem> <http://www.w3.org/2000/01/rdf-schema#label> "counting system"@en .
+<https://velopark.ilabt.imec.be/openvelopark/terms#countingSystem> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://velopark.ilabt.imec.be/openvelopark/terms#endDate
+<https://velopark.ilabt.imec.be/openvelopark/terms#endDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#endDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.mobivoc.org/BicycleParkingStation> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#endDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#endDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The final closing date of a parking facility (in ISO 8601 date format)."@en .
+<https://velopark.ilabt.imec.be/openvelopark/terms#endDate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://velopark.ilabt.imec.be/openvelopark/terms#> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#endDate> <http://www.w3.org/2000/01/rdf-schema#label> "end date"@en .
+# 
+# https://velopark.ilabt.imec.be/openvelopark/terms#intendedAudience
+<https://velopark.ilabt.imec.be/openvelopark/terms#intendedAudience> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#intendedAudience> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.mobivoc.org/BicycleParkingStation> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#intendedAudience> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#intendedAudience> <http://purl.org/dc/terms/created> "2019-01-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#intendedAudience> <http://purl.org/dc/terms/modified> "2019-01-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#intendedAudience> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the type of audience that can make use of a certain parking facility."@en .
+<https://velopark.ilabt.imec.be/openvelopark/terms#intendedAudience> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://velopark.ilabt.imec.be/openvelopark/terms#> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#intendedAudience> <http://www.w3.org/2000/01/rdf-schema#label> "intended audience"@en .
+<https://velopark.ilabt.imec.be/openvelopark/terms#intendedAudience> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://velopark.ilabt.imec.be/openvelopark/terms#maximumStorageTime
+<https://velopark.ilabt.imec.be/openvelopark/terms#maximumStorageTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#maximumStorageTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.mobivoc.org/BicycleParkingStation> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#maximumStorageTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#duration> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#maximumStorageTime> <http://purl.org/dc/terms/created> "2019-01-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#maximumStorageTime> <http://purl.org/dc/terms/modified> "2019-01-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#maximumStorageTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the maximum amount of time that bicycles are allowed to be parked in a certain parking facility."@en .
+<https://velopark.ilabt.imec.be/openvelopark/terms#maximumStorageTime> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://velopark.ilabt.imec.be/openvelopark/terms#> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#maximumStorageTime> <http://www.w3.org/2000/01/rdf-schema#label> "maximum storage time"@en .
+<https://velopark.ilabt.imec.be/openvelopark/terms#maximumStorageTime> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://velopark.ilabt.imec.be/openvelopark/terms#minimumStorageTime
+<https://velopark.ilabt.imec.be/openvelopark/terms#minimumStorageTime> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#minimumStorageTime> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.mobivoc.org/BicycleParkingStation> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#minimumStorageTime> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#duration> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#minimumStorageTime> <http://purl.org/dc/terms/created> "2019-01-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#minimumStorageTime> <http://purl.org/dc/terms/modified> "2019-01-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#minimumStorageTime> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the minimum amount of time that bicycles are allowed to be parked in a certain parking facility."@en .
+<https://velopark.ilabt.imec.be/openvelopark/terms#minimumStorageTime> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://velopark.ilabt.imec.be/openvelopark/terms#> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#minimumStorageTime> <http://www.w3.org/2000/01/rdf-schema#label> "minimun storage time"@en .
+<https://velopark.ilabt.imec.be/openvelopark/terms#minimumStorageTime> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://velopark.ilabt.imec.be/openvelopark/terms#postRemovalAction
+<https://velopark.ilabt.imec.be/openvelopark/terms#postRemovalAction> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#postRemovalAction> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.mobivoc.org/BicycleParkingStation> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#postRemovalAction> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#postRemovalAction> <http://purl.org/dc/terms/created> "2019-01-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#postRemovalAction> <http://purl.org/dc/terms/modified> "2019-01-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#postRemovalAction> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of how parking facility users must proceed when their bicycles are removed."@en .
+<https://velopark.ilabt.imec.be/openvelopark/terms#postRemovalAction> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://velopark.ilabt.imec.be/openvelopark/terms#> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#postRemovalAction> <http://www.w3.org/2000/01/rdf-schema#label> "post removal action"@en .
+<https://velopark.ilabt.imec.be/openvelopark/terms#postRemovalAction> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://velopark.ilabt.imec.be/openvelopark/terms#removalConditions
+<https://velopark.ilabt.imec.be/openvelopark/terms#removalConditions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#removalConditions> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.mobivoc.org/BicycleParkingStation> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#removalConditions> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#removalConditions> <http://purl.org/dc/terms/created> "2019-01-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#removalConditions> <http://purl.org/dc/terms/modified> "2019-01-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#removalConditions> <http://www.w3.org/2000/01/rdf-schema#comment> "Description of the conditions under which a bicycle may be removed from a certain parking facility."@en .
+<https://velopark.ilabt.imec.be/openvelopark/terms#removalConditions> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://velopark.ilabt.imec.be/openvelopark/terms#> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#removalConditions> <http://www.w3.org/2000/01/rdf-schema#label> "removal conditions"@en .
+<https://velopark.ilabt.imec.be/openvelopark/terms#removalConditions> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://velopark.ilabt.imec.be/openvelopark/terms#restrictions
+<https://velopark.ilabt.imec.be/openvelopark/terms#restrictions> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#restrictions> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.mobivoc.org/BicycleParkingStation> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#restrictions> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#string> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#restrictions> <http://purl.org/dc/terms/created> "2019-01-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#restrictions> <http://purl.org/dc/terms/modified> "2019-01-30"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#restrictions> <http://www.w3.org/2000/01/rdf-schema#comment> "Indicates the operational restrictions that a certain parking facility may have."@en .
+<https://velopark.ilabt.imec.be/openvelopark/terms#restrictions> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://velopark.ilabt.imec.be/openvelopark/terms#> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#restrictions> <http://www.w3.org/2000/01/rdf-schema#label> "restrictions"@en .
+<https://velopark.ilabt.imec.be/openvelopark/terms#restrictions> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://velopark.ilabt.imec.be/openvelopark/terms#startDate
+<https://velopark.ilabt.imec.be/openvelopark/terms#startDate> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#startDate> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.mobivoc.org/BicycleParkingStation> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#startDate> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#startDate> <http://www.w3.org/2000/01/rdf-schema#comment> "The initial opening date of a parking facility (in ISO 8601 date format)."@en .
+<https://velopark.ilabt.imec.be/openvelopark/terms#startDate> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://velopark.ilabt.imec.be/openvelopark/terms#> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#startDate> <http://www.w3.org/2000/01/rdf-schema#label> "start date"@en .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/goodrelations/v1#BusinessEntity
+<http://purl.org/goodrelations/v1#BusinessEntity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://purl.org/goodrelations/v1#BusinessEntity> <http://www.w3.org/2000/01/rdf-schema#comment> "An instance of this class represents the legal agent making (or seeking) a particular offering. This can be a legal body or a person. A business entity has at least a primary mailing address and contact details. For this, typical address standards (vCard) and location data (geo, WGS84) can be attached. Note that the location of the business entity is not necessarily the location from which the product or service is being available."@en .
+<http://purl.org/goodrelations/v1#BusinessEntity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://purl.org/goodrelations/v1#> .
+<http://purl.org/goodrelations/v1#BusinessEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Business Entity"@en .
+<http://purl.org/goodrelations/v1#BusinessEntity> <http://www.w3.org/2000/01/rdf-schema#label> "Juristische Person"@de .
+# 
+# http://schema.mobivoc.org/Bicycle
+# 
+# http://schema.mobivoc.org/BicycleParkingStation
+<http://schema.mobivoc.org/BicycleParkingStation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.mobivoc.org/BicycleParkingStation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.mobivoc.org/ParkingFacility> .
+<http://schema.mobivoc.org/BicycleParkingStation> <http://www.w3.org/2000/01/rdf-schema#comment> "Building or structure designed for use as a bicycle parking facility."@en .
+<http://schema.mobivoc.org/BicycleParkingStation> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.mobivoc.org/> .
+<http://schema.mobivoc.org/BicycleParkingStation> <http://www.w3.org/2000/01/rdf-schema#label> "Bicycle Parking Station"@en .
+<http://schema.mobivoc.org/BicycleParkingStation> <http://www.w3.org/2000/01/rdf-schema#label> "Fahrradparkstation"@de .
+# 
+# http://schema.mobivoc.org/Capacity
+<http://schema.mobivoc.org/Capacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.mobivoc.org/Capacity> <http://www.w3.org/2000/01/rdf-schema#comment> "Capacity of a civic structure."@en .
+<http://schema.mobivoc.org/Capacity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.mobivoc.org/> .
+<http://schema.mobivoc.org/Capacity> <http://www.w3.org/2000/01/rdf-schema#label> "Capacity"@en .
+<http://schema.mobivoc.org/Capacity> <http://www.w3.org/2000/01/rdf-schema#label> "Kapazität"@de .
+# 
+# http://schema.mobivoc.org/ParkingFacility
+<http://schema.mobivoc.org/ParkingFacility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.mobivoc.org/ParkingFacility> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/CivicStructure> .
+<http://schema.mobivoc.org/ParkingFacility> <http://www.w3.org/2000/01/rdf-schema#comment> "Any facility or area assigned for parking vehicles. A parking facility can provide one or more parking spaces."@en .
+<http://schema.mobivoc.org/ParkingFacility> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.mobivoc.org/> .
+<http://schema.mobivoc.org/ParkingFacility> <http://www.w3.org/2000/01/rdf-schema#label> "Parkeinrichtung"@de .
+<http://schema.mobivoc.org/ParkingFacility> <http://www.w3.org/2000/01/rdf-schema#label> "Parking Facility"@en .
+# 
+# http://schema.mobivoc.org/ParkingFacilityEntrance
+<http://schema.mobivoc.org/ParkingFacilityEntrance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.mobivoc.org/ParkingFacilityEntrance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/CivicStructure> .
+<http://schema.mobivoc.org/ParkingFacilityEntrance> <http://www.w3.org/2000/01/rdf-schema#comment> "Entrance of a parking facility where vehicles can enter."@en .
+<http://schema.mobivoc.org/ParkingFacilityEntrance> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.mobivoc.org/> .
+<http://schema.mobivoc.org/ParkingFacilityEntrance> <http://www.w3.org/2000/01/rdf-schema#label> "Einfahrt"@de .
+<http://schema.mobivoc.org/ParkingFacilityEntrance> <http://www.w3.org/2000/01/rdf-schema#label> "Entrance"@en .
+# 
+# http://schema.mobivoc.org/ParkingFacilityExit
+<http://schema.mobivoc.org/ParkingFacilityExit> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.mobivoc.org/ParkingFacilityExit> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/CivicStructure> .
+<http://schema.mobivoc.org/ParkingFacilityExit> <http://www.w3.org/2000/01/rdf-schema#comment> "Exit of a parking facility where vehicles can leave."@en .
+<http://schema.mobivoc.org/ParkingFacilityExit> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.mobivoc.org/> .
+<http://schema.mobivoc.org/ParkingFacilityExit> <http://www.w3.org/2000/01/rdf-schema#label> "Ausfahrt"@de .
+<http://schema.mobivoc.org/ParkingFacilityExit> <http://www.w3.org/2000/01/rdf-schema#label> "Exit"@en .
+# 
+# http://schema.mobivoc.org/RealTimeCapacity
+<http://schema.mobivoc.org/RealTimeCapacity> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.mobivoc.org/RealTimeCapacity> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.mobivoc.org/Capacity> .
+<http://schema.mobivoc.org/RealTimeCapacity> <http://www.w3.org/2000/01/rdf-schema#comment> "Real-time capacity of a civic structure."@en .
+<http://schema.mobivoc.org/RealTimeCapacity> <http://www.w3.org/2000/01/rdf-schema#comment> "Real-time capacity of a parking facility or parking space."@en .
+<http://schema.mobivoc.org/RealTimeCapacity> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.mobivoc.org/> .
+<http://schema.mobivoc.org/RealTimeCapacity> <http://www.w3.org/2000/01/rdf-schema#label> "Echtzeit Kapazität"@de .
+<http://schema.mobivoc.org/RealTimeCapacity> <http://www.w3.org/2000/01/rdf-schema#label> "Real Time Capacity"@en .
+# 
+# http://schema.mobivoc.org/TimeSpecification
+<http://schema.mobivoc.org/TimeSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.mobivoc.org/TimeSpecification> <http://www.w3.org/2000/01/rdf-schema#comment> "Specific time a price specification is due for."@en .
+<http://schema.mobivoc.org/TimeSpecification> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.mobivoc.org/> .
+<http://schema.mobivoc.org/TimeSpecification> <http://www.w3.org/2000/01/rdf-schema#label> "Time specification"@en .
+<http://schema.mobivoc.org/TimeSpecification> <http://www.w3.org/2000/01/rdf-schema#label> "Zeitspezifikation"@de .
+# 
+# http://schema.org/CivicStructure
+<http://schema.org/CivicStructure> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/CivicStructure> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Place> .
+<http://schema.org/CivicStructure> <http://www.w3.org/2000/01/rdf-schema#comment> "A public structure, such as a town hall or concert hall, parking facility or charging point."@en .
+<http://schema.org/CivicStructure> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/CivicStructure> <http://www.w3.org/2000/01/rdf-schema#label> "Civic Structure"@en .
+<http://schema.org/CivicStructure> <http://www.w3.org/2000/01/rdf-schema#label> "Zivile Struktur"@de .
+# 
+# http://schema.org/ContactPoint
+<http://schema.org/ContactPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/ContactPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "A contact point for customer service."@en .
+<http://schema.org/ContactPoint> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/ContactPoint> <http://www.w3.org/2000/01/rdf-schema#label> "Contact Point"@en .
+# 
+# http://schema.org/DayOfWeek
+<http://schema.org/DayOfWeek> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/DayOfWeek> <http://www.w3.org/2000/01/rdf-schema#comment> "The day of the week, e.g. used to specify to which day the opening hours of an OpeningHoursSpecification refer."@en .
+<http://schema.org/DayOfWeek> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/DayOfWeek> <http://www.w3.org/2000/01/rdf-schema#label> "Day of Week"@en .
+# 
+# http://schema.org/GeoCoordinates
+<http://schema.org/GeoCoordinates> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/GeoCoordinates> <http://www.w3.org/2000/01/rdf-schema#comment> "The geographic coordinates of a place or event."@en .
+<http://schema.org/GeoCoordinates> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/GeoCoordinates> <http://www.w3.org/2000/01/rdf-schema#label> "Geo Coordinates"@en .
+# 
+# http://schema.org/GeoShape
+<http://schema.org/GeoShape> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/GeoShape> <http://www.w3.org/2000/01/rdf-schema#comment> "The geographic shape of a place. A GeoShape can be described using several properties whose values are based on latitude/longitude pairs."@en .
+<http://schema.org/GeoShape> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/GeoShape> <http://www.w3.org/2000/01/rdf-schema#label> "Geo Shape"@en .
+# 
+# http://schema.org/LocationFeatureSpecification
+<http://schema.org/LocationFeatureSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/LocationFeatureSpecification> <http://www.w3.org/2000/01/rdf-schema#comment> "Specifies a location feature by providing a structured value representing a feature of an accommodation as a property-value pair of varying degrees of formality."@en .
+<http://schema.org/LocationFeatureSpecification> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/LocationFeatureSpecification> <http://www.w3.org/2000/01/rdf-schema#label> "LocationFeatureSpecification"@en .
+# 
+# http://schema.org/Map
+<http://schema.org/Map> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/Map> <http://www.w3.org/2000/01/rdf-schema#comment> "A map."@en .
+<http://schema.org/Map> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/Map> <http://www.w3.org/2000/01/rdf-schema#label> "Map"@en .
+# 
+# http://schema.org/OpeningHoursSpecification
+<http://schema.org/OpeningHoursSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/OpeningHoursSpecification> <http://www.w3.org/2000/01/rdf-schema#comment> "A structured value providing information about the opening hours of a place or a certain service inside a place."@en .
+<http://schema.org/OpeningHoursSpecification> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/OpeningHoursSpecification> <http://www.w3.org/2000/01/rdf-schema#label> "Opening Hours Specification"@en .
+# 
+# http://schema.org/Photograph
+<http://schema.org/Photograph> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/Photograph> <http://www.w3.org/2000/01/rdf-schema#comment> "A photograph."@en .
+<http://schema.org/Photograph> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/Photograph> <http://www.w3.org/2000/01/rdf-schema#label> "Photograph"@en .
+# 
+# http://schema.org/Place
+<http://schema.org/Place> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/Place> <http://www.w3.org/2000/01/rdf-schema#comment> "Entities that have a somewhat fixed, physical extension."@en .
+<http://schema.org/Place> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/Place> <http://www.w3.org/2000/01/rdf-schema#label> "Place"@en .
+# 
+# http://schema.org/PostalAddress
+<http://schema.org/PostalAddress> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/PostalAddress> <http://www.w3.org/2000/01/rdf-schema#comment> "The mailing address."@en .
+<http://schema.org/PostalAddress> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/PostalAddress> <http://www.w3.org/2000/01/rdf-schema#label> "Postal Address"@en .
+# 
+# http://schema.org/PriceSpecification
+<http://schema.org/PriceSpecification> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/PriceSpecification> <http://www.w3.org/2000/01/rdf-schema#comment> "A structured value representing a price or price range for an item."@en .
+<http://schema.org/PriceSpecification> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/PriceSpecification> <http://www.w3.org/2000/01/rdf-schema#label> "Preisspezifikation"@de .
+<http://schema.org/PriceSpecification> <http://www.w3.org/2000/01/rdf-schema#label> "Price specification"@en .
+# 
+# http://schema.org/Vehicle
+<http://schema.org/Vehicle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/Vehicle> <http://www.w3.org/2000/01/rdf-schema#comment> "A vehicle is a device that is designed or used to transport people or cargo over land, water, air, or through space."@en .
+<http://schema.org/Vehicle> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/Vehicle> <http://www.w3.org/2000/01/rdf-schema#label> "Fahrzeug"@de .
+<http://schema.org/Vehicle> <http://www.w3.org/2000/01/rdf-schema#label> "Vehicle"@en .
+# 
+# http://schema.org/WebSite
+<http://schema.org/WebSite> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://schema.org/WebSite> <http://www.w3.org/2000/01/rdf-schema#comment> "A WebSite is a set of related web pages and other items typically served from a single web domain and accessible via URLs."@en .
+<http://schema.org/WebSite> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.org/> .
+<http://schema.org/WebSite> <http://www.w3.org/2000/01/rdf-schema#label> "WebSite"@en .
+# 
+# http://xmlns.com/foaf/0.1/Document
+<http://xmlns.com/foaf/0.1/Document> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+# 
+# https://velopark.ilabt.imec.be/openvelopark/terms#AllowedBicycle
+<https://velopark.ilabt.imec.be/openvelopark/terms#AllowedBicycle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#AllowedBicycle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.mobivoc.org/Bicycle> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#AllowedBicycle> <http://purl.org/dc/terms/created> "2019-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#AllowedBicycle> <http://purl.org/dc/terms/modified> "2019-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#AllowedBicycle> <http://www.w3.org/2000/01/rdf-schema#comment> "A bicycle that is allowed in a given parking facility." .
+<https://velopark.ilabt.imec.be/openvelopark/terms#AllowedBicycle> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://velopark.ilabt.imec.be/openvelopark/terms#> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#AllowedBicycle> <http://www.w3.org/2000/01/rdf-schema#label> "Allowed Bicycle"@en .
+<https://velopark.ilabt.imec.be/openvelopark/terms#AllowedBicycle> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://velopark.ilabt.imec.be/openvelopark/terms#BicycleCase
+<https://velopark.ilabt.imec.be/openvelopark/terms#BicycleCase> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#BicycleCase> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.mobivoc.org/BicycleParkingStation> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#BicycleCase> <http://purl.org/dc/terms/created> "2019-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#BicycleCase> <http://purl.org/dc/terms/modified> "2019-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#BicycleCase> <http://www.w3.org/2000/01/rdf-schema#comment> "Covered and lockable bicycle parking facility on public roads." .
+<https://velopark.ilabt.imec.be/openvelopark/terms#BicycleCase> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://velopark.ilabt.imec.be/openvelopark/terms#> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#BicycleCase> <http://www.w3.org/2000/01/rdf-schema#label> "Bicycle Case"@en .
+<https://velopark.ilabt.imec.be/openvelopark/terms#BicycleCase> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://velopark.ilabt.imec.be/openvelopark/terms#BicyclePump
+<https://velopark.ilabt.imec.be/openvelopark/terms#BicyclePump> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#BicyclePump> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/LocationFeatureSpecification> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#BicyclePump> <http://purl.org/dc/terms/created> "2019-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#BicyclePump> <http://purl.org/dc/terms/modified> "2019-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#BicyclePump> <http://www.w3.org/2000/01/rdf-schema#comment> "A parking facility feature that indicates it has a bicycle pump available." .
+<https://velopark.ilabt.imec.be/openvelopark/terms#BicyclePump> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://velopark.ilabt.imec.be/openvelopark/terms#> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#BicyclePump> <http://www.w3.org/2000/01/rdf-schema#label> "Bicycle Pump"@en .
+<https://velopark.ilabt.imec.be/openvelopark/terms#BicyclePump> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://velopark.ilabt.imec.be/openvelopark/terms#BikeRentalService
+<https://velopark.ilabt.imec.be/openvelopark/terms#BikeRentalService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#BikeRentalService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/LocationFeatureSpecification> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#BikeRentalService> <http://purl.org/dc/terms/created> "2019-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#BikeRentalService> <http://purl.org/dc/terms/modified> "2019-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#BikeRentalService> <http://www.w3.org/2000/01/rdf-schema#comment> "A parking facility feature that indicates it has a bicycle rental service available." .
+<https://velopark.ilabt.imec.be/openvelopark/terms#BikeRentalService> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://velopark.ilabt.imec.be/openvelopark/terms#> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#BikeRentalService> <http://www.w3.org/2000/01/rdf-schema#label> "Bike Rental Service"@en .
+<https://velopark.ilabt.imec.be/openvelopark/terms#BikeRentalService> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://velopark.ilabt.imec.be/openvelopark/terms#CameraSurveillance
+<https://velopark.ilabt.imec.be/openvelopark/terms#CameraSurveillance> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#CameraSurveillance> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/LocationFeatureSpecification> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#CameraSurveillance> <http://purl.org/dc/terms/created> "2019-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#CameraSurveillance> <http://purl.org/dc/terms/modified> "2019-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#CameraSurveillance> <http://www.w3.org/2000/01/rdf-schema#comment> "A parking facility feature that indicates it has surveillance cameras available." .
+<https://velopark.ilabt.imec.be/openvelopark/terms#CameraSurveillance> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://velopark.ilabt.imec.be/openvelopark/terms#> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#CameraSurveillance> <http://www.w3.org/2000/01/rdf-schema#label> "Camera Surveillance"@en .
+<https://velopark.ilabt.imec.be/openvelopark/terms#CameraSurveillance> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://velopark.ilabt.imec.be/openvelopark/terms#CargoBicycle
+<https://velopark.ilabt.imec.be/openvelopark/terms#CargoBicycle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#CargoBicycle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.mobivoc.org/Bicycle> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#CargoBicycle> <http://purl.org/dc/terms/created> "2019-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#CargoBicycle> <http://purl.org/dc/terms/modified> "2019-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#CargoBicycle> <http://www.w3.org/2000/01/rdf-schema#comment> "A bicycle specially adapted to transport load." .
+<https://velopark.ilabt.imec.be/openvelopark/terms#CargoBicycle> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://velopark.ilabt.imec.be/openvelopark/terms#> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#CargoBicycle> <http://www.w3.org/2000/01/rdf-schema#label> "Cargo Bicycle"@en .
+<https://velopark.ilabt.imec.be/openvelopark/terms#CargoBicycle> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://velopark.ilabt.imec.be/openvelopark/terms#ChargingPoint
+<https://velopark.ilabt.imec.be/openvelopark/terms#ChargingPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#ChargingPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/LocationFeatureSpecification> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#ChargingPoint> <http://purl.org/dc/terms/created> "2019-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#ChargingPoint> <http://purl.org/dc/terms/modified> "2019-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#ChargingPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "A parking facility feature that indicates it has an electrical bicycle charging point available." .
+<https://velopark.ilabt.imec.be/openvelopark/terms#ChargingPoint> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://velopark.ilabt.imec.be/openvelopark/terms#> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#ChargingPoint> <http://www.w3.org/2000/01/rdf-schema#label> "Charging Point"@en .
+<https://velopark.ilabt.imec.be/openvelopark/terms#ChargingPoint> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://velopark.ilabt.imec.be/openvelopark/terms#ElectricBicycle
+<https://velopark.ilabt.imec.be/openvelopark/terms#ElectricBicycle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#ElectricBicycle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.mobivoc.org/Bicycle> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#ElectricBicycle> <http://purl.org/dc/terms/created> "2019-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#ElectricBicycle> <http://purl.org/dc/terms/modified> "2019-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#ElectricBicycle> <http://www.w3.org/2000/01/rdf-schema#comment> "An electrically powered bicycle." .
+<https://velopark.ilabt.imec.be/openvelopark/terms#ElectricBicycle> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://velopark.ilabt.imec.be/openvelopark/terms#> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#ElectricBicycle> <http://www.w3.org/2000/01/rdf-schema#label> "Electric Bicycle"@en .
+<https://velopark.ilabt.imec.be/openvelopark/terms#ElectricBicycle> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://velopark.ilabt.imec.be/openvelopark/terms#ElectronicAccess
+<https://velopark.ilabt.imec.be/openvelopark/terms#ElectronicAccess> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#ElectronicAccess> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/LocationFeatureSpecification> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#ElectronicAccess> <http://purl.org/dc/terms/created> "2019-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#ElectronicAccess> <http://purl.org/dc/terms/modified> "2019-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#ElectronicAccess> <http://www.w3.org/2000/01/rdf-schema#comment> "A parking facility feature that indicates it has an electronic access system." .
+<https://velopark.ilabt.imec.be/openvelopark/terms#ElectronicAccess> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://velopark.ilabt.imec.be/openvelopark/terms#> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#ElectronicAccess> <http://www.w3.org/2000/01/rdf-schema#label> "Electronic Access"@en .
+<https://velopark.ilabt.imec.be/openvelopark/terms#ElectronicAccess> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://velopark.ilabt.imec.be/openvelopark/terms#LockerService
+<https://velopark.ilabt.imec.be/openvelopark/terms#LockerService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#LockerService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/LocationFeatureSpecification> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#LockerService> <http://purl.org/dc/terms/created> "2019-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#LockerService> <http://purl.org/dc/terms/modified> "2019-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#LockerService> <http://www.w3.org/2000/01/rdf-schema#comment> "A parking facility feature that indicates it has a locker service available." .
+<https://velopark.ilabt.imec.be/openvelopark/terms#LockerService> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://velopark.ilabt.imec.be/openvelopark/terms#> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#LockerService> <http://www.w3.org/2000/01/rdf-schema#label> "Locker Service"@en .
+<https://velopark.ilabt.imec.be/openvelopark/terms#LockerService> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://velopark.ilabt.imec.be/openvelopark/terms#MaintenanceService
+<https://velopark.ilabt.imec.be/openvelopark/terms#MaintenanceService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#MaintenanceService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/LocationFeatureSpecification> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#MaintenanceService> <http://purl.org/dc/terms/created> "2019-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#MaintenanceService> <http://purl.org/dc/terms/modified> "2019-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#MaintenanceService> <http://www.w3.org/2000/01/rdf-schema#comment> "A parking facility feature that indicates it has a bicycle maintenance service available." .
+<https://velopark.ilabt.imec.be/openvelopark/terms#MaintenanceService> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://velopark.ilabt.imec.be/openvelopark/terms#> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#MaintenanceService> <http://www.w3.org/2000/01/rdf-schema#label> "Maintenance Service"@en .
+<https://velopark.ilabt.imec.be/openvelopark/terms#MaintenanceService> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://velopark.ilabt.imec.be/openvelopark/terms#NeighborhoodParking
+<https://velopark.ilabt.imec.be/openvelopark/terms#NeighborhoodParking> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#NeighborhoodParking> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.mobivoc.org/BicycleParkingStation> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#NeighborhoodParking> <http://purl.org/dc/terms/created> "2019-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#NeighborhoodParking> <http://purl.org/dc/terms/modified> "2019-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#NeighborhoodParking> <http://www.w3.org/2000/01/rdf-schema#comment> "Bicycle parking facility for residents of a given neighborhood." .
+<https://velopark.ilabt.imec.be/openvelopark/terms#NeighborhoodParking> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://velopark.ilabt.imec.be/openvelopark/terms#> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#NeighborhoodParking> <http://www.w3.org/2000/01/rdf-schema#label> "Neighborhood Parking Facility"@en .
+<https://velopark.ilabt.imec.be/openvelopark/terms#NeighborhoodParking> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://velopark.ilabt.imec.be/openvelopark/terms#PersonnelSupervision
+<https://velopark.ilabt.imec.be/openvelopark/terms#PersonnelSupervision> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#PersonnelSupervision> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/LocationFeatureSpecification> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#PersonnelSupervision> <http://purl.org/dc/terms/created> "2019-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#PersonnelSupervision> <http://purl.org/dc/terms/modified> "2019-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#PersonnelSupervision> <http://www.w3.org/2000/01/rdf-schema#comment> "A parking facility feature that indicates it has personnel supervision available." .
+<https://velopark.ilabt.imec.be/openvelopark/terms#PersonnelSupervision> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://velopark.ilabt.imec.be/openvelopark/terms#> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#PersonnelSupervision> <http://www.w3.org/2000/01/rdf-schema#label> "Personnel Supervision"@en .
+<https://velopark.ilabt.imec.be/openvelopark/terms#PersonnelSupervision> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://velopark.ilabt.imec.be/openvelopark/terms#RegularBicycle
+<https://velopark.ilabt.imec.be/openvelopark/terms#RegularBicycle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#RegularBicycle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.mobivoc.org/Bicycle> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#RegularBicycle> <http://purl.org/dc/terms/created> "2019-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#RegularBicycle> <http://purl.org/dc/terms/modified> "2019-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#RegularBicycle> <http://www.w3.org/2000/01/rdf-schema#comment> "A regular bicycle that does not have any special features." .
+<https://velopark.ilabt.imec.be/openvelopark/terms#RegularBicycle> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://velopark.ilabt.imec.be/openvelopark/terms#> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#RegularBicycle> <http://www.w3.org/2000/01/rdf-schema#label> "Regular Bicycle"@en .
+<https://velopark.ilabt.imec.be/openvelopark/terms#RegularBicycle> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://velopark.ilabt.imec.be/openvelopark/terms#TandemBicycle
+<https://velopark.ilabt.imec.be/openvelopark/terms#TandemBicycle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#TandemBicycle> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.mobivoc.org/Bicycle> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#TandemBicycle> <http://purl.org/dc/terms/created> "2019-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#TandemBicycle> <http://purl.org/dc/terms/modified> "2019-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#TandemBicycle> <http://www.w3.org/2000/01/rdf-schema#comment> "A bicycle designed to be ridden by more than one person." .
+<https://velopark.ilabt.imec.be/openvelopark/terms#TandemBicycle> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://velopark.ilabt.imec.be/openvelopark/terms#> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#TandemBicycle> <http://www.w3.org/2000/01/rdf-schema#label> "Tandem Bicycle"@en .
+<https://velopark.ilabt.imec.be/openvelopark/terms#TandemBicycle> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# https://velopark.ilabt.imec.be/openvelopark/terms#ToiletService
+<https://velopark.ilabt.imec.be/openvelopark/terms#ToiletService> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#ToiletService> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/LocationFeatureSpecification> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#ToiletService> <http://purl.org/dc/terms/created> "2019-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#ToiletService> <http://purl.org/dc/terms/modified> "2019-01-29"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#ToiletService> <http://www.w3.org/2000/01/rdf-schema#comment> "A parking facility feature that indicates it has a toilet service available." .
+<https://velopark.ilabt.imec.be/openvelopark/terms#ToiletService> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <https://velopark.ilabt.imec.be/openvelopark/terms#> .
+<https://velopark.ilabt.imec.be/openvelopark/terms#ToiletService> <http://www.w3.org/2000/01/rdf-schema#label> "Toilet Service"@en .
+<https://velopark.ilabt.imec.be/openvelopark/terms#ToiletService> <http://www.w3.org/2003/06/sw-vocab-status/ns#term_status> "stable" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://schema.mobivoc.org/Bicycle
+<http://schema.mobivoc.org/Bicycle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<http://schema.mobivoc.org/Bicycle> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://schema.org/Vehicle> .
+# 
+# https://velopark.ilabt.imec.be/openvelopark/terms
+<https://velopark.ilabt.imec.be/openvelopark/terms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#NamedIndividual> .
+<https://velopark.ilabt.imec.be/openvelopark/terms> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> .
+# 
+_:genid6 <http://xmlns.com/foaf/0.1/mbox> "julianandres.rojasmelendez@ugent.be" .
+_:genid6 <http://xmlns.com/foaf/0.1/name> "Julian Rojas" .
+_:genid7 <http://xmlns.com/foaf/0.1/mbox> "Pieter.Colpaert@UGent.be" .
+_:genid7 <http://xmlns.com/foaf/0.1/name> "Pieter Colpaert" .
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://schema.mobivoc.org/Bicycle> <http://www.w3.org/2000/01/rdf-schema#comment> "A human-or electric powered, pedal-driven, single-track vehicle, having two wheels attached to a frame, one behind the other."@en .
+<http://schema.mobivoc.org/Bicycle> <http://www.w3.org/2000/01/rdf-schema#isDefinedBy> <http://schema.mobivoc.org/> .
+<http://schema.mobivoc.org/Bicycle> <http://www.w3.org/2000/01/rdf-schema#label> "Bicycle"@en .
+<http://schema.mobivoc.org/Bicycle> <http://www.w3.org/2000/01/rdf-schema#label> "Fahrrad"@de .
+<http://schema.mobivoc.org/Bicycle> <http://www.w3.org/2000/01/rdf-schema#label> "Vélo"@fr .
+# 
+# Generated by the OWL API (version 5.1.7) https://github.com/owlcs/owlapi/
