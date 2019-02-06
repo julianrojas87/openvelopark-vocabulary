@@ -1,0 +1,786 @@
+@prefix rdf:    <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:   <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix cc:     <http://creativecommons.org/ns#> .
+@prefix owl:    <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
+@prefix mv:     <http://schema.mobivoc.org/> .
+@prefix gr:     <http://purl.org/goodrelations/v1#> .
+@prefix dbo:    <http://dbpedia.org/ontology/> .
+@prefix skos:   <http://www.w3.org/2004/02/skos/core#> .
+@prefix dct:    <http://purl.org/dc/terms/> .
+@prefix vann:   <http://purl.org/vocab/vann/> .
+@prefix foaf:   <http://xmlns.com/foaf/0.1/> .
+@prefix vs:     <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix schema: <http://schema.org/> .
+@prefix vp:     <https://velopark.ilabt.imec.be/openvelopark/terms#> .
+
+
+
+<https://velopark.ilabt.imec.be/openvelopark/terms>  
+        a                 foaf:Document ;
+        foaf:primaryTopic <https://velopark.ilabt.imec.be/openvelopark/terms> ;
+        dct:issued        "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
+        dct:hasFormat     <https://raw.githubusercontent.com/julianrojas87/openvelopark-vocabulary/master/openvelopark.ttl> ;
+        cc:license        <https://creativecommons.org/licenses/by/4.0/> ;
+        dct:rights        "Copyright 2019 - Open Velopark contributors" .
+
+<https://velopark.ilabt.imec.be/openvelopark/terms>  
+        a                 owl:Ontology ;
+        rdfs:label        "Open Velopark Vocabulary"@en ;
+        dct:description   "This ontology introduces the definition of a set of bicycle parking facilities related terms. It reuses and extends the MobiVoc (see http://schema.mobivoc.org/) and the schema.org (see https://schema.org) vocabularies."@en ;
+        vann:preferredNamespacePrefix  "openvelopark" ;
+        vann:preferredNamespaceUri     "https://velopark.ilabt.imec.be/openvelopark/terms#";
+        rdfs:seeAlso      <http://schema.mobivoc.org/> ;
+        rdfs:seeAlso      <https://schema.org/> ;
+        rdfs:seeAlso      <https://www.velopark.be/> ;
+        dct:creator       [ foaf:mbox "julianandres.rojasmelendez@ugent.be"; foaf:name "Julian Rojas" ] ;
+        dct:creator       [ foaf:mbox "Pieter.Colpaert@UGent.be"; foaf:name "Pieter Colpaert" ] .
+
+vp:NeighborhoodParking  
+        a                 rdfs:Class , owl:Class ;
+        rdfs:comment      "Bicycle parking facility for residents of a given neighborhood." ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "Neighborhood Parking Facility"@en ;
+        rdfs:subClassOf   mv:BicycleParkingStation ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:BicycleCase  
+        a                 rdfs:Class , owl:Class ;
+        rdfs:comment      "Covered and lockable bicycle parking facility on public roads." ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "Bicycle Case"@en ;
+        rdfs:subClassOf   mv:BicycleParkingStation ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:AllowedBicycle  
+        a                 rdfs:Class , owl:Class ;
+        rdfs:comment      "A bicycle that is allowed in a given parking facility." ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "Allowed Bicycle"@en ;
+        rdfs:subClassOf   mv:Bicycle ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:RegularBicycle  
+        a                 rdfs:Class , owl:Class ;
+        rdfs:comment      "A regular bicycle that does not have any special features." ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "Regular Bicycle"@en ;
+        rdfs:subClassOf   mv:Bicycle ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:ElectricBicycle  
+        a                 rdfs:Class , owl:Class ;
+        rdfs:comment      "An electrically powered bicycle." ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "Electric Bicycle"@en ;
+        rdfs:subClassOf   mv:Bicycle ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:CargoBicycle  
+        a                 rdfs:Class , owl:Class ;
+        rdfs:comment      "A bicycle specially adapted to transport load." ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "Cargo Bicycle"@en ;
+        rdfs:subClassOf   mv:Bicycle ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:TandemBicycle  
+        a                 rdfs:Class , owl:Class ;
+        rdfs:comment      "A bicycle designed to be ridden by more than one person." ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "Tandem Bicycle"@en ;
+        rdfs:subClassOf   mv:Bicycle ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:CameraSurveillance  
+        a                 rdfs:Class , owl:Class ;
+        rdfs:comment      "A parking facility feature that indicates it has surveillance cameras available." ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "Camera Surveillance"@en ;
+        rdfs:subClassOf   schema:LocationFeatureSpecification ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:PersonnelSupervision 
+        a                 rdfs:Class , owl:Class ;
+        rdfs:comment      "A parking facility feature that indicates it has personnel supervision available." ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "Personnel Supervision"@en ;
+        rdfs:subClassOf   schema:LocationFeatureSpecification ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:ElectronicAccess  
+        a                 rdfs:Class , owl:Class ;
+        rdfs:comment      "A parking facility feature that indicates it has an electronic access system." ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "Electronic Access"@en ;
+        rdfs:subClassOf   schema:LocationFeatureSpecification ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:BicyclePump  
+        a                 rdfs:Class , owl:Class ;
+        rdfs:comment      "A parking facility feature that indicates it has a bicycle pump available." ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "Bicycle Pump"@en ;
+        rdfs:subClassOf   schema:LocationFeatureSpecification ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:MaintenanceService 
+        a                 rdfs:Class , owl:Class ;
+        rdfs:comment      "A parking facility feature that indicates it has a bicycle maintenance service available." ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "Maintenance Service"@en ;
+        rdfs:subClassOf   schema:LocationFeatureSpecification ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:ChargingPoint 
+        a                 rdfs:Class , owl:Class ;
+        rdfs:comment      "A parking facility feature that indicates it has an electrical bicycle charging point available." ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "Charging Point"@en ;
+        rdfs:subClassOf   schema:LocationFeatureSpecification ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:LockerService 
+        a                 rdfs:Class , owl:Class ;
+        rdfs:comment      "A parking facility feature that indicates it has a locker service available." ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "Locker Service"@en ;
+        rdfs:subClassOf   schema:LocationFeatureSpecification ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:ToiletService 
+        a                 rdfs:Class , owl:Class ;
+        rdfs:comment      "A parking facility feature that indicates it has a toilet service available." ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "Toilet Service"@en ;
+        rdfs:subClassOf   schema:LocationFeatureSpecification ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:BikeRentalService 
+        a                 rdfs:Class , owl:Class ;
+        rdfs:comment      "A parking facility feature that indicates it has a bicycle rental service available." ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "Bike Rental Service"@en ;
+        rdfs:subClassOf   schema:LocationFeatureSpecification ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:dataOwner  
+        a                 rdf:Property , owl:ObjectProperty ;
+        rdfs:comment      "The owner of the data about a certain bicycle parking facility."@en ;
+        rdfs:domain       mv:BicycleParkingStation ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "data owner"@en ;
+        rdfs:range        gr:BusinessEntity ;
+        dct:created       "2019-01-30"^^xsd:date ;
+        dct:modified      "2019-01-30"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:startDate
+        a                 owl:DatatypeProperty , rdf:Property ;
+        rdfs:comment      "The initial opening date of a parking facility (in ISO 8601 date format)."@en ;
+        rdfs:domain       mv:BicycleParkingStation ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "start date"@en ;
+        rdfs:range        xsd:date .
+
+vp:endDate
+        a                 owl:DatatypeProperty , rdf:Property ;
+        rdfs:comment      "The final closing date of a parking facility (in ISO 8601 date format)."@en ;
+        rdfs:domain       mv:BicycleParkingStation ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "end date"@en ;
+        rdfs:range        xsd:date .
+
+vp:allows  
+        a                 rdf:Property , owl:ObjectProperty ;
+        rdfs:comment      "Indicates a type of bicycle that is allowed in a certain parking facility."@en ;
+        rdfs:domain       mv:BicycleParkingStation ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "allows"@en ;
+        rdfs:range        vp:AllowedBicycle ;
+        dct:created       "2019-01-30"^^xsd:date ;
+        dct:modified      "2019-01-30"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:minimumStorageTime  
+        a                 rdf:Property , owl:DatatypeProperty ;
+        rdfs:comment      "Indicates the minimum amount of time that bicycles are allowed to be parked in a certain parking facility."@en ;
+        rdfs:domain       mv:BicycleParkingStation ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "minimun storage time"@en ;
+        rdfs:range        xsd:duration ;
+        dct:created       "2019-01-30"^^xsd:date ;
+        dct:modified      "2019-01-30"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:maximumStorageTime  
+        a                 rdf:Property , owl:DatatypeProperty ;
+        rdfs:comment      "Indicates the maximum amount of time that bicycles are allowed to be parked in a certain parking facility."@en ;
+        rdfs:domain       mv:BicycleParkingStation ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "maximum storage time"@en ;
+        rdfs:range        xsd:duration ;
+        dct:created       "2019-01-30"^^xsd:date ;
+        dct:modified      "2019-01-30"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:intendedAudience  
+        a                 rdf:Property , owl:DatatypeProperty ;
+        rdfs:comment      "Indicates the type of audience that can make use of a certain parking facility."@en ;
+        rdfs:domain       mv:BicycleParkingStation ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "intended audience"@en ;
+        rdfs:range        xsd:string ;
+        dct:created       "2019-01-30"^^xsd:date ;
+        dct:modified      "2019-01-30"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:restrictions  
+        a                 rdf:Property , owl:DatatypeProperty ;
+        rdfs:comment      "Indicates the operational restrictions that a certain parking facility may have."@en ;
+        rdfs:domain       mv:BicycleParkingStation ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "restrictions"@en ;
+        rdfs:range        xsd:string ;
+        dct:created       "2019-01-30"^^xsd:date ;
+        dct:modified      "2019-01-30"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:removalConditions  
+        a                 rdf:Property , owl:DatatypeProperty ;
+        rdfs:comment      "Description of the conditions under which a bicycle may be removed from a certain parking facility."@en ;
+        rdfs:domain       mv:BicycleParkingStation ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "removal conditions"@en ;
+        rdfs:range        xsd:string ;
+        dct:created       "2019-01-30"^^xsd:date ;
+        dct:modified      "2019-01-30"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:postRemovalAction  
+        a                 rdf:Property , owl:DatatypeProperty ;
+        rdfs:comment      "Description of how parking facility users must proceed when their bicycles are removed."@en ;
+        rdfs:domain       mv:BicycleParkingStation ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "post removal action"@en ;
+        rdfs:range        xsd:string ;
+        dct:created       "2019-01-30"^^xsd:date ;
+        dct:modified      "2019-01-30"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:bicycleType  
+        a                 rdf:Property , owl:ObjectProperty ;
+        rdfs:comment      "Indicates the specific type of bicycle that is allowed in a certain parking facility."@en ;
+        rdfs:domain       vp:AllowedBicycle ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "bicycle type"@en ;
+        rdfs:range        mv:Bicycle ;
+        dct:created       "2019-01-30"^^xsd:date ;
+        dct:modified      "2019-01-30"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:bicyclesAmount  
+        a                 rdf:Property , owl:DatatypeProperty ;
+        rdfs:comment      "Indicates the maximum amount of bicycle of a certain type that are allowed in a parking facility."@en ;
+        rdfs:domain       vp:AllowedBicycle ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "bicylces amount"@en ;
+        rdfs:range        xsd:integer ;
+        dct:created       "2019-01-30"^^xsd:date ;
+        dct:modified      "2019-01-30"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:countingSystem  
+        a                 rdf:Property , owl:DatatypeProperty ;
+        rdfs:comment      "Indicates whether a certain type of allowed bicycle has a counting system or not, for a given parking facility."@en ;
+        rdfs:domain       vp:AllowedBicycle ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "counting system"@en ;
+        rdfs:range        xsd:boolean ;
+        dct:created       "2019-01-30"^^xsd:date ;
+        dct:modified      "2019-01-30"^^xsd:date ;
+        vs:term_status    "stable" .
+
+schema:Place  
+        a                 owl:Class ;
+        rdfs:comment      "Entities that have a somewhat fixed, physical extension."@en ;
+        rdfs:isDefinedBy  schema: ;
+        rdfs:label        "Place"@en .
+
+schema:CivicStructure  
+        a                 owl:Class ;
+        rdfs:comment      "A public structure, such as a town hall or concert hall, parking facility or charging point."@en ;
+        rdfs:isDefinedBy  schema: ;
+        rdfs:label        "Civic Structure"@en , "Zivile Struktur"@de ;
+        rdfs:subClassOf   schema:Place .
+
+mv:ParkingFacility  
+        a                    owl:Class , rdfs:Class ;
+        rdfs:comment         "Any facility or area assigned for parking vehicles. A parking facility can provide one or more parking spaces."@en ;
+        rdfs:isDefinedBy     mv: ;
+        rdfs:label           "Parking Facility"@en , "Parkeinrichtung"@de ;
+        rdfs:subClassOf      schema:CivicStructure .
+
+mv:BicycleParkingStation
+        a                 owl:Class , rdfs:Class ;
+        rdfs:comment      "Building or structure designed for use as a bicycle parking facility."@en ;
+        rdfs:isDefinedBy  mv: ;
+        rdfs:label        "Bicycle Parking Station"@en , "Fahrradparkstation"@de ;
+        rdfs:subClassOf   mv:ParkingFacility .
+
+schema:amenityFeature  
+        a                 owl:ObjectProperty ;
+        rdfs:comment      "An amenity feature (e.g. a characteristic or service) of a place or accomodation."@en ;
+        rdfs:domain       schema:Place ;
+        rdfs:isDefinedBy  schema: ;
+        rdfs:label        "amenity feature"@en ;
+        rdfs:range        schema:LocationFeatureSpecification .
+
+schema:LocationFeatureSpecification  
+        a                 owl:Class ;
+        rdfs:comment      "Specifies a location feature by providing a structured value representing a feature of an accommodation as a property-value pair of varying degrees of formality."@en ;
+        rdfs:isDefinedBy  schema: ;
+        rdfs:label        "LocationFeatureSpecification"@en  .
+
+schema:Vehicle  
+        a                 owl:Class ;
+        rdfs:comment      "A vehicle is a device that is designed or used to transport people or cargo over land, water, air, or through space."@en ;
+        rdfs:isDefinedBy  schema: ;
+        rdfs:label        "Vehicle"@en , "Fahrzeug"@de .
+
+mv:Bicycle  
+        a                 schema:Vehicle ;
+        rdfs:comment      "A human-or electric powered, pedal-driven, single-track vehicle, having two wheels attached to a frame, one behind the other."@en ;
+        rdfs:isDefinedBy  mv: ;
+        rdfs:label        "Bicycle"@en , "Vélo"@fr , "Fahrrad"@de .
+
+schema:PostalAddress  
+        a                 owl:Class ;
+        rdfs:comment      "The mailing address."@en ;
+        rdfs:isDefinedBy  schema: ;
+        rdfs:label        "Postal Address"@en .
+
+schema:address  
+        a                 owl:ObjectProperty ;
+        rdfs:comment      "Physical address of the item."@en ;
+        rdfs:domain       schema:Place ;
+        rdfs:isDefinedBy  schema: ;
+        rdfs:label        "address"@en ;
+        rdfs:range        schema:PostalAddress .
+
+gr:BusinessEntity  
+        a                 owl:Class ;
+        rdfs:comment      "An instance of this class represents the legal agent making (or seeking) a particular offering. This can be a legal body or a person. A business entity has at least a primary mailing address and contact details. For this, typical address standards (vCard) and location data (geo, WGS84) can be attached. Note that the location of the business entity is not necessarily the location from which the product or service is being available."@en ;
+        rdfs:isDefinedBy  gr: ;
+        rdfs:label        "Business Entity"@en , "Juristische Person"@de .
+
+mv:ownedBy  
+        a                 owl:ObjectProperty , rdf:Property ;
+        rdfs:comment      "The owner of a civic structure or facility. Owner and operator can be different business entities."@en ;
+        rdfs:domain       schema:CivicStructure ;
+        rdfs:isDefinedBy  mv: ;
+        rdfs:label        "owned by"@en , "in Besitz von"@de ;
+        rdfs:range        gr:BusinessEntity .
+
+mv:operatedBy  
+        a                 rdf:Property , owl:ObjectProperty ;
+        rdfs:comment      "The operator of a civic structure or facility. Operator and owner can be different business entitites."@en ;
+        rdfs:domain       schema:CivicStructure ;
+        rdfs:isDefinedBy  mv: ;
+        rdfs:label        "operated by"@en , "betrieben von"@de ;
+        rdfs:range        gr:BusinessEntity .
+
+dct:identifier  
+        a                 rdf:Property , owl:DatatypeProperty ;
+        rdfs:comment      "An unambiguous reference to the resource within a given context."@en ;
+        rdfs:domain       mv:BicycleParkingStation ;
+        rdfs:isDefinedBy  dct: ;
+        rdfs:label        "identifier"@en ;
+        rdfs:range        xsd:string .
+
+schema:name  
+        a                 rdf:Property , owl:DatatypeProperty ;
+        rdfs:comment      "The name of an item."@en ;
+        rdfs:domain       schema:Place ;
+        rdfs:isDefinedBy  schema: ;
+        rdfs:label        "name"@en ;
+        rdfs:range        xsd:string .
+
+mv:totalCapacity  
+        a                 owl:DatatypeProperty , rdf:Property ;
+        rdfs:comment      "Indicates the total number of parking spaces of a parking facility." ;
+        rdfs:domain       mv:ParkingFacility ;
+        rdfs:isDefinedBy  mv: ;
+        rdfs:label        "total capacity"@en , "Gesamtkapazität"@de ;
+        rdfs:range        xsd:integer .
+
+mv:Capacity  
+        a                 owl:Class , rdfs:Class ;
+        rdfs:comment      "Capacity of a civic structure."@en ;
+        rdfs:isDefinedBy  mv: ;
+        rdfs:label        "Capacity"@en , "Kapazität"@de .
+
+mv:capacity  
+        a                 rdf:Property , owl:ObjectProperty ;
+        rdfs:comment      "Relates the civic structure to its capacity."@en ;
+        rdfs:domain       schema:CivicStructure ;
+        rdfs:isDefinedBy  mv: ;
+        rdfs:label        "has capacity"@en , "hat Kapazität"@de ;
+        rdfs:range        mv:Capacity .
+
+mv:RealTimeCapacity  
+        a                 owl:Class , rdfs:Class ;
+        rdfs:comment      "Real-time capacity of a parking facility or parking space."@en , "Real-time capacity of a civic structure."@en ;
+        rdfs:isDefinedBy  mv: ;
+        rdfs:label        "Real Time Capacity"@en , "Echtzeit Kapazität"@de ;
+        rdfs:subClassOf   mv:Capacity .
+
+mv:currentValue  
+        a                 owl:DatatypeProperty , rdf:Property ;
+        rdfs:comment      "Indicates the current value of the real-time capacity."@en ;
+        rdfs:domain       mv:RealTimeCapacity ;
+        rdfs:isDefinedBy  mv: ;
+        rdfs:label        "current value"@en ;
+        rdfs:range        xsd:integer .
+
+dct:date  
+        a                 owl:DatatypeProperty , rdf:Property ;
+        rdfs:comment      "The date of the given real-time capacity."@en ;
+        rdfs:domain       mv:RealTimeCapacity ;
+        rdfs:isDefinedBy  dct: ;
+        rdfs:label        "date"@en ;
+        rdfs:range        xsd:date .
+
+schema:geo
+        a                 rdf:Property , owl:ObjectProperty ;
+        rdfs:comment      "The geo coordinates of a place."@en ;
+        rdfs:domain       schema:Place ;
+        rdfs:isDefinedBy  schema: ;
+        rdfs:label        "geo"@en ;
+        rdfs:range        [ a            owl:Class ;
+                            owl:unionOf  ( schema:GeoCoordinates schema:GeoShape )
+                          ] .
+
+schema:GeoCoordinates  
+        a                 owl:Class , rdfs:Class ;
+        rdfs:comment      "The geographic coordinates of a place or event."@en ;
+        rdfs:isDefinedBy  schema: ;
+        rdfs:label        "Geo Coordinates"@en .
+
+schema:GeoShape  
+        a                 owl:Class , rdfs:Class ;
+        rdfs:comment      "The geographic shape of a place. A GeoShape can be described using several properties whose values are based on latitude/longitude pairs."@en ;
+        rdfs:isDefinedBy  schema: ;
+        rdfs:label        "Geo Shape"@en .
+
+schema:hasMap
+        a                 owl:ObjectProperty , rdf:Property ;
+        rdfs:comment      "A URL to a map of the place."@en ;
+        rdfs:domain       schema:Place ;
+        rdfs:isDefinedBy  schema: ;
+        rdfs:label        "has map"@en ;
+        rdfs:range        schema:Map .
+
+schema:Map  
+        a                 owl:Class , rdfs:Class ;
+        rdfs:comment      "A map."@en ;
+        rdfs:isDefinedBy  schema: ;
+        rdfs:label        "Map"@en .
+
+dbo:closeTo
+        a                 owl:ObjectProperty , rdf:Property ;
+        rdfs:comment      "Place close to another place."@en ;
+        rdfs:domain       schema:Place ;
+        rdfs:isDefinedBy  dbo: ;
+        rdfs:label        "close to"@en ;
+        rdfs:range        schema:Place .
+
+schema:contactPoint
+        a                 owl:ObjectProperty , rdf:Property ;
+        rdfs:comment      "A contact point for a person or organization."@en ;
+        rdfs:domain       mv:BicycleParkingStation ;
+        rdfs:isDefinedBy  schema: ;
+        rdfs:label        "contact point"@en ;
+        rdfs:range        schema:ContactPoint .
+
+schema:ContactPoint
+        a                 owl:Class , rdfs:Class ;
+        rdfs:comment      "A contact point for customer service."@en ;
+        rdfs:isDefinedBy  schema: ;
+        rdfs:label        "Contact Point"@en .
+
+schema:contactType
+        a                 owl:DatatypeProperty , rdf:Property ;
+        rdfs:comment      "A person or organization can have different contact points, for different purposes. For example, a sales contact point, a PR contact point and so on. This property is used to specify the kind of contact point."@en ;
+        rdfs:domain       schema:ContactPoint ;
+        rdfs:isDefinedBy  schema: ;
+        rdfs:label        "contact type"@en ;
+        rdfs:range        xsd:string .
+
+schema:email
+        a                 owl:DatatypeProperty , rdf:Property ;
+        rdfs:comment      "Email address."@en ;
+        rdfs:domain       schema:ContactPoint ;
+        rdfs:isDefinedBy  schema: ;
+        rdfs:label        "email"@en ;
+        rdfs:range        xsd:string .
+
+schema:telephone
+        a                 owl:DatatypeProperty , rdf:Property ;
+        rdfs:comment      "A telephone number."@en ;
+        rdfs:domain       schema:ContactPoint ;
+        rdfs:isDefinedBy  schema: ;
+        rdfs:label        "telephone"@en ;
+        rdfs:range        xsd:string .
+
+schema:availableLanguage
+        a                 owl:DatatypeProperty , rdf:Property ;
+        rdfs:comment      "A language someone may use with or at the item, service or place. Please use one of the language codes from the IETF BCP 47 standard."@en ;
+        rdfs:domain       schema:ContactPoint ;
+        rdfs:isDefinedBy  schema: ;
+        rdfs:label        "available language"@en ;
+        rdfs:range        xsd:string .
+
+schema:hoursAvailable
+        a                 owl:ObjectProperty , rdf:Property ;
+        rdfs:comment      "The hours during which a service or contact is available."@en ;
+        rdfs:domain       schema:ContactPoint ;
+        rdfs:isDefinedBy  schema: ;
+        rdfs:label        "hours available"@en ;
+        rdfs:range        schema:OpeningHoursSpecification .
+
+schema:openingHoursSpecification
+        a                 owl:ObjectProperty , rdf:Property ;
+        rdfs:comment      "The hours during which a service or contact is available."@en ;
+        rdfs:domain       mv:BicycleParkingStation ;
+        rdfs:isDefinedBy  schema: ;
+        rdfs:label        "opening hours"@en ;
+        rdfs:range        schema:OpeningHoursSpecification .
+
+schema:OpeningHoursSpecification
+        a                 owl:Class , rdfs:Class ;
+        rdfs:comment      "A structured value providing information about the opening hours of a place or a certain service inside a place."@en ;
+        rdfs:isDefinedBy  schema: ;
+        rdfs:label        "Opening Hours Specification"@en .
+
+schema:dayOfWeek
+        a                 owl:ObjectProperty , rdf:Property ;
+        rdfs:comment      "The day of the week for which certain opening hours are valid."@en ;
+        rdfs:domain       schema:OpeningHoursSpecification ;
+        rdfs:isDefinedBy  schema: ;
+        rdfs:label        "day of week"@en ;
+        rdfs:range        schema:DayOfWeek .
+
+schema:DayOfWeek
+        a                 owl:Class , rdfs:Class ;
+        rdfs:comment      "The day of the week, e.g. used to specify to which day the opening hours of an OpeningHoursSpecification refer."@en ;
+        rdfs:isDefinedBy  schema: ;
+        rdfs:label        "Day of Week"@en .
+
+schema:opens
+        a                 owl:DatatypeProperty , rdf:Property ;
+        rdfs:comment      "The opening hour of the place or service on the given day(s) of the week."@en ;
+        rdfs:domain       schema:OpeningHoursSpecification ;
+        rdfs:isDefinedBy  schema: ;
+        rdfs:label        "opens"@en ;
+        rdfs:range        xsd:time .
+
+schema:closes
+        a                 owl:DatatypeProperty , rdf:Property ;
+        rdfs:comment      "The closing hour of the place or service on the given day(s) of the week."@en ;
+        rdfs:domain       schema:OpeningHoursSpecification ;
+        rdfs:isDefinedBy  schema: ;
+        rdfs:label        "closes"@en ;
+        rdfs:range        xsd:time .
+
+schema:interactionService
+        a                 owl:ObjectProperty , rdf:Property ;
+        rdfs:comment      "The WebSite or SoftwareApplication where the interactions took place."@en ;
+        rdfs:domain       mv:ParkingFacility ;
+        rdfs:isDefinedBy  schema: ;
+        rdfs:label        "interaction service"@en ;
+        rdfs:range        schema:WebSite .
+
+schema:WebSite
+        a                 owl:Class , rdfs:Class ;
+        rdfs:comment      "A WebSite is a set of related web pages and other items typically served from a single web domain and accessible via URLs."@en ;
+        rdfs:isDefinedBy  schema: ;
+        rdfs:label        "WebSite"@en .
+
+schema:photo
+        a                 owl:ObjectProperty , rdf:Property ;
+        rdfs:comment      "A photograph of this place."@en ;
+        rdfs:domain       schema:Place ;
+        rdfs:isDefinedBy  schema: ;
+        rdfs:label        "photo"@en ;
+        rdfs:range        schema:Photograph .
+
+schema:Photograph
+        a                 owl:Class , rdfs:Class ;
+        rdfs:comment      "A photograph."@en ;
+        rdfs:isDefinedBy  schema: ;
+        rdfs:label        "Photograph"@en .
+
+schema:publicAccess
+        a                 owl:DatatypeProperty , rdf:Property ;
+        rdfs:comment      "A flag to signal that a Place is open to public visitors."@en ;
+        rdfs:domain       schema:Place ;
+        rdfs:isDefinedBy  schema: ;
+        rdfs:label        "public access"@en ;
+        rdfs:range        xsd:boolean .
+
+mv:numberOfLevels  
+        a                 owl:DatatypeProperty , rdf:Property ;
+        rdfs:comment      "Indicates the total number of levels a parking facility has."@en ;
+        rdfs:domain       mv:ParkingFacility ;
+        rdfs:isDefinedBy  mv: ;
+        rdfs:label        "number of levels"@en , "Anzahl Ebenen"@de ;
+        rdfs:range        xsd:integer .
+
+mv:entrance  
+        a                 rdf:Property , owl:ObjectProperty ;
+        rdfs:comment      "Describes the entrance of a parking facility."@en ;
+        rdfs:domain       mv:ParkingFacility ;
+        rdfs:isDefinedBy  mv: ;
+        rdfs:label        "entrance"@en , "hat Einfahrt"@de ;
+        rdfs:range        mv:ParkingFacilityEntrance .
+
+mv:exit  
+        a                 owl:ObjectProperty , rdf:Property ;
+        rdfs:comment      "Describes the exit of a parking facility." ;
+        rdfs:domain       mv:ParkingFacility ;
+        rdfs:isDefinedBy  mv: ;
+        rdfs:label        "exit"@en , "hat Ausfahrt"@de ;
+        rdfs:range        mv:ParkingFacilityExit .
+
+mv:ParkingFacilityEntrance
+        a                 owl:Class , rdfs:Class ;
+        rdfs:comment      "Entrance of a parking facility where vehicles can enter."@en ;
+        rdfs:isDefinedBy  mv: ;
+        rdfs:label        "Entrance"@en , "Einfahrt"@de ;
+        rdfs:subClassOf   schema:CivicStructure .
+
+mv:ParkingFacilityExit
+        a                 owl:Class , rdfs:Class ;
+        rdfs:comment      "Exit of a parking facility where vehicles can leave."@en ;
+        rdfs:isDefinedBy  mv: ;
+        rdfs:label        "Exit"@en , "Ausfahrt"@de ;
+        rdfs:subClassOf   schema:CivicStructure .
+
+schema:PriceSpecification  
+        a                 owl:Class ;
+        rdfs:comment      "A structured value representing a price or price range for an item."@en ;
+        rdfs:isDefinedBy  schema: ;
+        rdfs:label        "Price specification"@en , "Preisspezifikation"@de .
+
+schema:priceSpecification
+        a                 owl:ObjectProperty , rdf:Property ;
+        rdfs:comment      "One or more detailed price specifications, indicating the unit price and delivery or payment charges."@en ;
+        rdfs:domain       mv:ParkingFacility ;
+        rdfs:isDefinedBy  schema: ;
+        rdfs:label        "price specification"@en ;
+        rdfs:range        schema:PriceSpecification .
+
+mv:freeOfCharge  
+        a                 rdf:Property , owl:DatatypeProperty ;
+        rdfs:comment      "Indicates that the usage of the civic structure is for free."@en ;
+        rdfs:domain       schema:PriceSpecification ;
+        rdfs:isDefinedBy  mv: ;
+        rdfs:label        "free of charge"@en , "kostenlos"@de ;
+        rdfs:range        xsd:boolean .
+
+schema:price 
+        a                 rdf:Property , owl:DatatypeProperty ;
+        rdfs:comment      "The offer price of a product, or of a price component when attached to PriceSpecification and its subtypes."@en ;
+        rdfs:domain       schema:PriceSpecification ;
+        rdfs:isDefinedBy  schema: ;
+        rdfs:label        "price"@en ;
+        rdfs:range        xsd:double .
+
+schema:priceCurrency 
+        a                 rdf:Property , owl:DatatypeProperty ;
+        rdfs:comment      "The currency of the price. Use standard formats: ISO 4217 currency format (e.g. USD)."@en ;
+        rdfs:domain       schema:PriceSpecification ;
+        rdfs:isDefinedBy  schema: ;
+        rdfs:label        "price"@en ;
+        rdfs:range        xsd:string .
+
+mv:dueForTime  
+        a                 rdf:Property , owl:ObjectProperty ;
+        rdfs:comment      "Indicates that a price specification is due for a certain time specification."@en ;
+        rdfs:domain       schema:PriceSpecification ;
+        rdfs:isDefinedBy  mv: ;
+        rdfs:label        "due for time"@en , "fällig für Zeitdauer"@de ;
+        rdfs:range        mv:TimeSpecification .
+
+mv:TimeSpecification  
+        a                 owl:Class ;
+        rdfs:comment      "Specific time a price specification is due for."@en ;
+        rdfs:isDefinedBy  mv: ;
+        rdfs:label        "Time specification"@en , "Zeitspezifikation"@de .
+
+mv:overnight  
+        a                 owl:DatatypeProperty , rdf:Property ;
+        rdfs:comment      "Indicates that a time period overnight is possible." ;
+        rdfs:domain       mv:TimeSpecification ;
+        rdfs:isDefinedBy  mv: ;
+        rdfs:label        "overnight"@en , "über Nacht"@de ;
+        rdfs:range        xsd:boolean .
+
+mv:timeStartValue  
+        a                 owl:DatatypeProperty , rdf:Property ;
+        rdfs:comment      "Indicates the start value of a time period." ;
+        rdfs:domain       mv:TimeSpecification ;
+        rdfs:isDefinedBy  mv: ;
+        rdfs:label        "time start value"@en , "Anfangszeit"@de ;
+        rdfs:range        xsd:double .
+
+mv:timeEndValue  
+        a                 owl:DatatypeProperty , rdf:Property ;
+        rdfs:comment      "Indicates the end value of a time period." ;
+        rdfs:domain       mv:TimeSpecification ;
+        rdfs:isDefinedBy  mv: ;
+        rdfs:label        "time end value"@en , "Endzeit"@de ;
+        rdfs:range        xsd:double .
+
+mv:timeUnit  
+        a                 rdf:Property , owl:DatatypeProperty ;
+        rdfs:comment      "Indicates the time unit a value is specified for." ;
+        rdfs:domain       mv:TimeSpecification ;
+        rdfs:isDefinedBy  mv: ;
+        rdfs:label        "time unit"@en , "Zeiteinheit"@de ;
+        rdfs:range        xsd:string .
