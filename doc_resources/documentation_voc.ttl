@@ -5,6 +5,7 @@
 @prefix xsd:    <http://www.w3.org/2001/XMLSchema#> .
 @prefix mv:     <http://schema.mobivoc.org/> .
 @prefix gr:     <http://purl.org/goodrelations/v1#> .
+@prefix dbo:    <http://dbpedia.org/ontology/> .
 @prefix dct:    <http://purl.org/dc/terms/> .
 @prefix vann:   <http://purl.org/vocab/vann/> .
 @prefix foaf:   <http://xmlns.com/foaf/0.1/> .
@@ -12,7 +13,6 @@
 @prefix schema: <http://schema.org/> .
 @prefix vp:     <https://velopark.ilabt.imec.be/openvelopark/vocabulary#> .
 @prefix vpt:    <https://velopark.ilabt.imec.be/openvelopark/terms#> .
-
 
 
 vp:     a                 foaf:Document ;
@@ -31,8 +31,8 @@ vp:     a                 owl:Ontology ;
         rdfs:seeAlso      mv:, schema:, vpt: ;
         rdfs:seeAlso      <https://www.velopark.be/> ;
         dct:creator       <https://biblio.ugent.be/person/802002620753> ;
-        dct:creator       <https://pietercolpaert.be/#me> ;
-        owl:imports       schema:, mv:, vpt: .
+        dct:creator       <https://pietercolpaert.be/#me> .
+        #owl:imports       schema:, mv:, vpt: .
 
 <https://biblio.ugent.be/person/802002620753> 
         a                 foaf:Person, schema:Person ;
@@ -224,4 +224,146 @@ vp:countingSystem
         rdfs:range        xsd:boolean ;
         dct:created       "2019-01-30"^^xsd:date ;
         dct:modified      "2019-01-30"^^xsd:date ;
+        vs:term_status    "stable" .
+
+
+#################################################################
+#
+#    Individuals
+#
+#################################################################
+
+vpt:NeighborhoodParking  
+        a                 mv:BicycleParkingStation ;
+        rdfs:comment      "Bicycle parking facility for residents of a given neighborhood." ;
+        rdfs:isDefinedBy  vpt: ;
+        rdfs:label        "Neighborhood Parking Facility"@en ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vpt:BicycleCase  
+        a                 mv:BicycleParkingStation ;
+        rdfs:comment      "Covered and lockable bicycle parking facility on public roads." ;
+        rdfs:isDefinedBy  vpt: ;
+        rdfs:label        "Bicycle Case"@en ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vpt:RegularBicycle  
+        a                 vp:Bicycle ;
+        rdfs:comment      "A regular bicycle that does not have any special features." ;
+        rdfs:isDefinedBy  vpt: ;
+        rdfs:label        "Regular Bicycle"@en ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vpt:ElectricBicycle  
+        a                 vp:Bicycle ;
+        rdfs:comment      "An electrically powered bicycle." ;
+        rdfs:isDefinedBy  vpt: ;
+        rdfs:label        "Electric Bicycle"@en ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vpt:CargoBicycle  
+        a                 vp:Bicycle ;
+        rdfs:comment      "A bicycle specially adapted to transport load." ;
+        rdfs:isDefinedBy  vpt: ;
+        rdfs:label        "Cargo Bicycle"@en ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vpt:TandemBicycle  
+        a                 vp:Bicycle ;
+        rdfs:comment      "A bicycle designed to be ridden by more than one person." ;
+        rdfs:isDefinedBy  vpt: ;
+        rdfs:label        "Tandem Bicycle"@en ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vpt:CameraSurveillance  
+        a                 vp:BikeParkingFeature ;
+        rdfs:comment      "A parking facility feature that indicates it has surveillance cameras available." ;
+        rdfs:isDefinedBy  vpt: ;
+        rdfs:label        "Camera Surveillance"@en ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vpt:PersonnelSupervision 
+        a                 vp:BikeParkingFeature ;
+        rdfs:comment      "A parking facility feature that indicates it has personnel supervision available." ;
+        rdfs:isDefinedBy  vpt: ;
+        rdfs:label        "Personnel Supervision"@en ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vpt:ElectronicAccess  
+        a                 vp:BikeParkingFeature ;
+        rdfs:comment      "A parking facility feature that indicates it has an electronic access system." ;
+        rdfs:isDefinedBy  vpt: ;
+        rdfs:label        "Electronic Access"@en ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vpt:BicyclePump  
+        a                 vp:BikeParkingFeature ;
+        rdfs:comment      "A parking facility feature that indicates it has a bicycle pump available." ;
+        rdfs:isDefinedBy  vpt: ;
+        rdfs:label        "Bicycle Pump"@en ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vpt:MaintenanceService 
+        a                 vp:BikeParkingFeature ;
+        rdfs:comment      "A parking facility feature that indicates it has a bicycle maintenance service available." ;
+        rdfs:isDefinedBy  vpt: ;
+        rdfs:label        "Maintenance Service"@en ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vpt:ChargingPoint 
+        a                 vp:BikeParkingFeature ;
+        rdfs:comment      "A parking facility feature that indicates it has an electrical bicycle charging point available." ;
+        rdfs:isDefinedBy  vpt: ;
+        rdfs:label        "Charging Point"@en ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vpt:LockerService 
+        a                 vp:BikeParkingFeature ;
+        rdfs:comment      "A parking facility feature that indicates it has a locker service available." ;
+        rdfs:isDefinedBy  vpt: ;
+        rdfs:label        "Locker Service"@en ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vpt:ToiletService 
+        a                 vp:BikeParkingFeature ;
+        rdfs:comment      "A parking facility feature that indicates it has a toilet service available." ;
+        rdfs:isDefinedBy  vpt: ;
+        rdfs:label        "Toilet Service"@en ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vpt:BikeRentalService 
+        a                 vp:BikeParkingFeature ;
+        rdfs:comment      "A parking facility feature that indicates it has a bicycle rental service available." ;
+        rdfs:isDefinedBy  vpt: ;
+        rdfs:label        "Bike Rental Service"@en ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-01-29"^^xsd:date ;
         vs:term_status    "stable" .
