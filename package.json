@@ -81,7 +81,8 @@
   "devDependencies": {
     "common-style": "^3.0.0",
     "request": "^2.88.0",
-    "vows": "0.7.x"
+    "vows": "0.7.x",
+    "lodash": "^4.17.5"
   },
   "bugs": {
     "url": "https://github.com/nodeapps/http-server/issues"
