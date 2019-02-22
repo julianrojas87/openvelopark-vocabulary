@@ -6,7 +6,8 @@
         "dct": "http://purl.org/dc/terms#",
         "dbo": "http://dbpedia.org/ontology/",
         "gr": "http://purl.org/goodrelations/v1#",
-        "vp": "http://openvelopark.be/vocabulary/",
+        "vp": "http://velopark.ilabt.imec.be/openvelopark/vocabulary#",
+        "vpt": "http://velopark.ilabt.imec.be/openvelopark/terms#",
         "PostalAddress": "schema:PostalAddress",
         "GeoCoordinates": "schema:GeoCoordinates",
         "GeoShape": "schema:GeoShape",
@@ -22,22 +23,24 @@
         "Exit": "mv:ParkingFacilityExit",
         "RealTimeCapacity": "mv:RealTimeCapacity",
         "TimeSpecification": "mv:TimeSpecification",
-        "NeighborhoodParking": "vp:NeighborhoodParking",
-        "BicycleCase": "vp:BicycleCase",
+        "Bicycle": "vp:Bicycle",
         "AllowedBicycle": "vp:AllowedBicycle",
-        "RegularBicycle": "vp:RegularBicycle",
-        "ElectricBicycle": "vp:ElectricBicycle",
-        "CargoBicycle": "vp:CargoBicycle",
-        "TandemBicycle": "vp:TandemBicycle",
-        "CameraSurveillance": "vp:CameraSurveillance",
-        "PersonnelSupervision": "vp:PersonnelSupervision",
-        "ElectronicAccess": "vp:ElectronicAccess",
-        "BicyclePump": "vp:BicyclePump",
-        "MaintenanceService": "vp:MaintenanceService",
-        "ChargingPoint": "vp:ChargingPoint",
-        "LockerService": "vp:LockerService",
-        "ToiletService": "vp:ToiletService",
-        "BikeRentalService": "vp:BikeRentalService",
+        "BikeParkingFeature": "vp:BikeParkingFeature",
+        "NeighborhoodParking": "vpt:NeighborhoodParking",
+        "BicycleCase": "vpt:BicycleCase",
+        "RegularBicycle": "vpt:RegularBicycle",
+        "ElectricBicycle": "vpt:ElectricBicycle",
+        "CargoBicycle": "vpt:CargoBicycle",
+        "TandemBicycle": "vpt:TandemBicycle",
+        "CameraSurveillance": "vpt:CameraSurveillance",
+        "PersonnelSupervision": "vpt:PersonnelSupervision",
+        "ElectronicAccess": "vpt:ElectronicAccess",
+        "BicyclePump": "vpt:BicyclePump",
+        "MaintenanceService": "vpt:MaintenanceService",
+        "ChargingPoint": "vpt:ChargingPoint",
+        "LockerService": "vpt:LockerService",
+        "ToiletService": "vpt:ToiletService",
+        "BikeRentalService": "vpt:BikeRentalService",
         "BusinessEntity": "gr:BusinessEntity",
         "address": "schema:address",
         "geo": "schema:geo",
@@ -52,6 +55,10 @@
         "operatedBy": "mv:operatedBy",
         "dataOwner": "vp:dataOwner",
         "rights": "dct:rights",
+        "about": {
+            "@id": "schema:about",
+            "@type": "@id"
+        },
         "description": {
             "@id": "schema:description",
             "@type": "xsd:string"
@@ -289,17 +296,6 @@
         "streetAddress": "Koningin Maria Hendrikaplein 1",
         "description": "Onder Gent Sint-Pieters trein station"
     },
-    "geo": [
-        {
-            "@type": "GeoCoordinates",
-            "latitude": 51.0369388,
-            "longitude": 3.7078917
-        },
-        {
-            "@type": "GeoShape",
-            "polygon": "POLYGON ((30 10, 40 40, 20 40, 10 20))"
-        }
-    ],
     "map": {
         "@type": "Map",
         "url": "http://parking.nmbs.be/gent-sint-pieters/map.png"
@@ -368,18 +364,17 @@
         {
             "@type": "Photograph",
             "image": "http://data.gent.be/pic/546213_1.png",
-            "description": "Facility entrance."
+            "about": "vpt:TandemBicycle"
         },
         {
             "@type": "Photograph",
             "image": "http://data.gent.be/pic/546213_2.png",
-            "description": "Bicycle pump."
+            "about": "vpt:BicyclePump."
         }
     ],
     "rights": "https://tinyurl.com/yb3ywacm",
     "@graph": [
         {
-            "@id": "http://data.gent.be/parking/bikes/546213#secured",
             "@type": "BicycleParkingStation",
             "openingHoursSpecification": [
                 {
@@ -429,19 +424,19 @@
             "allows": [
                 {
                     "@type": "AllowedBicycle",
-                    "bicycleType": "vp:RegularBicycle",
+                    "bicycleType": "vpt:RegularBicycle",
                     "bicyclesAmount": 100,
                     "countingSystem": true
                 },
                 {
                     "@type": "AllowedBicycle",
-                    "bicycleType": "vp:ElectricBicycle",
+                    "bicycleType": "vpt:ElectricBicycle",
                     "bicyclesAmount": 100,
                     "countingSystem": true
                 },
                 {
                     "@type": "AllowedBicycle",
-                    "bicycleType": "vp:CargoBicycle",
+                    "bicycleType": "vpt:CargoBicycle",
                     "bicyclesAmount": 50,
                     "countingSystem": true
                 }
@@ -502,7 +497,7 @@
             ],
             "amenityFeature": [
                 {
-                    "@type": "CameraSurveillance",
+                    "@type": "vpt:CameraSurveillance",
                     "value": true,
                     "hoursAvailable": [
                         {
@@ -538,7 +533,7 @@
                     ]
                 },
                 {
-                    "@type": "PersonnelSupervision",
+                    "@type": "vpt:PersonnelSupervision",
                     "value": true,
                     "hoursAvailable": [
                         {
@@ -574,18 +569,17 @@
                     ]
                 },
                 {
-                    "@type": "BicyclePump",
+                    "@type": "vpt:BicyclePump",
                     "value": true
                 },
                 {
-                    "@type": "MaintenanceService",
+                    "@type": "vpt:MaintenanceService",
                     "value": false
                 }
             ]
         },
         {
-            "@id": "http://data.gent.be/parking/bikes/546213#unsecured",
-            "@type": "NeighborhoodParking",
+            "@type": "vpt:NeighborhoodParking",
             "openingHoursSpecification": [
                 {
                     "@type": "OpeningHoursSpecification",
@@ -633,13 +627,13 @@
             "allows": [
                 {
                     "@type": "AllowedBicycle",
-                    "bicycleType": "vp:RegularBicycle",
+                    "bicycleType": "vpt:RegularBicycle",
                     "bicyclesAmount": 100,
                     "countingSystem": false
                 },
                 {
                     "@type": "AllowedBicycle",
-                    "bicycleType": "vp:ElectricBicycle",
+                    "bicycleType": "vpt:ElectricBicycle",
                     "bicyclesAmount": 100,
                     "countingSystem": false
                 }
@@ -685,15 +679,15 @@
             ],
             "amenityFeature": [
                 {
-                    "@type": "CameraSurveillance",
+                    "@type": "vpt:CameraSurveillance",
                     "value": false
                 },
                 {
-                    "@type": "BicyclePump",
+                    "@type": "vpt:BicyclePump",
                     "value": true
                 },
                 {
-                    "@type": "MaintenanceService",
+                    "@type": "vpt:MaintenanceService",
                     "value": false
                 }
             ]
