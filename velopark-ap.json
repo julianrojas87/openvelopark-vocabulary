@@ -97,7 +97,7 @@
         },
         "openingHoursSpecification": {
             "@id": "schema:openingHoursSpecification",
-            "@type": "@set"
+            "@container": "@set"
         },
         "contactType": {
             "@id": "schema:contactType",
