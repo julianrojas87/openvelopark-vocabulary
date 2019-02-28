@@ -13,6 +13,7 @@
         "GeoShape": "schema:GeoShape",
         "Map": "schema:Map",
         "ContactPoint": "schema:ContactPoint",
+        "Language": "schema:Language",
         "OpeningHoursSpecification": "schema:OpeningHoursSpecification",
         "WebSite": "schema:WebSite",
         "PriceSpecification": "schema:PriceSpecification",
@@ -44,7 +45,7 @@
         "BusinessEntity": "gr:BusinessEntity",
         "address": "schema:address",
         "geo": "schema:geo",
-        "map": "schema:hasMap",
+        "hasMap": "schema:hasMap",
         "url": "schema:url",
         "image": "schema:image",
         "contactPoint": "schema:contactPoint",
@@ -296,7 +297,7 @@
         "streetAddress": "Koningin Maria Hendrikaplein 1",
         "description": "Onder Gent Sint-Pieters trein station"
     },
-    "map": {
+    "hasMap": {
         "@type": "Map",
         "url": "http://parking.nmbs.be/gent-sint-pieters/map.png"
     },
@@ -319,9 +320,18 @@
         "email": "parking@nmbs.be",
         "telephone": "+3292101010",
         "availableLanguage": [
-            "nl",
-            "fr",
-            "en"
+            {
+                "@type": "Language",
+                "name": "nl"
+            },
+            {
+                "@type": "Language",
+                "name": "fr"
+            },
+            {
+                "@type": "Language",
+                "name": "en"
+            }
         ],
         "hoursAvailable": [
             {
