@@ -1,0 +1,433 @@
+{
+    "@context": {
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "schema": "http://schema.org/",
+        "mv": "http://schema.mobivoc.org/",
+        "dct": "http://purl.org/dc/terms#",
+        "dbo": "http://dbpedia.org/ontology/",
+        "gr": "http://purl.org/goodrelations/v1#",
+        "vp": "http://velopark.ilabt.imec.be/openvelopark/vocabulary#",
+        "vpt": "http://velopark.ilabt.imec.be/openvelopark/terms#",
+        "PostalAddress": "schema:PostalAddress",
+        "GeoCoordinates": "schema:GeoCoordinates",
+        "GeoShape": "schema:GeoShape",
+        "Map": "schema:Map",
+        "ContactPoint": "schema:ContactPoint",
+        "Language": "schema:Language",
+        "OpeningHoursSpecification": "schema:OpeningHoursSpecification",
+        "WebSite": "schema:WebSite",
+        "PriceSpecification": "schema:PriceSpecification",
+        "Photograph": "schema:Photograph",
+        "Place": "schema:Place",
+        "BicycleParkingStation": "mv:BicycleParkingStation",
+        "Entrance": "mv:ParkingFacilityEntrance",
+        "Exit": "mv:ParkingFacilityExit",
+        "RealTimeCapacity": "mv:RealTimeCapacity",
+        "TimeSpecification": "mv:TimeSpecification",
+        "Bicycle": "vp:Bicycle",
+        "AllowedBicycle": "vp:AllowedBicycle",
+        "BikeParkingFeature": "vp:BikeParkingFeature",
+        "NeighborhoodParking": "vpt:NeighborhoodParking",
+        "BicycleCase": "vpt:BicycleCase",
+        "RegularBicycle": "vpt:RegularBicycle",
+        "ElectricBicycle": "vpt:ElectricBicycle",
+        "CargoBicycle": "vpt:CargoBicycle",
+        "TandemBicycle": "vpt:TandemBicycle",
+        "CameraSurveillance": "vpt:CameraSurveillance",
+        "PersonnelSupervision": "vpt:PersonnelSupervision",
+        "ElectronicAccess": "vpt:ElectronicAccess",
+        "BicyclePump": "vpt:BicyclePump",
+        "MaintenanceService": "vpt:MaintenanceService",
+        "ChargingPoint": "vpt:ChargingPoint",
+        "LockerService": "vpt:LockerService",
+        "ToiletService": "vpt:ToiletService",
+        "BikeRentalService": "vpt:BikeRentalService",
+        "BusinessEntity": "gr:BusinessEntity",
+        "address": "schema:address",
+        "geo": "schema:geo",
+        "hasMap": "schema:hasMap",
+        "url": "schema:url",
+        "image": "schema:image",
+        "contactPoint": "schema:contactPoint",
+        "interactionService": "schema:interactionService",
+        "capacity": "mv:capacity",
+        "dueForTime": "mv:dueForTime",
+        "ownedBy": "mv:ownedBy",
+        "operatedBy": "mv:operatedBy",
+        "dataOwner": "vp:dataOwner",
+        "rights": "dct:rights",
+        "about": {
+            "@id": "schema:about",
+            "@type": "@id"
+        },
+        "description": {
+            "@id": "schema:description",
+            "@type": "xsd:string"
+        },
+        "dateModified": {
+            "@id": "schema:dateModified",
+            "@type": "xsd:dateTime"
+        },
+        "name": {
+            "@id": "schema:name",
+            "@container": "@set"
+        },
+        "value": {
+            "@id": "schema:value",
+            "@type": "xsd:boolean"
+        },
+        "postalCode": {
+            "@id": "schema:postalCode",
+            "@type": "xsd:integer"
+        },
+        "streetAddress": {
+            "@id": "schema:streetAddress",
+            "@type": "xsd:string"
+        },
+        "polygon": {
+            "@id": "schema:polygon",
+            "@type": "xsd:string"
+        },
+        "latitude": {
+            "@id": "schema:latitude",
+            "@type": "xsd:double"
+        },
+        "longitude": {
+            "@id": "schema:longitude",
+            "@type": "xsd:double"
+        },
+        "openingHoursSpecification": {
+            "@id": "schema:openingHoursSpecification",
+            "@container": "@set"
+        },
+        "contactType": {
+            "@id": "schema:contactType",
+            "@type": "xsd:string"
+        },
+        "email": {
+            "@id": "schema:email",
+            "@type": "xsd:string"
+        },
+        "telephone": {
+            "@id": "schema:telephone",
+            "@type": "xsd:string"
+        },
+        "availableLanguage": {
+            "@id": "schema:availableLanguage",
+            "@container": "@set"
+        },
+        "hoursAvailable": {
+            "@id": "schema:hoursAvailable",
+            "@container": "@set"
+        },
+        "dayOfWeek": {
+            "@id": "schema:dayOfWeek",
+            "@type": "@id"
+        },
+        "opens": {
+            "@id": "schema:opens",
+            "@type": "xsd:time"
+        },
+        "closes": {
+            "@id": "schema:closes",
+            "@type": "xsd:time"
+        },
+        "publicAccess": {
+            "@id": "schema:publicAccess",
+            "@type": "xsd:boolean"
+        },
+        "priceSpecification": {
+            "@id": "schema:priceSpecification",
+            "@container": "@set"
+        },
+        "price": {
+            "@id": "schema:price",
+            "@type": "xsd:double"
+        },
+        "currency": {
+            "@id": "schema:priceCurrency",
+            "@type": "xsd:string"
+        },
+        "amenityFeature": {
+            "@id": "schema:amenityFeature",
+            "@container": "@set"
+        },
+        "photos": {
+            "@id": "schema:photos",
+            "@container": "@set"
+        },
+        "entrance": {
+            "@id": "mv:entrance",
+            "@container": "@set"
+        },
+        "exit": {
+            "@id": "mv:exit",
+            "@container": "@set"
+        },
+        "numberOfLevels": {
+            "@id": "mv:numberOfLevels",
+            "@type": "xsd:integer"
+        },
+        "totalCapacity": {
+            "@id": "mv:totalCapacity",
+            "@type": "xsd:integer"
+        },
+        "currentValue": {
+            "@id": "mv:currentValue",
+            "@type": "xsd:integer"
+        },
+        "freeOfCharge": {
+            "@id": "mv:freeOfCharge",
+            "@type": "xsd:boolean"
+        },
+        "overnight": {
+            "@id": "mv:overnight",
+            "@type": "xsd:boolean"
+        },
+        "timeStartValue": {
+            "@id": "mv:timeStartValue",
+            "@type": "xsd:double"
+        },
+        "timeEndValue": {
+            "@id": "mv:timeEndValue",
+            "@type": "xsd:double"
+        },
+        "timeUnit": {
+            "@id": "mv:timeUnit",
+            "@type": "xsd:string"
+        },
+        "startDate": {
+            "@id": "vp:startDate",
+            "@type": "xsd:dateTime"
+        },
+        "endDate": {
+            "@id": "vp:endDate",
+            "@type": "xsd:dateTime"
+        },
+        "allows": {
+            "@id": "vp:allows",
+            "@container": "@set"
+        },
+        "minimumStorageTime": {
+            "@id": "vp:minimumStorageTime",
+            "@type": "xsd:duration"
+        },
+        "maximumStorageTime": {
+            "@id": "vp:maximumStorageTime",
+            "@type": "xsd:duration"
+        },
+        "intendedAudience": {
+            "@id": "vp:intendedAudience",
+            "@type": "xsd:string"
+        },
+        "restrictions": {
+            "@id": "vp:restrictions",
+            "@type": "xsd:string"
+        },
+        "removalConditions": {
+            "@id": "vp:removalConditions",
+            "@type": "xsd:string"
+        },
+        "postRemovalAction": {
+            "@id": "vp:postRemovalAction",
+            "@type": "xsd:string"
+        },
+        "bicycleType": {
+            "@id": "vp:bicycleType",
+            "@type": "@id"
+        },
+        "bicyclesAmount": {
+            "@id": "vp:bicyclesAmount",
+            "@type": "xsd:integer"
+        },
+        "countingSystem": {
+            "@id": "vp:countingSystem",
+            "@type": "xsd:boolean"
+        },
+        "companyName": {
+            "@id": "gr:legalName",
+            "@type": "xsd:string"
+        },
+        "identifier": {
+            "@id": "dct:identifier",
+            "@type": "xsd:string"
+        },
+        "date": {
+            "@id": "dct:date",
+            "@type": "xsd:dateTime"
+        },
+        "closeTo": {
+            "@id": "dbo:closeTo",
+            "@container": "@set"
+        }
+    },
+    "@id": "",
+    "@type": "BicycleParkingStation",
+    "dateModified": "",
+    "dataOwner": {
+        "@id": "",
+        "@type": "BusinessEntity",
+        "companyName": ""
+    },
+    "identifier": "",
+    "name": "",
+    "ownedBy": {
+        "@id": "",
+        "@type": "BusinessEntity",
+        "companyName": ""
+    },
+    "operatedBy": {
+        "@id": "",
+        "@type": "BusinessEntity",
+        "companyName": ""
+    },
+    "address": {
+        "@id": "",
+        "@type": "PostalAddress",
+        "postalCode": 0,
+        "streetAddress": "",
+        "description": ""
+    },
+    "hasMap": {
+        "@type": "Map",
+        "url": ""
+    },
+    "closeTo": [
+        {
+            "@type": "Place",
+            "name": ""
+        }
+    ],
+    "startDate": "",
+    "endDate": "",
+    "contactPoint": {
+        "@type": "ContactPoint",
+        "contactType": "",
+        "email": "",
+        "telephone": "",
+        "availableLanguage": [
+            {
+                "@type": "Language",
+                "name": ""
+            }
+        ],
+        "hoursAvailable": [
+            {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": "",
+                "opens": "",
+                "closes": ""
+            }
+        ]
+    },
+    "interactionService": {
+        "@type": "WebSite",
+        "url": ""
+    },
+    "photos": [
+        {
+            "@type": "Photograph",
+            "image": "",
+            "about": ""
+        }
+    ],
+    "rights": "",
+    "@graph": [
+        {
+            "@type": "",
+            "openingHoursSpecification": [
+                {
+                    "@type": "OpeningHoursSpecification",
+                    "dayOfWeek": "",
+                    "opens": "",
+                    "closes": ""
+                }
+            ],
+            "maximumStorageTime": "",
+            "publicAccess": true,
+            "intendedAudience": "",
+            "restrictions": "",
+            "removalConditions": "",
+            "postRemovalAction": "",
+            "numberOfLevels": 0,
+            "totalCapacity": 0,
+            "capacity": {
+                "@type": "RealTimeCapacity",
+                "currentValue": 0,
+                "date": ""
+            },
+            "allows": [
+                {
+                    "@type": "AllowedBicycle",
+                    "bicycleType": "",
+                    "bicyclesAmount": 0,
+                    "countingSystem": true
+                }
+            ],
+            "geo": [
+                {
+                    "@type": "GeoCoordinates",
+                    "latitude": 0,
+                    "longitude": 0
+                },
+                {
+                    "@type": "GeoShape",
+                    "polygon": ""
+                }
+            ],
+            "entrance": [
+                {
+                    "@type": "Entrance",
+                    "geo": {
+                        "@type": "GeoCoordinates",
+                        "latitude": 0,
+                        "longitude": 0
+                    },
+                    "description": ""
+                }
+            ],
+            "exit": [
+                {
+                    "@type": "Exit",
+                    "geo": {
+                        "@type": "GeoCoordinates",
+                        "latitude": 0,
+                        "longitude": 0
+                    },
+                    "description": ""
+                }
+            ],
+            "priceSpecification": [
+                {
+                    "@type": "PriceSpecification",
+                    "freeOfCharge": true,
+                    "price": 0,
+                    "currency": "",
+                    "url": "",
+                    "dueForTime": {
+                        "@type": "TimeSpecification",
+                        "overnight": true,
+                        "timeStartValue": 0,
+                        "timeEndValue": 0,
+                        "timeUnit": ""
+                    },
+                    "description": ""
+                }
+            ],
+            "amenityFeature": [
+                {
+                    "@type": "",
+                    "value": true,
+                    "hoursAvailable": [
+                        {
+                            "@type": "OpeningHoursSpecification",
+                            "dayOfWeek": "",
+                            "opens": "",
+                            "closes": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
