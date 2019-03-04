@@ -284,7 +284,7 @@
     "address": {
         "@id": "",
         "@type": "PostalAddress",
-        "postalCode": 0,
+        "postalCode": "",
         "streetAddress": "",
         "description": ""
     },
@@ -349,26 +349,26 @@
             "restrictions": "",
             "removalConditions": "",
             "postRemovalAction": "",
-            "numberOfLevels": 0,
-            "totalCapacity": 0,
+            "numberOfLevels": "",
+            "totalCapacity": "",
             "capacity": {
                 "@type": "RealTimeCapacity",
-                "currentValue": 0,
+                "currentValue": "",
                 "date": ""
             },
             "allows": [
                 {
                     "@type": "AllowedBicycle",
                     "bicycleType": "",
-                    "bicyclesAmount": 0,
-                    "countingSystem": true
+                    "bicyclesAmount": "",
+                    "countingSystem": ""
                 }
             ],
             "geo": [
                 {
                     "@type": "GeoCoordinates",
-                    "latitude": 0,
-                    "longitude": 0
+                    "latitude": "",
+                    "longitude": ""
                 },
                 {
                     "@type": "GeoShape",
@@ -380,8 +380,8 @@
                     "@type": "Entrance",
                     "geo": {
                         "@type": "GeoCoordinates",
-                        "latitude": 0,
-                        "longitude": 0
+                        "latitude": "",
+                        "longitude": ""
                     },
                     "description": ""
                 }
@@ -391,8 +391,8 @@
                     "@type": "Exit",
                     "geo": {
                         "@type": "GeoCoordinates",
-                        "latitude": 0,
-                        "longitude": 0
+                        "latitude": "",
+                        "longitude": ""
                     },
                     "description": ""
                 }
@@ -400,15 +400,15 @@
             "priceSpecification": [
                 {
                     "@type": "PriceSpecification",
-                    "freeOfCharge": true,
-                    "price": 0,
+                    "freeOfCharge": "",
+                    "price": "",
                     "currency": "",
                     "url": "",
                     "dueForTime": {
                         "@type": "TimeSpecification",
-                        "overnight": true,
-                        "timeStartValue": 0,
-                        "timeEndValue": 0,
+                        "overnight": "",
+                        "timeStartValue": "",
+                        "timeEndValue": "",
                         "timeUnit": ""
                     },
                     "description": ""
@@ -417,7 +417,7 @@
             "amenityFeature": [
                 {
                     "@type": "",
-                    "value": true,
+                    "value": "",
                     "hoursAvailable": [
                         {
                             "@type": "OpeningHoursSpecification",
