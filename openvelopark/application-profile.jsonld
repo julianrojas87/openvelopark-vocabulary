@@ -418,6 +418,7 @@
                 {
                     "@type": "",
                     "value": "",
+                    "name": "",
                     "hoursAvailable": [
                         {
                             "@type": "OpeningHoursSpecification",
