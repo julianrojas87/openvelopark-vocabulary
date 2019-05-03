@@ -136,6 +136,10 @@
             "@id": "schema:closes",
             "@type": "xsd:time"
         },
+        "sectionName": {
+            "@id": "schema:name",
+            "@type": "xsd:string"
+        },
         "publicAccess": {
             "@id": "schema:publicAccess",
             "@type": "xsd:boolean"
@@ -340,7 +344,7 @@
     "@graph": [
         {
             "@type": "",
-            "name": "",
+            "sectionName": "",
             "openingHoursSpecification": [
                 {
                     "@type": "OpeningHoursSpecification",
