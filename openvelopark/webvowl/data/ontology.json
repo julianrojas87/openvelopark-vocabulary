@@ -2113,7 +2113,7 @@
     "attributes" : [ "datatype", "external" ],
     "id" : "53"
   }, {
-    "iri" : "https://velopark.ilabt.imec.be/openvelopark/vocabulary#maximumStorageTime",
+    "iri" : "https://velopark.ilabt.imec.be/openvelopark/vocabulary#maximumParkingDuration",
     "baseIri" : "https://velopark.ilabt.imec.be/openvelopark/vocabulary",
     "range" : "27",
     "annotations" : {
@@ -2143,8 +2143,8 @@
       } ]
     },
     "label" : {
-      "IRI-based" : "maximumStorageTime",
-      "en" : "maximum storage time"
+      "IRI-based" : "maximumParkingDuration",
+      "en" : "maximum parking duration"
     },
     "domain" : "22",
     "comment" : {

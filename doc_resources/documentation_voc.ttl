@@ -149,12 +149,12 @@ vp:minimumStorageTime
         dct:modified      "2019-01-30"^^xsd:date ;
         vs:term_status    "stable" .
 
-vp:maximumStorageTime  
+vp:maximumParkingDuration  
         a                 rdf:Property , owl:DatatypeProperty ;
         rdfs:comment      "Indicates the maximum amount of time that bicycles are allowed to be parked in a certain parking facility."@en ;
         rdfs:domain       mv:BicycleParkingStation ;
         rdfs:isDefinedBy  vp: ;
-        rdfs:label        "maximum storage time"@en ;
+        rdfs:label        "maximum parking duration"@en ;
         rdfs:range        xsd:duration ;
         dct:created       "2019-01-30"^^xsd:date ;
         dct:modified      "2019-01-30"^^xsd:date ;

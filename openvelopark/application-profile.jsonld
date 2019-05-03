@@ -212,8 +212,8 @@
             "@id": "vp:minimumStorageTime",
             "@type": "xsd:duration"
         },
-        "maximumStorageTime": {
-            "@id": "vp:maximumStorageTime",
+        "maximumParkingDuration": {
+            "@id": "vp:maximumParkingDuration",
             "@type": "xsd:duration"
         },
         "intendedAudience": {
@@ -343,7 +343,7 @@
                     "closes": ""
                 }
             ],
-            "maximumStorageTime": "",
+            "maximumParkingDuration": "",
             "publicAccess": true,
             "intendedAudience": "",
             "restrictions": "",
