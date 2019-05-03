@@ -340,6 +340,7 @@
     "@graph": [
         {
             "@type": "",
+            "name": "",
             "openingHoursSpecification": [
                 {
                     "@type": "OpeningHoursSpecification",
