@@ -84,6 +84,10 @@
             "@id": "schema:streetAddress",
             "@type": "xsd:string"
         },
+        "country": {
+            "@id": "schema:addressCountry",
+            "@type": "xsd:string"
+        },
         "polygon": {
             "@id": "schema:polygon",
             "@type": "xsd:string"
@@ -286,6 +290,7 @@
         "@type": "PostalAddress",
         "postalCode": "",
         "streetAddress": "",
+        "country": "",
         "description": ""
     },
     "hasMap": {
