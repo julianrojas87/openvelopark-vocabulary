@@ -78,7 +78,7 @@
         },
         "postalCode": {
             "@id": "schema:postalCode",
-            "@type": "xsd:integer"
+            "@type": "xsd:string"
         },
         "streetAddress": {
             "@id": "schema:streetAddress",
