@@ -18,7 +18,7 @@
 vp:     a                 foaf:Document ;
         foaf:primaryTopic vp: ;
         dct:issued        "2019-01-29"^^xsd:date ;
-        dct:modified      "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-05-20"^^xsd:date ;
         dct:hasFormat     vp: ;
         cc:license        <https://creativecommons.org/licenses/by/4.0/> ;
         dct:rights        "Copyright 2019 - Open Velopark contributors" .
@@ -64,6 +64,16 @@ vp:BikeParkingFeature
         rdfs:subClassOf   schema:LocationFeatureSpecification ;
         dct:created       "2019-01-29"^^xsd:date ;
         dct:modified      "2019-01-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:SecurityFeature 
+        a                 rdfs:Class , owl:Class ;
+        rdfs:comment      "A security feature available for a given location or facility."@en ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "Security Feature"@en ;
+        rdfs:subClassOf   schema:LocationFeatureSpecification ;
+        dct:created       "2019-05-20"^^xsd:date ;
+        dct:modified      "2019-05-20"^^xsd:date ;
         vs:term_status    "stable" .
 
 vp:AllowedBicycle  
@@ -288,30 +298,30 @@ vpt:TandemBicycle
         vs:term_status    "stable" .
 
 vpt:CameraSurveillance  
-        a                 vp:BikeParkingFeature ;
-        rdfs:comment      "A parking facility feature that indicates it has surveillance cameras available." ;
+        a                 vp:SecurityFeature ;
+        rdfs:comment      "A facility feature that indicates it has surveillance cameras available." ;
         rdfs:isDefinedBy  vpt: ;
         rdfs:label        "Camera Surveillance"@en ;
         dct:created       "2019-01-29"^^xsd:date ;
-        dct:modified      "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-05-20"^^xsd:date ;
         vs:term_status    "stable" .
 
 vpt:PersonnelSupervision 
-        a                 vp:BikeParkingFeature ;
-        rdfs:comment      "A parking facility feature that indicates it has personnel supervision available." ;
+        a                 vp:SecurityFeature ;
+        rdfs:comment      "A facility feature that indicates it has personnel supervision available." ;
         rdfs:isDefinedBy  vpt: ;
         rdfs:label        "Personnel Supervision"@en ;
         dct:created       "2019-01-29"^^xsd:date ;
-        dct:modified      "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-05-20"^^xsd:date ;
         vs:term_status    "stable" .
 
 vpt:ElectronicAccess  
-        a                 vp:BikeParkingFeature ;
-        rdfs:comment      "A parking facility feature that indicates it has an electronic access system." ;
+        a                 vp:SecurityFeature ;
+        rdfs:comment      "A facility feature that indicates it has an electronic access system." ;
         rdfs:isDefinedBy  vpt: ;
         rdfs:label        "Electronic Access"@en ;
         dct:created       "2019-01-29"^^xsd:date ;
-        dct:modified      "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-05-20"^^xsd:date ;
         vs:term_status    "stable" .
 
 vpt:BicyclePump  
@@ -342,12 +352,12 @@ vpt:ChargingPoint
         vs:term_status    "stable" .
 
 vpt:LockerService 
-        a                 vp:BikeParkingFeature ;
-        rdfs:comment      "A parking facility feature that indicates it has a locker service available." ;
+        a                 vp:SecurityFeature ;
+        rdfs:comment      "A facility feature that indicates it has a locker service available." ;
         rdfs:isDefinedBy  vpt: ;
         rdfs:label        "Locker Service"@en ;
         dct:created       "2019-01-29"^^xsd:date ;
-        dct:modified      "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-05-20"^^xsd:date ;
         vs:term_status    "stable" .
 
 vpt:ToiletService 

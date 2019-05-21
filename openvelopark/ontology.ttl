@@ -66,6 +66,16 @@ vp:BikeParkingFeature
         dct:modified      "2019-01-29"^^xsd:date ;
         vs:term_status    "stable" .
 
+vp:SecurityFeature 
+        a                 rdfs:Class , owl:Class ;
+        rdfs:comment      "A security feature available for a given location or facility."@en ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "Security Feature"@en ;
+        rdfs:subClassOf   schema:LocationFeatureSpecification ;
+        dct:created       "2019-05-20"^^xsd:date ;
+        dct:modified      "2019-05-20"^^xsd:date ;
+        vs:term_status    "stable" .
+
 vp:AllowedBicycle  
         a                 rdfs:Class , owl:Class ;
         rdfs:comment      "A bicycle that is allowed in a given parking facility." ;

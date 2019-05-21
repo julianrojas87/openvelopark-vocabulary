@@ -17,7 +17,7 @@
 
 vp:     a                 foaf:Document ;
         foaf:primaryTopic vp: ;
-        dct:issued        "2019-01-29"^^xsd:date ;
+        dct:issued        "2019-05-20"^^xsd:date ;
         dct:modified      "2019-01-29"^^xsd:date ;
         dct:hasFormat     vp: ;
         cc:license        <https://creativecommons.org/licenses/by/4.0/> ;
@@ -64,6 +64,16 @@ vp:BikeParkingFeature
         rdfs:subClassOf   schema:LocationFeatureSpecification ;
         dct:created       "2019-01-29"^^xsd:date ;
         dct:modified      "2019-01-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:SecurityFeature 
+        a                 rdfs:Class , owl:Class ;
+        rdfs:comment      "A security feature available for a given location or facility."@en ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "Security Feature"@en ;
+        rdfs:subClassOf   schema:LocationFeatureSpecification ;
+        dct:created       "2019-05-20"^^xsd:date ;
+        dct:modified      "2019-05-20"^^xsd:date ;
         vs:term_status    "stable" .
 
 vp:AllowedBicycle  

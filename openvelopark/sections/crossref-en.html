@@ -15,6 +15,10 @@ This section provides details for each class and property defined by Open Velopa
          <a href="#https://velopark.ilabt.imec.be/openvelopark/vocabulary#BikeParkingFeature"
             title="https://velopark.ilabt.imec.be/openvelopark/vocabulary#BikeParkingFeature">Bike Parking Feature</a>
       </li>
+      <li>
+         <a href="#https://velopark.ilabt.imec.be/openvelopark/vocabulary#SecurityFeature"
+            title="https://velopark.ilabt.imec.be/openvelopark/vocabulary#SecurityFeature">Security Feature</a>
+      </li>
    </ul>
    <div class="entity" id="https://velopark.ilabt.imec.be/openvelopark/vocabulary#AllowedBicycle">
       <h3>Allowed Bicycle<sup class="type-c" title="class">c</sup>
@@ -133,20 +137,52 @@ This section provides details for each class and property defined by Open Velopa
                title="https://velopark.ilabt.imec.be/openvelopark/terms#BicyclePump">Bicycle Pump</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#BikeRentalService"
                title="https://velopark.ilabt.imec.be/openvelopark/terms#BikeRentalService">Bike Rental Service</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#CameraSurveillance"
-               title="https://velopark.ilabt.imec.be/openvelopark/terms#CameraSurveillance">Camera Surveillance</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#ChargingPoint"
                title="https://velopark.ilabt.imec.be/openvelopark/terms#ChargingPoint">Charging Point</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#MaintenanceService"
+               title="https://velopark.ilabt.imec.be/openvelopark/terms#MaintenanceService">Maintenance Service</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#ToiletService"
+               title="https://velopark.ilabt.imec.be/openvelopark/terms#ToiletService">Toilet Service</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="https://velopark.ilabt.imec.be/openvelopark/vocabulary#SecurityFeature">
+      <h3>Security Feature<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://velopark.ilabt.imec.be/openvelopark/vocabulary#SecurityFeature</p>
+      <div class="comment">
+         <span class="markdown">A security feature available for a given location or facility.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+            <a href="https://velopark.ilabt.imec.be/openvelopark/vocabulary#">https://velopark.ilabt.imec.be/openvelopark/vocabulary#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted" title="http://schema.org/LocationFeatureSpecification"><a target="_blank" href="http://schema.org/LocationFeatureSpecification">Location Feature Specification</a></span>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#CameraSurveillance"
+               title="https://velopark.ilabt.imec.be/openvelopark/terms#CameraSurveillance">Camera Surveillance</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#ElectronicAccess"
                title="https://velopark.ilabt.imec.be/openvelopark/terms#ElectronicAccess">Electronic Access</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#LockerService"
                title="https://velopark.ilabt.imec.be/openvelopark/terms#LockerService">Locker Service</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#MaintenanceService"
-               title="https://velopark.ilabt.imec.be/openvelopark/terms#MaintenanceService">Maintenance Service</a>
             <sup class="type-ni" title="named individual">ni</sup>, <a href="#PersonnelSupervision"
                title="https://velopark.ilabt.imec.be/openvelopark/terms#PersonnelSupervision">Personnel Supervision</a>
-            <sup class="type-ni" title="named individual">ni</sup>, <a href="#ToiletService"
-               title="https://velopark.ilabt.imec.be/openvelopark/terms#ToiletService">Toilet Service</a>
             <sup class="type-ni" title="named individual">ni</sup>
          </dd>
       </dl>
@@ -657,8 +693,8 @@ This section provides details for each class and property defined by Open Velopa
    <h3 id="namedindividuals" class="list">Named Individuals</h3>
    <ul class="hlist">
       <li>
-         <a href="#BicycleCase"
-            title="https://velopark.ilabt.imec.be/openvelopark/terms#BicycleCase">Bicycle Case</a>
+         <a href="#BicycleLocker"
+            title="https://velopark.ilabt.imec.be/openvelopark/terms#BicycleLocker">Bicycle Locker</a>
       </li>
       <li>
          <a href="#BicyclePump"
@@ -697,16 +733,20 @@ This section provides details for each class and property defined by Open Velopa
             title="https://velopark.ilabt.imec.be/openvelopark/terms#MaintenanceService">Maintenance Service</a>
       </li>
       <li>
-         <a href="#NeighborhoodParking"
-            title="https://velopark.ilabt.imec.be/openvelopark/terms#NeighborhoodParking">Neighborhood Parking Facility</a>
-      </li>
-      <li>
          <a href="#PersonnelSupervision"
             title="https://velopark.ilabt.imec.be/openvelopark/terms#PersonnelSupervision">Personnel Supervision</a>
       </li>
       <li>
+         <a href="#PublicBicycleParking"
+            title="https://velopark.ilabt.imec.be/openvelopark/terms#PublicBicycleParking">Public Bicycle Parking</a>
+      </li>
+      <li>
          <a href="#RegularBicycle"
             title="https://velopark.ilabt.imec.be/openvelopark/terms#RegularBicycle">Regular Bicycle</a>
+      </li>
+      <li>
+         <a href="#ResidentBicycleParking"
+            title="https://velopark.ilabt.imec.be/openvelopark/terms#ResidentBicycleParking">Resident Bicycle Parking</a>
       </li>
       <li>
          <a href="#TandemBicycle"
@@ -717,13 +757,13 @@ This section provides details for each class and property defined by Open Velopa
             title="https://velopark.ilabt.imec.be/openvelopark/terms#ToiletService">Toilet Service</a>
       </li>
    </ul>
-   <div class="entity" id="BicycleCase">
-      <h3>Bicycle Case<sup class="type-ni" title="named individual">ni</sup>
+   <div class="entity" id="BicycleLocker">
+      <h3>Bicycle Locker<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
          </span>
       </h3>
       <p>
-         <strong>IRI:</strong> https://velopark.ilabt.imec.be/openvelopark/terms#BicycleCase</p>
+         <strong>IRI:</strong> https://velopark.ilabt.imec.be/openvelopark/terms#BicycleLocker</p>
       <div class="comment">
          <span class="markdown">Covered and lockable bicycle parking facility on public roads.</span>
       </div>
@@ -826,8 +866,8 @@ This section provides details for each class and property defined by Open Velopa
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#https://velopark.ilabt.imec.be/openvelopark/vocabulary#BikeParkingFeature"
-               title="https://velopark.ilabt.imec.be/openvelopark/vocabulary#BikeParkingFeature">Bike Parking Feature</a>
+            <a href="#https://velopark.ilabt.imec.be/openvelopark/vocabulary#SecurityFeature"
+               title="https://velopark.ilabt.imec.be/openvelopark/vocabulary#SecurityFeature">Security Feature</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -942,8 +982,8 @@ This section provides details for each class and property defined by Open Velopa
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#https://velopark.ilabt.imec.be/openvelopark/vocabulary#BikeParkingFeature"
-               title="https://velopark.ilabt.imec.be/openvelopark/vocabulary#BikeParkingFeature">Bike Parking Feature</a>
+            <a href="#https://velopark.ilabt.imec.be/openvelopark/vocabulary#SecurityFeature"
+               title="https://velopark.ilabt.imec.be/openvelopark/vocabulary#SecurityFeature">Security Feature</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -971,8 +1011,8 @@ This section provides details for each class and property defined by Open Velopa
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#https://velopark.ilabt.imec.be/openvelopark/vocabulary#BikeParkingFeature"
-               title="https://velopark.ilabt.imec.be/openvelopark/vocabulary#BikeParkingFeature">Bike Parking Feature</a>
+            <a href="#https://velopark.ilabt.imec.be/openvelopark/vocabulary#SecurityFeature"
+               title="https://velopark.ilabt.imec.be/openvelopark/vocabulary#SecurityFeature">Security Feature</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -1006,34 +1046,6 @@ This section provides details for each class and property defined by Open Velopa
          </dd>
       </dl>
    </div>
-   <div class="entity" id="NeighborhoodParking">
-      <h3>Neighborhood Parking Facility<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://velopark.ilabt.imec.be/openvelopark/terms#NeighborhoodParking</p>
-      <div class="comment">
-         <span class="markdown">Bicycle parking facility for residents of a given neighborhood.</span>
-      </div>
-      <dl class="definedBy">
-         <dt>Is defined by</dt>
-         <dd>
-               <a href="https://velopark.ilabt.imec.be/openvelopark/terms#">https://velopark.ilabt.imec.be/openvelopark/terms#</a>
-         </dd>
-      </dl>
-      <dl>
-         <dt>Term status</dt>
-         <dd>stable</dd>
-      </dl>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <span class="dotted" title="http://schema.mobivoc.org/BicycleParkingStation"><a target="_blank" href="http://schema.mobivoc.org/BicycleParkingStation">Bicycle Parking Station</a></span>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="PersonnelSupervision">
       <h3>Personnel Supervision<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
@@ -1057,8 +1069,36 @@ This section provides details for each class and property defined by Open Velopa
       <dl class="description">
          <dt>belongs to</dt>
          <dd>
-            <a href="#https://velopark.ilabt.imec.be/openvelopark/vocabulary#BikeParkingFeature"
-               title="https://velopark.ilabt.imec.be/openvelopark/vocabulary#BikeParkingFeature">Bike Parking Feature</a>
+            <a href="#https://velopark.ilabt.imec.be/openvelopark/vocabulary#SecurityFeature"
+               title="https://velopark.ilabt.imec.be/openvelopark/vocabulary#SecurityFeature">Security Feature</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PublicBicycleParking">
+      <h3>Public Bicycle Parking<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://velopark.ilabt.imec.be/openvelopark/terms#PublicBicycleParking</p>
+      <div class="comment">
+         <span class="markdown">Bicycle parking facility available for public use.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+               <a href="https://velopark.ilabt.imec.be/openvelopark/terms#">https://velopark.ilabt.imec.be/openvelopark/terms#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <span class="dotted" title="http://schema.mobivoc.org/BicycleParkingStation"><a target="_blank" href="http://schema.mobivoc.org/BicycleParkingStation">Bicycle Parking Station</a></span>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
@@ -1088,6 +1128,34 @@ This section provides details for each class and property defined by Open Velopa
          <dd>
             <a href="#https://velopark.ilabt.imec.be/openvelopark/vocabulary#Bicycle"
                title="https://velopark.ilabt.imec.be/openvelopark/vocabulary#Bicycle">Bicycle</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ResidentBicycleParking">
+      <h3>Resident Bicycle Parking<sup class="type-ni" title="named individual">ni</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://velopark.ilabt.imec.be/openvelopark/terms#ResidentBicycleParking</p>
+      <div class="comment">
+         <span class="markdown">Bicycle parking facility for residents of a given neighborhood.</span>
+      </div>
+      <dl class="definedBy">
+         <dt>Is defined by</dt>
+         <dd>
+               <a href="https://velopark.ilabt.imec.be/openvelopark/terms#">https://velopark.ilabt.imec.be/openvelopark/terms#</a>
+         </dd>
+      </dl>
+      <dl>
+         <dt>Term status</dt>
+         <dd>stable</dd>
+      </dl>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <span class="dotted" title="http://schema.mobivoc.org/BicycleParkingStation"><a target="_blank" href="http://schema.mobivoc.org/BicycleParkingStation">Bicycle Parking Station</a></span>
             <sup class="type-c" title="class">c</sup>
          </dd>
       </dl>
