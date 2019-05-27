@@ -226,6 +226,10 @@
             "@id": "vp:maximumParkingDuration",
             "@type": "xsd:duration"
         },
+        "openingHoursExtraInformation": {
+            "@id": "vp:openingHoursExtraInformation",
+            "@type": "xsd:string"
+        },
         "intendedAudience": {
             "@id": "vp:intendedAudience",
             "@type": "xsd:string"
@@ -355,6 +359,7 @@
                     "closes": ""
                 }
             ],
+            "openingHoursExtraInformation": "",
             "maximumParkingDuration": "",
             "publicAccess": true,
             "intendedAudience": "",
