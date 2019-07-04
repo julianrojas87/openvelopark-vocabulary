@@ -56,7 +56,6 @@
         "dueForTime": "mv:dueForTime",
         "ownedBy": "mv:ownedBy",
         "operatedBy": "mv:operatedBy",
-        "dataOwner": "vp:dataOwner",
         "rights": "dct:rights",
         "about": {
             "@id": "schema:about",
@@ -190,10 +189,6 @@
             "@id": "mv:freeOfCharge",
             "@type": "xsd:boolean"
         },
-        "overnight": {
-            "@id": "mv:overnight",
-            "@type": "xsd:boolean"
-        },
         "timeStartValue": {
             "@id": "mv:timeStartValue",
             "@type": "xsd:double"
@@ -217,10 +212,6 @@
         "allows": {
             "@id": "vp:allows",
             "@container": "@set"
-        },
-        "minimumStorageTime": {
-            "@id": "vp:minimumStorageTime",
-            "@type": "xsd:duration"
         },
         "maximumParkingDuration": {
             "@id": "vp:maximumParkingDuration",
@@ -278,11 +269,6 @@
     "@id": "",
     "@type": "BicycleParkingStation",
     "dateModified": "",
-    "dataOwner": {
-        "@id": "",
-        "@type": "BusinessEntity",
-        "companyName": ""
-    },
     "identifier": "",
     "name": "",
     "ownedBy": {
@@ -423,7 +409,6 @@
                     "url": "",
                     "dueForTime": {
                         "@type": "TimeSpecification",
-                        "overnight": "",
                         "timeStartValue": "",
                         "timeEndValue": "",
                         "timeUnit": ""
