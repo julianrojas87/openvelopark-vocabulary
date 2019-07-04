@@ -92,17 +92,6 @@ vp:AllowedBicycle
 #
 #################################################################
 
-vp:dataOwner  
-        a                 rdf:Property , owl:ObjectProperty ;
-        rdfs:comment      "The owner of the data about a certain bicycle parking facility."@en ;
-        rdfs:domain       mv:BicycleParkingStation ;
-        rdfs:isDefinedBy  vp: ;
-        rdfs:label        "data owner"@en ;
-        rdfs:range        gr:BusinessEntity ;
-        dct:created       "2019-01-30"^^xsd:date ;
-        dct:modified      "2019-01-30"^^xsd:date ;
-        vs:term_status    "stable" .
-
 vp:allows  
         a                 rdf:Property , owl:ObjectProperty ;
         rdfs:comment      "Indicates a type of bicycle that is allowed in a certain parking facility."@en ;

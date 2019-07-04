@@ -2967,46 +2967,6 @@
     "attributes" : [ "datatype", "external" ],
     "id" : "104"
   }, {
-    "iri" : "https://velopark.ilabt.imec.be/openvelopark/vocabulary#dataOwner",
-    "baseIri" : "https://velopark.ilabt.imec.be/openvelopark/vocabulary",
-    "range" : "11",
-    "annotations" : {
-      "isDefinedBy" : [ {
-        "identifier" : "isDefinedBy",
-        "language" : "undefined",
-        "value" : "https://velopark.ilabt.imec.be/openvelopark/vocabulary#",
-        "type" : "iri"
-      } ],
-      "term_status" : [ {
-        "identifier" : "term_status",
-        "language" : "undefined",
-        "value" : "stable",
-        "type" : "label"
-      } ],
-      "created" : [ {
-        "identifier" : "created",
-        "language" : "undefined",
-        "value" : "2019-01-30",
-        "type" : "label"
-      } ],
-      "modified" : [ {
-        "identifier" : "modified",
-        "language" : "undefined",
-        "value" : "2019-01-30",
-        "type" : "label"
-      } ]
-    },
-    "label" : {
-      "IRI-based" : "dataOwner",
-      "en" : "data owner"
-    },
-    "domain" : "23",
-    "comment" : {
-      "en" : "The owner of the data about a certain bicycle parking facility."
-    },
-    "attributes" : [ "object" ],
-    "id" : "105"
-  }, {
     "iri" : "http://schema.mobivoc.org/numberOfLevels",
     "baseIri" : "http://schema.mobivoc.org",
     "range" : "107",
