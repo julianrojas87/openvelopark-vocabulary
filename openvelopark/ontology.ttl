@@ -214,12 +214,12 @@ vp:countingSystem
         dct:modified      "2019-01-30"^^xsd:date ;
         vs:term_status    "stable" .
 
-vp:extraOpeningInformation  
+vp:openingHoursExtraInformation  
         a                 rdf:Property , owl:DatatypeProperty ;
         rdfs:comment      "Indicates extra information about the opening hours of the facility. E.g. Closed on holidays."@en ;
         rdfs:domain       mv:BicycleParkingStation ;
         rdfs:isDefinedBy  vp: ;
-        rdfs:label        "extra opening information"@en ;
+        rdfs:label        "opening hours extra information"@en ;
         rdfs:range        xsd:string ;
         dct:created       "2019-07-04"^^xsd:date ;
         dct:modified      "2019-07-04"^^xsd:date ;

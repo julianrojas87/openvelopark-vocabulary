@@ -2686,7 +2686,7 @@
     "attributes" : [ "datatype" ],
     "id" : "91"
   }, {
-    "iri" : "https://velopark.ilabt.imec.be/openvelopark/vocabulary#extraOpeningInformation",
+    "iri" : "https://velopark.ilabt.imec.be/openvelopark/vocabulary#openingHoursExtraInformation",
     "baseIri" : "https://velopark.ilabt.imec.be/openvelopark/vocabulary",
     "range" : "118",
     "annotations" : {
@@ -2716,8 +2716,8 @@
       } ]
     },
     "label" : {
-      "IRI-based" : "extra opening information",
-      "en" : "extra opening information"
+      "IRI-based" : "opening hours extra information",
+      "en" : "opening hours extra information"
     },
     "domain" : "23",
     "comment" : {
