@@ -18,7 +18,7 @@
 vp:     a                 foaf:Document ;
         foaf:primaryTopic vp: ;
         dct:issued        "2019-01-29"^^xsd:date ;
-        dct:modified      "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-07-04"^^xsd:date ;
         dct:hasFormat     vp: ;
         cc:license        <https://creativecommons.org/licenses/by/4.0/> ;
         dct:rights        "Copyright 2019 - Open Velopark contributors" .
@@ -137,17 +137,6 @@ vp:endDate
         rdfs:label        "end date"@en ;
         rdfs:range        xsd:date .
 
-vp:minimumStorageTime  
-        a                 rdf:Property , owl:DatatypeProperty ;
-        rdfs:comment      "Indicates the minimum amount of time that bicycles are allowed to be parked in a certain parking facility."@en ;
-        rdfs:domain       mv:BicycleParkingStation ;
-        rdfs:isDefinedBy  vp: ;
-        rdfs:label        "minimum storage time"@en ;
-        rdfs:range        xsd:duration ;
-        dct:created       "2019-01-30"^^xsd:date ;
-        dct:modified      "2019-01-30"^^xsd:date ;
-        vs:term_status    "stable" .
-
 vp:maximumParkingDuration  
         a                 rdf:Property , owl:DatatypeProperty ;
         rdfs:comment      "Indicates the maximum amount of time that bicycles are allowed to be parked in a certain parking facility."@en ;
@@ -223,4 +212,15 @@ vp:countingSystem
         rdfs:range        xsd:boolean ;
         dct:created       "2019-01-30"^^xsd:date ;
         dct:modified      "2019-01-30"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:extraOpeningInformation  
+        a                 rdf:Property , owl:DatatypeProperty ;
+        rdfs:comment      "Indicates extra information about the opening hours of the facility. E.g. Closed on holidays."@en ;
+        rdfs:domain       mv:BicycleParkingStation ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "extra opening information"@en ;
+        rdfs:range        xsd:string ;
+        dct:created       "2019-07-04"^^xsd:date ;
+        dct:modified      "2019-07-04"^^xsd:date ;
         vs:term_status    "stable" .
