@@ -221,7 +221,7 @@ vpt:ToiletService
                           "Une fonctionnalité de parking qui indique qu'il a un service de toilette disponible."@fr, 
                           "Eine Parkmöglichkeit, die anzeigt, dass ein Toilettenservice verfügbar ist."@de ;
         rdfs:isDefinedBy  vpt: ;
-        rdfs:label        "Toilet Service"@en, "Toilet Service"@nl, "Service de Toilette"@fr, "Toilettenservice"@de ;
+        rdfs:label        "Toilet Service"@en, "Toilet Dienst"@nl, "Service de Toilette"@fr, "Toilettenservice"@de ;
         dct:created       "2019-01-29"^^xsd:date ;
         dct:modified      "2019-05-20"^^xsd:date ;
         vs:term_status    "stable" .
