@@ -77,7 +77,7 @@ vpt:BicycleLocker
                           "Parking vélo couvert et verrouillable sur la voie publique."@fr, 
                           "Überdachter und abschließbarer Fahrradabstellplatz auf öffentlichen Straßen."@de ;
         rdfs:isDefinedBy  vpt: ;
-        rdfs:label        "Bicycle Locker"@en, "Fietstrommel"@nl, "Casier de Bicyclette"@fr, "Fahrradschrank"@de ;
+        rdfs:label        "Bicycle Locker"@en, "Fietskluis"@nl, "Casier de Bicyclette"@fr, "Fahrradschrank"@de ;
         dct:created       "2019-01-29"^^xsd:date ;
         dct:modified      "2019-05-20"^^xsd:date ;
         vs:term_status    "stable" .
@@ -89,7 +89,7 @@ vpt:RegularBicycle
                           "Un vélo ordinaire qui ne présente aucune particularité."@fr, 
                           "Ein normales Fahrrad, das keine Besonderheiten aufweist."@de ;
         rdfs:isDefinedBy  vpt: ;
-        rdfs:label        "Regular Bicycle"@en, "Normale Fiets"@nl, "Vélo Régulier"@fr, "Normales Fahrrad"@de ;
+        rdfs:label        "Regular Bicycle"@en, "Normale Fiets"@nl, "Vélo Classique"@fr, "Normales Fahrrad"@de ;
         dct:created       "2019-01-29"^^xsd:date ;
         dct:modified      "2019-05-20"^^xsd:date ;
         vs:term_status    "stable" .
@@ -161,7 +161,7 @@ vpt:ElectronicAccess
                           "Une fonctionnalité qui indique qu’il dispose d’un système d’accès électronique."@fr, 
                           "Ein Funktionsmerkmal, das angibt, dass es über ein elektronisches Zugangssystem verfügt."@de ;
         rdfs:isDefinedBy  vpt: ;
-        rdfs:label        "Electronic Access"@en, "Elektronische Toegang"@nl, "Accès Électronique"@fr, "Elektronischer Zugang"@de ;
+        rdfs:label        "Electronic Access"@en, "Elektronische Toegang"@nl, "Contrôle d'Accès Électronique"@fr, "Elektronischer Zugang"@de ;
         dct:created       "2019-01-29"^^xsd:date ;
         dct:modified      "2019-05-20"^^xsd:date ;
         vs:term_status    "stable" .
@@ -209,7 +209,7 @@ vpt:ChargingPoint
                           "Une fonction de parcage indiquant qu’il dispose d’un point de charge pour vélo électrique."@fr, 
                           "Eine Parkfunktion, die anzeigt, dass eine Ladestation für Elektrofahrräder verfügbar ist."@de ;
         rdfs:isDefinedBy  vpt: ;
-        rdfs:label        "Charging Point"@en, "Oplaadpunt"@nl, "Point de Charge"@fr, "Ladepunkt"@de ;
+        rdfs:label        "Charging Point"@en, "Oplaadpunt"@nl, "Borne de Recharge"@fr, "Ladepunkt"@de ;
         dct:created       "2019-01-29"^^xsd:date ;
         dct:modified      "2019-05-20"^^xsd:date ;
         vs:term_status    "stable" .
@@ -221,7 +221,7 @@ vpt:ToiletService
                           "Une fonctionnalité de parking qui indique qu'il a un service de toilette disponible."@fr, 
                           "Eine Parkmöglichkeit, die anzeigt, dass ein Toilettenservice verfügbar ist."@de ;
         rdfs:isDefinedBy  vpt: ;
-        rdfs:label        "Toilet Service"@en, "Toilet Dienst"@nl, "Service de Toilette"@fr, "Toilettenservice"@de ;
+        rdfs:label        "Toilet Service"@en, "Toiletten"@nl, "Toilettes"@fr, "Toilettenservice"@de ;
         dct:created       "2019-01-29"^^xsd:date ;
         dct:modified      "2019-05-20"^^xsd:date ;
         vs:term_status    "stable" .
