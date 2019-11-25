@@ -17,7 +17,7 @@
 vpt:    a                 foaf:Document ;
         foaf:primaryTopic vpt: ;
         dct:issued        "2019-01-29"^^xsd:date ;
-        dct:modified      "2019-05-20"^^xsd:date ;
+        dct:modified      "2019-11-25"^^xsd:date ;
         dct:hasFormat     vpt: ;
         cc:license        <https://creativecommons.org/licenses/by/4.0/> ;
         dct:rights        "Copyright 2019 - Open Velopark contributors" .
@@ -65,9 +65,9 @@ vpt:ResidentBicycleParking
                           "Stockage dans l'espace spécialement conçu d'un bâtiment, accessible uniquement aux résidents locaux."@fr, 
                           "Lagerung im speziell gestalteten Raum eines Gebäudes, nur für Anwohner zugänglich."@de ;
         rdfs:isDefinedBy  vpt: ;
-        rdfs:label        "Resident Bicycle Parking"@en, "Buurtstalling"@nl, "Stationnement pour Vélos Résident"@fr, "Resident Fahrradabstellplatz"@de ;
+        rdfs:label        "Resident Bicycle Parking"@en, "Buurtstalling"@nl, "Parking Vélo Riverains"@fr, "Resident Fahrradabstellplatz"@de ;
         dct:created       "2019-01-29"^^xsd:date ;
-        dct:modified      "2019-05-20"^^xsd:date ;
+        dct:modified      "2019-11-25"^^xsd:date ;
         vs:term_status    "stable" .
 
 vpt:BicycleLocker  
@@ -137,9 +137,9 @@ vpt:CameraSurveillance
                           "Une fonctionnalité qui indique que des caméras de surveillance sont disponibles."@fr, 
                           "Eine Funktion, die anzeigt, dass Überwachungskameras verfügbar sind."@de ;
         rdfs:isDefinedBy  vpt: ;
-        rdfs:label        "Camera Surveillance"@en, "Camera Bewaking"@nl, "Surveillance par Caméra"@fr, "Kameraüberwachung"@de ;
+        rdfs:label        "Camera Surveillance"@en, "Camerabewaking"@nl, "Surveillance par Caméra"@fr, "Kameraüberwachung"@de ;
         dct:created       "2019-01-29"^^xsd:date ;
-        dct:modified      "2019-05-20"^^xsd:date ;
+        dct:modified      "2019-11-25"^^xsd:date ;
         vs:term_status    "stable" .
 
 vpt:PersonnelSupervision 
