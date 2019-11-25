@@ -82,6 +82,18 @@ vpt:BicycleLocker
         dct:modified      "2019-05-20"^^xsd:date ;
         vs:term_status    "stable" .
 
+vpt:BicycleStand  
+        a                 mv:BicycleParkingStation ;
+        rdfs:comment      "Device to which bicycles can be securely attached for parking purposes."@en, 
+                          "Apparaat waaraan fietsen veilig kunnen worden bevestigd voor parkeren."@nl, 
+                          "Dispositif auquel des bicyclettes peuvent être solidement attachées à des fins de stationnement."@fr, 
+                          "Gerät, an dem Fahrräder zum Parken sicher befestigt werden können."@de ;
+        rdfs:isDefinedBy  vpt: ;
+        rdfs:label        "Bicycle Stand"@en, "Fietsbeugel"@nl, "Support de Vélo"@fr, "Fahrradständer"@de ;
+        dct:created       "2019-11-25"^^xsd:date ;
+        dct:modified      "2019-11-25"^^xsd:date ;
+        vs:term_status    "stable" .
+
 vpt:RegularBicycle  
         a                 vp:Bicycle ;
         rdfs:comment      "A regular bicycle that does not have any special features."@en, 

@@ -243,139 +243,208 @@ vp:countingSystem
 #
 #################################################################
 
-vpt:NeighborhoodParking  
+vpt:PublicBicycleParking  
         a                 mv:BicycleParkingStation ;
-        rdfs:comment      "Bicycle parking facility for residents of a given neighborhood." ;
+        rdfs:comment      "Bicycle parking facility available for public use."@en, 
+                          "Fietsenstalling beschikbaar voor openbaar gebruik."@nl, 
+                          "Stationnement pour vélos disponible pour un usage public."@fr, 
+                          "Fahrradabstellplatz zur öffentlichen Nutzung."@de ;
         rdfs:isDefinedBy  vpt: ;
-        rdfs:label        "Neighborhood Parking Facility"@en ;
-        dct:created       "2019-01-29"^^xsd:date ;
-        dct:modified      "2019-01-29"^^xsd:date ;
+        rdfs:label        "Public Bicycle Parking"@en, "Openbare Fietsenstalling"@nl, "Parking Vélo Public"@fr, "Öffentlicher Fahrradabstellplatz"@de ;
+        dct:created       "2019-05-20"^^xsd:date ;
+        dct:modified      "2019-05-20"^^xsd:date ;
         vs:term_status    "stable" .
 
-vpt:BicycleCase  
+vpt:ResidentBicycleParking  
         a                 mv:BicycleParkingStation ;
-        rdfs:comment      "Covered and lockable bicycle parking facility on public roads." ;
+        rdfs:comment      "Bicycle parking in the specifically designed space of a building, only accessible to local residents."@en, 
+                          "Stalling in specifiek daarvoor ingerichte ruimte van een gebouw, enkel toegankelijk voor omwonenden uit de buurt."@nl, 
+                          "Stockage dans l'espace spécialement conçu d'un bâtiment, accessible uniquement aux résidents locaux."@fr, 
+                          "Lagerung im speziell gestalteten Raum eines Gebäudes, nur für Anwohner zugänglich."@de ;
         rdfs:isDefinedBy  vpt: ;
-        rdfs:label        "Bicycle Case"@en ;
+        rdfs:label        "Resident Bicycle Parking"@en, "Buurtstalling"@nl, "Parking Vélo Riverains"@fr, "Resident Fahrradabstellplatz"@de ;
         dct:created       "2019-01-29"^^xsd:date ;
-        dct:modified      "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-11-25"^^xsd:date ;
         vs:term_status    "stable" .
 
-vpt:RegularBicycle  
-        a                 vp:Bicycle ;
-        rdfs:comment      "A regular bicycle that does not have any special features." ;
+vpt:BicycleLocker  
+        a                 mv:BicycleParkingStation ;
+        rdfs:comment      "Covered and lockable bicycle parking facility on public roads."@en, 
+                          "Overdekte en afsluitbare fietsenstalling op openbare wegen."@nl, 
+                          "Parking vélo couvert et verrouillable sur la voie publique."@fr, 
+                          "Überdachter und abschließbarer Fahrradabstellplatz auf öffentlichen Straßen."@de ;
         rdfs:isDefinedBy  vpt: ;
-        rdfs:label        "Regular Bicycle"@en ;
-        dct:created       "2019-01-29"^^xsd:date ;
-        dct:modified      "2019-01-29"^^xsd:date ;
-        vs:term_status    "stable" .
-
-vpt:ElectricBicycle  
-        a                 vp:Bicycle ;
-        rdfs:comment      "An electrically powered bicycle." ;
-        rdfs:isDefinedBy  vpt: ;
-        rdfs:label        "Electric Bicycle"@en ;
-        dct:created       "2019-01-29"^^xsd:date ;
-        dct:modified      "2019-01-29"^^xsd:date ;
-        vs:term_status    "stable" .
-
-vpt:CargoBicycle  
-        a                 vp:Bicycle ;
-        rdfs:comment      "A bicycle specially adapted to transport load." ;
-        rdfs:isDefinedBy  vpt: ;
-        rdfs:label        "Cargo Bicycle"@en ;
-        dct:created       "2019-01-29"^^xsd:date ;
-        dct:modified      "2019-01-29"^^xsd:date ;
-        vs:term_status    "stable" .
-
-vpt:TandemBicycle  
-        a                 vp:Bicycle ;
-        rdfs:comment      "A bicycle designed to be ridden by more than one person." ;
-        rdfs:isDefinedBy  vpt: ;
-        rdfs:label        "Tandem Bicycle"@en ;
-        dct:created       "2019-01-29"^^xsd:date ;
-        dct:modified      "2019-01-29"^^xsd:date ;
-        vs:term_status    "stable" .
-
-vpt:CameraSurveillance  
-        a                 vp:SecurityFeature ;
-        rdfs:comment      "A facility feature that indicates it has surveillance cameras available." ;
-        rdfs:isDefinedBy  vpt: ;
-        rdfs:label        "Camera Surveillance"@en ;
+        rdfs:label        "Bicycle Locker"@en, "Fietskluis"@nl, "Casier de Bicyclette"@fr, "Fahrradschrank"@de ;
         dct:created       "2019-01-29"^^xsd:date ;
         dct:modified      "2019-05-20"^^xsd:date ;
         vs:term_status    "stable" .
 
+vpt:BicycleStand  
+        a                 mv:BicycleParkingStation ;
+        rdfs:comment      "Device to which bicycles can be securely attached for parking purposes."@en, 
+                          "Apparaat waaraan fietsen veilig kunnen worden bevestigd voor parkeren."@nl, 
+                          "Dispositif auquel des bicyclettes peuvent être solidement attachées à des fins de stationnement."@fr, 
+                          "Gerät, an dem Fahrräder zum Parken sicher befestigt werden können."@de ;
+        rdfs:isDefinedBy  vpt: ;
+        rdfs:label        "Bicycle Stand"@en, "Fietsbeugel"@nl, "Support de Vélo"@fr, "Fahrradständer"@de ;
+        dct:created       "2019-11-25"^^xsd:date ;
+        dct:modified      "2019-11-25"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vpt:RegularBicycle  
+        a                 vp:Bicycle ;
+        rdfs:comment      "A regular bicycle that does not have any special features."@en, 
+                          "Een gewone fiets die geen speciale functies heeft."@nl, 
+                          "Un vélo ordinaire qui ne présente aucune particularité."@fr, 
+                          "Ein normales Fahrrad, das keine Besonderheiten aufweist."@de ;
+        rdfs:isDefinedBy  vpt: ;
+        rdfs:label        "Regular Bicycle"@en, "Normale Fiets"@nl, "Vélo Classique"@fr, "Normales Fahrrad"@de ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-05-20"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vpt:ElectricBicycle  
+        a                 vp:Bicycle ;
+        rdfs:comment      "An electrically powered bicycle."@en, 
+                          "Een elektrisch aangedreven fiets."@nl, 
+                          "Un vélo à propulsion électrique."@fr, 
+                          "Ein elektrisch angetriebenes Fahrrad."@de ;
+        rdfs:isDefinedBy  vpt: ;
+        rdfs:label        "Electric Bicycle"@en, "Elektrische Fiets"@nl, "Vélo Électrique"@fr, "Elektrofahrrad"@de ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-05-20"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vpt:CargoBicycle  
+        a                 vp:Bicycle ;
+        rdfs:comment      "A bicycle specially adapted to transport load."@en, 
+                          "Een speciaal aangepaste fiets om lading te vervoeren."@nl, 
+                          "Un vélo spécialement adapté au transport de charge."@fr, 
+                          "Ein Fahrrad, das speziell für den Transport von Lasten ausgelegt ist."@de ;
+        rdfs:isDefinedBy  vpt: ;
+        rdfs:label        "Cargo Bicycle"@en, "Bakfiets"@nl, "Vélo Cargo"@fr, "Lastenfahrrad"@de ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-05-20"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vpt:TandemBicycle  
+        a                 vp:Bicycle ;
+        rdfs:comment      "A bicycle designed to be ridden by more than one person."@en, 
+                          "Een fiets die ontworpen is om door meer dan één persoon te worden bereden."@nl, 
+                          "Un vélo conçu pour être monté par plus d'une personne."@fr, 
+                          "Ein Fahrrad, das von mehr als einer Person gefahren werden kann."@de ;
+        rdfs:isDefinedBy  vpt: ;
+        rdfs:label        "Tandem Bicycle"@en, "Tandemfiets"@nl, "Vélo Tandem"@fr, "Tandemfahrrad"@de ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-05-20"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vpt:CameraSurveillance  
+        a                 vp:SecurityFeature ;
+        rdfs:comment      "A facility feature that indicates it has surveillance cameras available."@en, 
+                          "Een faciliteitsfunctie die aangeeft dat er bewakingscamera's beschikbaar zijn."@nl, 
+                          "Une fonctionnalité qui indique que des caméras de surveillance sont disponibles."@fr, 
+                          "Eine Funktion, die anzeigt, dass Überwachungskameras verfügbar sind."@de ;
+        rdfs:isDefinedBy  vpt: ;
+        rdfs:label        "Camera Surveillance"@en, "Camerabewaking"@nl, "Surveillance par Caméra"@fr, "Kameraüberwachung"@de ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-11-25"^^xsd:date ;
+        vs:term_status    "stable" .
+
 vpt:PersonnelSupervision 
         a                 vp:SecurityFeature ;
-        rdfs:comment      "A facility feature that indicates it has personnel supervision available." ;
+        rdfs:comment      "A facility feature that indicates it has personnel supervision available."@en, 
+                          "Een faciliteitsfunctie die aangeeft dat er personeelsbewaking beschikbaar is."@nl, 
+                          "Une fonctionnalité qui indique qu’une supervision du personnel est disponible."@fr, 
+                          "Eine Einrichtungsfunktion, die angibt, dass eine Personalüberwachung verfügbar ist."@de ;
         rdfs:isDefinedBy  vpt: ;
-        rdfs:label        "Personnel Supervision"@en ;
+        rdfs:label        "Personnel Supervision"@en, "Beveiligingspersoneel"@nl, "Personnel de Sécurité"@fr, "Sicherheitspersonal"@de ;
         dct:created       "2019-01-29"^^xsd:date ;
         dct:modified      "2019-05-20"^^xsd:date ;
         vs:term_status    "stable" .
 
 vpt:ElectronicAccess  
         a                 vp:SecurityFeature ;
-        rdfs:comment      "A facility feature that indicates it has an electronic access system." ;
+        rdfs:comment      "A facility feature that indicates it has an electronic access system."@en, 
+                          "Een faciliteitsfunctie die aangeeft dat het een elektronisch toegangssysteem heeft."@nl, 
+                          "Une fonctionnalité qui indique qu’il dispose d’un système d’accès électronique."@fr, 
+                          "Ein Funktionsmerkmal, das angibt, dass es über ein elektronisches Zugangssystem verfügt."@de ;
         rdfs:isDefinedBy  vpt: ;
-        rdfs:label        "Electronic Access"@en ;
+        rdfs:label        "Electronic Access"@en, "Elektronische Toegang"@nl, "Contrôle d'Accès Électronique"@fr, "Elektronischer Zugang"@de ;
+        dct:created       "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-05-20"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vpt:LockerService 
+        a                 vp:SecurityFeature ;
+        rdfs:comment      "A facility feature that indicates it has a locker service available."@en, 
+                          "Een faciliteitsfunctie die aangeeft dat er een lockerservice beschikbaar is."@nl, 
+                          "Une fonctionnalité qui indique qu’un service de casier est disponible."@fr, 
+                          "Eine Einrichtungsfunktion, die angibt, dass ein Schließfachdienst verfügbar ist."@de ;
+        rdfs:isDefinedBy  vpt: ;
+        rdfs:label        "Locker Service"@en, "Lockerservice"@nl, "Service de Casier"@fr, "Schließfachservice"@de ;
         dct:created       "2019-01-29"^^xsd:date ;
         dct:modified      "2019-05-20"^^xsd:date ;
         vs:term_status    "stable" .
 
 vpt:BicyclePump  
         a                 vp:BikeParkingFeature ;
-        rdfs:comment      "A parking facility feature that indicates it has a bicycle pump available." ;
+        rdfs:comment      "A parking facility feature that indicates it has a bicycle pump available."@en, 
+                          "Een parkeerfaciliteit die aangeeft dat er een fietspomp beschikbaar is."@nl, 
+                          "Une fonctionnalité de parking indiquant qu’une pompe à vélo est disponible."@fr, 
+                          "Eine Parkfunktion, die anzeigt, dass eine Fahrradpumpe verfügbar ist."@de ;
         rdfs:isDefinedBy  vpt: ;
-        rdfs:label        "Bicycle Pump"@en ;
+        rdfs:label        "Bicycle Pump"@en, "Fietspomp"@nl, "Pompe à Vélo"@fr, "Fahrradpumpe"@de ;
         dct:created       "2019-01-29"^^xsd:date ;
-        dct:modified      "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-05-20"^^xsd:date ;
         vs:term_status    "stable" .
 
 vpt:MaintenanceService 
         a                 vp:BikeParkingFeature ;
-        rdfs:comment      "A parking facility feature that indicates it has a bicycle maintenance service available." ;
+        rdfs:comment      "A parking facility feature that indicates it has a bicycle maintenance service available."@en, 
+                          "Een parkeerfaciliteit die aangeeft dat er een fietsonderhoudsdienst beschikbaar is."@nl, 
+                          "Une fonctionnalité de parking indiquant qu’un service d’entretien des vélos est disponible."@fr, 
+                          "Eine Parkfunktion, die anzeigt, dass ein Fahrradwartungsservice verfügbar ist."@de ;
         rdfs:isDefinedBy  vpt: ;
-        rdfs:label        "Maintenance Service"@en ;
+        rdfs:label        "Maintenance Service"@en, "Onderhoudsdienst"@nl, "Service de Maintenance"@fr, "Wartungsservice"@de ;
         dct:created       "2019-01-29"^^xsd:date ;
         dct:modified      "2019-01-29"^^xsd:date ;
         vs:term_status    "stable" .
 
 vpt:ChargingPoint 
         a                 vp:BikeParkingFeature ;
-        rdfs:comment      "A parking facility feature that indicates it has an electrical bicycle charging point available." ;
+        rdfs:comment      "A parking facility feature that indicates it has an electrical bicycle charging point available."@en, 
+                          "Een parkeervoorziening die aangeeft dat er een elektrisch fietslaadpunt beschikbaar is."@nl, 
+                          "Une fonction de parcage indiquant qu’il dispose d’un point de charge pour vélo électrique."@fr, 
+                          "Eine Parkfunktion, die anzeigt, dass eine Ladestation für Elektrofahrräder verfügbar ist."@de ;
         rdfs:isDefinedBy  vpt: ;
-        rdfs:label        "Charging Point"@en ;
-        dct:created       "2019-01-29"^^xsd:date ;
-        dct:modified      "2019-01-29"^^xsd:date ;
-        vs:term_status    "stable" .
-
-vpt:LockerService 
-        a                 vp:SecurityFeature ;
-        rdfs:comment      "A facility feature that indicates it has a locker service available." ;
-        rdfs:isDefinedBy  vpt: ;
-        rdfs:label        "Locker Service"@en ;
+        rdfs:label        "Charging Point"@en, "Oplaadpunt"@nl, "Borne de Recharge"@fr, "Ladepunkt"@de ;
         dct:created       "2019-01-29"^^xsd:date ;
         dct:modified      "2019-05-20"^^xsd:date ;
         vs:term_status    "stable" .
 
 vpt:ToiletService 
         a                 vp:BikeParkingFeature ;
-        rdfs:comment      "A parking facility feature that indicates it has a toilet service available." ;
+        rdfs:comment      "A parking facility feature that indicates it has a toilet service available."@en, 
+                          "Een parkeerfaciliteit die aangeeft dat er een toiletservice beschikbaar is."@nl, 
+                          "Une fonctionnalité de parking qui indique qu'il a un service de toilette disponible."@fr, 
+                          "Eine Parkmöglichkeit, die anzeigt, dass ein Toilettenservice verfügbar ist."@de ;
         rdfs:isDefinedBy  vpt: ;
-        rdfs:label        "Toilet Service"@en ;
+        rdfs:label        "Toilet Service"@en, "Toiletten"@nl, "Toilettes"@fr, "Toilettenservice"@de ;
         dct:created       "2019-01-29"^^xsd:date ;
-        dct:modified      "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-05-20"^^xsd:date ;
         vs:term_status    "stable" .
 
 vpt:BikeRentalService 
         a                 vp:BikeParkingFeature ;
-        rdfs:comment      "A parking facility feature that indicates it has a bicycle rental service available." ;
+        rdfs:comment      "A parking facility feature that indicates it has a bicycle rental service available."@en, 
+                          "Een parkeerfaciliteit die aangeeft dat er een fietsverhuur beschikbaar is."@nl, 
+                          "Un parking qui indique qu’un service de location de vélos est disponible."@fr, 
+                          "Eine Parkmöglichkeit, die anzeigt, dass ein Fahrradverleih zur Verfügung steht."@de ;
         rdfs:isDefinedBy  vpt: ;
-        rdfs:label        "Bike Rental Service"@en ;
+        rdfs:label        "Bike Rental Service"@en, "Fietsverhuur"@nl, "Service de Location de Vélos"@fr, "Fahrradverleih"@de ;
         dct:created       "2019-01-29"^^xsd:date ;
-        dct:modified      "2019-01-29"^^xsd:date ;
+        dct:modified      "2019-05-20"^^xsd:date ;
         vs:term_status    "stable" .
 
 

@@ -1,26 +1,30 @@
 {
   "_comment" : "Created with OWL2VOWL (version 0.3.4), http://vowl.visualdataweb.org",
   "header" : {
-    "languages" : [ "de", "en", "undefined" ],
+    "version": "0.2.1",
+    "languages" : [ "nl", "fr", "de", "en" ],
     "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "https://velopark.ilabt.imec.be/openvelopark/vocabulary", "http://schema.org", "http://purl.org/goodrelations/v1", "http://www.w3.org/2000/01/rdf-schema", "http://schema.mobivoc.org", "http://purl.org/dc/terms", "http://www.w3.org/2001/XMLSchema", "http://dbpedia.org/ontology" ],
     "iri" : "https://velopark.ilabt.imec.be/openvelopark/vocabulary#",
-    "author" : [ "https://biblio.ugent.be/person/802002620753", "https://pietercolpaert.be/#me" ],
+    "author" : [ "https://julianrojas.org/#me", "https://pietercolpaert.be/#me" ],
     "description" : {
       "en" : "This ontology introduces the definition of a set of bicycle parking facilities related terms. It reuses and extends the MobiVoc (see http://schema.mobivoc.org/) and the schema.org (see https://schema.org) vocabularies."
     },
     "labels" : {
       "en" : "Open Velopark Vocabulary"
     },
+    "title" : {
+      "en" : "Open Velopark Vocabulary"
+    },
     "other" : {
       "creator" : [ {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "https://pietercolpaert.be/#me",
+        "value" : "https://julianrojas.org/#me",
         "type" : "iri"
       }, {
         "identifier" : "creator",
         "language" : "undefined",
-        "value" : "https://biblio.ugent.be/person/802002620753",
+        "value" : "https://pietercolpaert.be/#me",
         "type" : "iri"
       } ],
       "preferredNamespacePrefix" : [ {
@@ -63,7 +67,7 @@
     "classCount" : 26,
     "objectPropertyCount" : 21,
     "datatypePropertyCount" : 30,
-    "individualCount" : 15
+    "individualCount" : 17
   },
   "class" : [ {
     "id" : "3",
@@ -398,6 +402,42 @@
       "labels" : {
         "IRI-based" : "BicycleLocker",
         "en" : "Bicycle Locker"
+      }
+    }, {
+      "iri" : "https://velopark.ilabt.imec.be/openvelopark/terms#BicycleStand",
+      "baseIri" : "https://velopark.ilabt.imec.be/openvelopark/terms",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://velopark.ilabt.imec.be/openvelopark/terms#",
+          "type" : "iri"
+        } ],
+        "term_status" : [ {
+          "identifier" : "term_status",
+          "language" : "undefined",
+          "value" : "stable",
+          "type" : "label"
+        } ],
+        "created" : [ {
+          "identifier" : "created",
+          "language" : "undefined",
+          "value" : "2019-11-25",
+          "type" : "label"
+        } ],
+        "modified" : [ {
+          "identifier" : "modified",
+          "language" : "undefined",
+          "value" : "2019-11-25",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "Device to which bicycles can be securely attached for parking purposes."
+      },
+      "labels" : {
+        "IRI-based" : "BicycleStand",
+        "en" : "Bicycle Stand"
       }
     }, {
       "iri" : "https://velopark.ilabt.imec.be/openvelopark/terms#PublicBicycleParking",
