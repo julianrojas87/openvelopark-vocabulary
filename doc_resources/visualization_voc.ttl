@@ -447,6 +447,18 @@ vpt:BikeRentalService
         dct:modified      "2019-05-20"^^xsd:date ;
         vs:term_status    "stable" .
 
+vpt:BikeSharing 
+        a                 vp:BikeParkingFeature ;
+        rdfs:comment      "A service in which bicycles are made available for shared use to individuals on a short term basis."@en, 
+                          "Een service waarbij fietsen op korte termijn beschikbaar worden gesteld voor gedeeld gebruik aan particulieren."@nl, 
+                          "Un service dans lequel des vélos sont mis à la disposition des particuliers pour une utilisation partagée à court terme."@fr, 
+                          "Ein Service, bei dem Fahrräder für Einzelpersonen kurzfristig zur gemeinsamen Nutzung zur Verfügung gestellt werden."@de ;
+        rdfs:isDefinedBy  vpt: ;
+        rdfs:label        "Bike Sharing"@en, "Deelfiets"@nl, "Vélos en Libre Partage"@fr, "Fahrard Teilen"@de ;
+        dct:created       "2019-11-26"^^xsd:date ;
+        dct:modified      "2019-11-26"^^xsd:date ;
+        vs:term_status    "stable" .
+
 
 #################################################################
 #

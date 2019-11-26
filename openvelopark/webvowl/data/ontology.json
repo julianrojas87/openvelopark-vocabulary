@@ -1,7 +1,7 @@
 {
   "_comment" : "Created with OWL2VOWL (version 0.3.4), http://vowl.visualdataweb.org",
   "header" : {
-    "version": "0.2.1",
+    "version": "0.2.2",
     "languages" : [ "nl", "fr", "de", "en" ],
     "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "https://velopark.ilabt.imec.be/openvelopark/vocabulary", "http://schema.org", "http://purl.org/goodrelations/v1", "http://www.w3.org/2000/01/rdf-schema", "http://schema.mobivoc.org", "http://purl.org/dc/terms", "http://www.w3.org/2001/XMLSchema", "http://dbpedia.org/ontology" ],
     "iri" : "https://velopark.ilabt.imec.be/openvelopark/vocabulary#",
@@ -709,6 +709,42 @@
       "labels" : {
         "IRI-based" : "BikeRentalService",
         "en" : "Bike Rental Service"
+      }
+    }, {
+      "iri" : "https://velopark.ilabt.imec.be/openvelopark/terms#BikeSharing",
+      "baseIri" : "https://velopark.ilabt.imec.be/openvelopark/terms",
+      "annotations" : {
+        "isDefinedBy" : [ {
+          "identifier" : "isDefinedBy",
+          "language" : "undefined",
+          "value" : "https://velopark.ilabt.imec.be/openvelopark/terms#",
+          "type" : "iri"
+        } ],
+        "term_status" : [ {
+          "identifier" : "term_status",
+          "language" : "undefined",
+          "value" : "stable",
+          "type" : "label"
+        } ],
+        "created" : [ {
+          "identifier" : "created",
+          "language" : "undefined",
+          "value" : "2019-11-26",
+          "type" : "label"
+        } ],
+        "modified" : [ {
+          "identifier" : "modified",
+          "language" : "undefined",
+          "value" : "2019-11-26",
+          "type" : "label"
+        } ]
+      },
+      "comment" : {
+        "undefined" : "A service in which bicycles are made available for shared use to individuals on a short term basis."
+      },
+      "labels" : {
+        "IRI-based" : "BikeSharing",
+        "en" : "Bike Sharing"
       }
     }, {
       "iri" : "https://velopark.ilabt.imec.be/openvelopark/terms#ToiletService",
