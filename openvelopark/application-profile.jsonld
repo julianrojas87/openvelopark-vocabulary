@@ -421,6 +421,7 @@
                     "@type": "",
                     "value": "",
                     "name": "",
+                    "description": "",
                     "hoursAvailable": [
                         {
                             "@type": "OpeningHoursSpecification",
