@@ -271,6 +271,7 @@
     "dateModified": "",
     "identifier": "",
     "name": "",
+    "description": "",
     "ownedBy": {
         "@id": "",
         "@type": "BusinessEntity",
