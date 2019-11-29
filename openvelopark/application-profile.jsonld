@@ -213,6 +213,10 @@
             "@id": "vp:allows",
             "@container": "@set"
         },
+        "covered": {
+            "@id": "vp:covered",
+            "@type": "xsd:boolean"
+        },
         "maximumParkingDuration": {
             "@id": "vp:maximumParkingDuration",
             "@type": "xsd:duration"
@@ -354,6 +358,7 @@
             "removalConditions": "",
             "postRemovalAction": "",
             "numberOfLevels": "",
+            "covered": "",
             "totalCapacity": "",
             "capacity": {
                 "@type": "RealTimeCapacity",

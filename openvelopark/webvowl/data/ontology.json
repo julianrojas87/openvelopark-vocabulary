@@ -1,7 +1,7 @@
 {
   "_comment" : "Created with OWL2VOWL (version 0.3.4), http://vowl.visualdataweb.org",
   "header" : {
-    "version": "0.2.2",
+    "version": "0.2.3",
     "languages" : [ "nl", "fr", "de", "en" ],
     "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "https://velopark.ilabt.imec.be/openvelopark/vocabulary", "http://schema.org", "http://purl.org/goodrelations/v1", "http://www.w3.org/2000/01/rdf-schema", "http://schema.mobivoc.org", "http://purl.org/dc/terms", "http://www.w3.org/2001/XMLSchema", "http://dbpedia.org/ontology" ],
     "iri" : "https://velopark.ilabt.imec.be/openvelopark/vocabulary#",
@@ -92,6 +92,9 @@
     "type" : "rdfs:Datatype"
   }, {
     "id" : "118",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "119",
     "type" : "rdfs:Datatype"
   }, {
     "id" : "25",
@@ -342,6 +345,13 @@
     "id" : "118",
     "label" : {
       "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#boolean",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "119",
+    "label" : {
+      "IRI-based" : "boolean"
     }
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#date",
@@ -2761,6 +2771,46 @@
     },
     "attributes" : [ "datatype" ],
     "id" : "91"
+  }, {
+    "iri" : "https://velopark.ilabt.imec.be/openvelopark/vocabulary#covered",
+    "baseIri" : "https://velopark.ilabt.imec.be/openvelopark/vocabulary",
+    "range" : "119",
+    "annotations" : {
+      "isDefinedBy" : [ {
+        "identifier" : "isDefinedBy",
+        "language" : "undefined",
+        "value" : "https://velopark.ilabt.imec.be/openvelopark/vocabulary#",
+        "type" : "iri"
+      } ],
+      "term_status" : [ {
+        "identifier" : "term_status",
+        "language" : "undefined",
+        "value" : "stable",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2019-11-29",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2019-11-29",
+        "type" : "label"
+      } ]
+    },
+    "label" : {
+      "IRI-based" : "covered",
+      "en" : "covered"
+    },
+    "domain" : "23",
+    "comment" : {
+      "en" : "Indicates if a facility is sheltered or has any type of roof covering."
+    },
+    "attributes" : [ "datatype" ],
+    "id" : "117"
   }, {
     "iri" : "https://velopark.ilabt.imec.be/openvelopark/vocabulary#openingHoursExtraInformation",
     "baseIri" : "https://velopark.ilabt.imec.be/openvelopark/vocabulary",
