@@ -231,7 +231,18 @@ vp:covered
         rdfs:domain       mv:BicycleParkingStation ;
         rdfs:isDefinedBy  vp: ;
         rdfs:label        "covered"@en ;
-        rdfs:range        xsd:string ;
+        rdfs:range        xsd:boolean ;
         dct:created       "2019-11-29"^^xsd:date ;
         dct:modified      "2019-11-29"^^xsd:date ;
+        vs:term_status    "stable" .
+
+vp:temporarilyClosed  
+        a                 rdf:Property , owl:DatatypeProperty ;
+        rdfs:comment      "Indicates if a facility is temporarily closed due to works, events, maintenance, etc."@en ;
+        rdfs:domain       mv:BicycleParkingStation ;
+        rdfs:isDefinedBy  vp: ;
+        rdfs:label        "temporarily closed"@en ;
+        rdfs:range        xsd:boolean ;
+        dct:created       "2019-12-01"^^xsd:date ;
+        dct:modified      "2019-12-01"^^xsd:date ;
         vs:term_status    "stable" .
