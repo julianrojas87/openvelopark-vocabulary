@@ -50,7 +50,6 @@
         "image": "schema:image",
         "contactPoint": "schema:contactPoint",
         "interactionService": "schema:interactionService",
-        "capacity": "mv:capacity",
         "dueForTime": "mv:dueForTime",
         "ownedBy": "mv:ownedBy",
         "operatedBy": "mv:operatedBy",
@@ -171,6 +170,10 @@
         "totalCapacity": {
             "@id": "mv:totalCapacity",
             "@type": "xsd:integer"
+        },
+        "liveCapacity": {
+            "@id": "mv:capacity",
+            "@type": "@id"
         },
         "currentValue": {
             "@id": "mv:currentValue",
@@ -426,11 +429,7 @@
             "postRemovalAction": "Contact APCOA on 0473 33 89 11",
             "numberOfLevels": 2,
             "totalCapacity": 250,
-            "capacity": {
-                "@type": "RealTimeCapacity",
-                "currentValue": 133,
-                "date": "2018-11-08T14:42:00.000Z"
-            },
+            "liveCapacity": "https://velopark.ilabt.imec.be/data/live/gent",
             "allows": [
                 {
                     "@type": "AllowedBicycle",
@@ -629,11 +628,7 @@
             "postRemovalAction": "Contact APCOA on 0473 33 89 11",
             "numberOfLevels": 1,
             "totalCapacity": 200,
-            "capacity": {
-                "@type": "RealTimeCapacity",
-                "currentValue": 133,
-                "date": "2018-11-08T14:42:00.000Z"
-            },
+            "liveCapacity": "https://velopark.ilabt.imec.be/data/live/gent",
             "allows": [
                 {
                     "@type": "AllowedBicycle",

@@ -22,7 +22,6 @@
         "BicycleParkingStation": "mv:BicycleParkingStation",
         "Entrance": "mv:ParkingFacilityEntrance",
         "Exit": "mv:ParkingFacilityExit",
-        "RealTimeCapacity": "mv:RealTimeCapacity",
         "TimeSpecification": "mv:TimeSpecification",
         "Bicycle": "vp:Bicycle",
         "AllowedBicycle": "vp:AllowedBicycle",
@@ -52,7 +51,6 @@
         "image": "schema:image",
         "contactPoint": "schema:contactPoint",
         "interactionService": "schema:interactionService",
-        "capacity": "mv:capacity",
         "dueForTime": "mv:dueForTime",
         "ownedBy": "mv:ownedBy",
         "operatedBy": "mv:operatedBy",
@@ -180,6 +178,10 @@
         "totalCapacity": {
             "@id": "mv:totalCapacity",
             "@type": "xsd:integer"
+        },
+        "liveCapacity": {
+            "@id": "mv:capacity",
+            "@type": "@id"
         },
         "currentValue": {
             "@id": "mv:currentValue",
@@ -365,11 +367,7 @@
             "numberOfLevels": "",
             "covered": "",
             "totalCapacity": "",
-            "capacity": {
-                "@type": "RealTimeCapacity",
-                "currentValue": "",
-                "date": ""
-            },
+            "liveCapacity": "",
             "allows": [
                 {
                     "@type": "AllowedBicycle",
