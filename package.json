@@ -76,7 +76,7 @@
     "optimist": "0.6.x",
     "portfinder": "^1.0.20",
     "q": "^1.5.1",
-    "union": "~0.4.3"
+    "union": "~0.5.0"
   },
   "devDependencies": {
     "common-style": "^3.0.0",
